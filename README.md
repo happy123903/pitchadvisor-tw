@@ -2,7 +2,7 @@
 
 以 Rebas 中職歷史逐球資料，建立依投打、情境與本打席歷程即時推論的配球分析工具。React／TypeScript 前端部署於 GitHub Pages，FastAPI 在 Render 執行，Supabase 保存資料與私有模型版本。
 
-**第二週進度（2026-11-10）**：序列 LightGBM／GRU 實際訓練比較、消融、溫度校準、conformal、條件結果推薦與前端歷程編輯已完成。選定 `week2-sequence-v1`／`lightgbm_history`；Supabase 已讀回校驗，本機 63 項測試通過。發布與瀏覽器驗收狀態以 [第二週交付紀錄](docs/week2/COMPLETION.md) 為準。正式網站：[球路參謀](https://happy123903.github.io/pitchadvisor-tw/)。
+**第二週進度（2026-11-10）**：序列 LightGBM／GRU 實際訓練比較、消融、溫度校準、conformal、條件結果推薦與前端歷程編輯已完成。選定 `week2-sequence-v1`／`lightgbm_history`；GitHub Pages、Render、Supabase 三平台已發布並實查通過，本機 63 項測試、前端 5 項測試與桌面／手機瀏覽器驗收通過。詳細證據以 [第二週交付紀錄](docs/week2/COMPLETION.md) 為準。正式網站：[球路參謀](https://happy123903.github.io/pitchadvisor-tw/)。
 
 ## 快速開啟本機網站
 
