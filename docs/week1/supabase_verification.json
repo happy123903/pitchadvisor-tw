@@ -1,0 +1,85 @@
+{
+  "verified_on": "2026-11-10",
+  "timezone": "Asia/Taipei",
+  "project_ref": "tffmdcuyzifepuaadglx",
+  "issue": "SUPABASE_URL contained /rest/v1/; the importer appended the REST path again.",
+  "resolution": "Corrected ignored local .env to the project origin and reran the existing --apply import.",
+  "database": {
+    "model": {
+      "sha256": "0783ab099c672bc7cc821de64bd0b9561f6c7ce54aec7170345e7728c0f234d8",
+      "data_version": "rebas-2023-2025-regular-v1",
+      "storage_path": "week1-frequency-v1/model.json",
+      "model_version": "week1-frequency-v1"
+    },
+    "counts": {
+      "players": 377,
+      "model_versions": 1,
+      "aggregate_stats": 75424,
+      "pitcher_repertoire": 826
+    },
+    "tables": [
+      {
+        "name": "aggregate_stats",
+        "rls_enabled": true,
+        "anon_can_access": false,
+        "service_role_can_insert": true,
+        "service_role_can_select": true,
+        "service_role_can_update": true,
+        "authenticated_can_access": false
+      },
+      {
+        "name": "model_versions",
+        "rls_enabled": true,
+        "anon_can_access": false,
+        "service_role_can_insert": true,
+        "service_role_can_select": true,
+        "service_role_can_update": true,
+        "authenticated_can_access": false
+      },
+      {
+        "name": "pitcher_repertoire",
+        "rls_enabled": true,
+        "anon_can_access": false,
+        "service_role_can_insert": true,
+        "service_role_can_select": true,
+        "service_role_can_update": true,
+        "authenticated_can_access": false
+      },
+      {
+        "name": "players",
+        "rls_enabled": true,
+        "anon_can_access": false,
+        "service_role_can_insert": true,
+        "service_role_can_select": true,
+        "service_role_can_update": true,
+        "authenticated_can_access": false
+      }
+    ],
+    "data_version": "rebas-2023-2025-regular-v1",
+    "storage_objects": [
+      {
+        "name": "week1-frequency-v1/manifest.json",
+        "size": "439",
+        "mimetype": "application/json"
+      },
+      {
+        "name": "week1-frequency-v1/model.json",
+        "size": "5088365",
+        "mimetype": "application/json"
+      }
+    ],
+    "storage_bucket_private": true
+  },
+  "http_verification": {
+    "players_read_http": 200,
+    "storage_manifest_http": 200,
+    "storage_model_http": 200,
+    "model_bytes": 5088365,
+    "model_sha256": "0783ab099c672bc7cc821de64bd0b9561f6c7ce54aec7170345e7728c0f234d8",
+    "matches_local_model_and_manifest": true
+  },
+  "limitations": [
+    "Render deployment was not verified in this repair.",
+    "GitHub Pages publication and browser QA were not verified in this repair."
+  ]
+}

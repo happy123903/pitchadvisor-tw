@@ -1,8 +1,8 @@
 # 球路參謀 PitchAdvisor TW
 
-以 Rebas 中職歷史逐球資料，建立可即時查詢的配球分析工具。前端為 React／TypeScript，後端為 FastAPI，預計部署至 GitHub Pages、Supabase 與 Render。
+以 Rebas 中職歷史逐球資料，建立依投打、情境與本打席歷程即時推論的配球分析工具。React／TypeScript 前端部署於 GitHub Pages，FastAPI 在 Render 執行，Supabase 保存資料與私有模型版本。
 
-**第一週狀態**：資料下載、清洗、資料查核、頻率基準、價值函數、13 分區、本機 API 與前端已完成；雲端專案尚未建立，實際 Supabase 匯入與公開網站部署仍待完成。詳見 [第一週交付狀態](docs/week1/COMPLETION.md)。
+**第二週進度（2026-11-10）**：序列 LightGBM／GRU 實際訓練比較、消融、溫度校準、conformal、條件結果推薦與前端歷程編輯已完成。選定 `week2-sequence-v1`／`lightgbm_history`；Supabase 已讀回校驗，本機 63 項測試通過。發布與瀏覽器驗收狀態以 [第二週交付紀錄](docs/week2/COMPLETION.md) 為準。正式網站：[球路參謀](https://happy123903.github.io/pitchadvisor-tw/)。
 
 ## 快速開啟本機網站
 
@@ -22,7 +22,9 @@ powershell -NoProfile -File scripts/Start-Local.ps1
 powershell -NoProfile -File scripts/Stop-Local.ps1
 ```
 
-目前版本可選投打、球數、出局數與壘包，查看球種分布、13 區落點、候選失分變化及樣本。**打者目前只用於樣本查核，不參與球種機率建模；非空序列會明確回報尚未支援。** 序列摘要、LightGBM、GRU、校準及預測集合依 v3 排在第二週，沒有用假結果替代。
+目前版本可選投打、球數、出局數與壘包，新增／編輯／刪除歷程後重新推論；打者條件與歷程會影響模型。三項任務為球種、13 區落點與五類投球結果，另提供候選配球、訓練樣本數與預測集合。歷程需從同一打席 0–0 完整輸入，最多 16 球；未知球速／落點可留空，球數自動重建。換投或換打者時開始新打席。
+
+驗證集球種 log loss：投手頻率 1.244698、情境 LightGBM 1.201012、序列 LightGBM **1.158778**、GRU 1.174469。校準稽核球種覆蓋率 **89.83%**，名目 90%，平均集合 2.52 類。各項比較與限制見 [第二週成果](docs/week2/RESULTS.md)。
 
 ## 從乾淨環境重建
 
@@ -44,6 +46,15 @@ Set-Location ..
 
 Python 依賴鎖在 `uv.lock`，部署用套件鎖在 `requirements-lock.txt`；前端依賴鎖在 `web/package-lock.json`。原始資料與環境已列入 `.gitignore`，不隨原始碼上傳。
 
+上述指令重建第一週資料與基準。第二週產物已提交，可直接服務；若要重新訓練，額外安裝 CPU 訓練群組（沿用上述 uv 目錄設定）：
+
+```powershell
+rtk proxy uv sync --python 3.12 --locked --group training
+rtk proxy .venv\Scripts\python.exe scripts/build_week2.py --threads 4 --epochs 10 --rounds 140
+```
+
+`--smoke` 只作管線試跑，輸出到忽略的 `artifacts/week2-smoke/` 與 `docs/week2/smoke/`，不可部署。線上 runtime 不安裝 PyTorch；GRU 比較的 NumPy 匯出已與 CPU PyTorch 驗證一致。方法與重現設定見 [MODELING_METHOD.md](docs/week2/MODELING_METHOD.md)。
+
 資料來源鏈為：[野革盃官網](https://blog.rebas.tw/articles/4136) → [官方 Open Data](https://github.com/rebas-tw/rebas.tw-open-data) → 官方 Releases。下載程式驗證 ZIP 大小、CRC 與 SHA-256，並在 `docs/sources/download_manifest.json` 保存來源、版本與校驗碼。2025 年選用 2026-11-07 發布的更新版本；未混入 2026 年賽事。
 
 只讀單場 JSON，不讀同一 ZIP 中的合併檔；先取得四份完整例行賽 ZIP，再執行建置。網路失敗時可重跑下載，不會把 `.part` 當作完成檔案。
@@ -56,6 +67,8 @@ Python 依賴鎖在 `uv.lock`，部署用套件鎖在 `requirements-lock.txt`；
 - `docs/week1/split_manifest.json`：逐場固定時間切分。
 - `data/processed/pitches.parquet`：攤平後逐球資料；`games.parquet`、`identities.parquet` 為比賽與身分對照。
 - `artifacts/baseline/`：訓練期統計、價值函數、查詢快照與校驗 manifest。
+- `artifacts/week2/`：正式序列模型、特徵編碼、校準器、第一週查詢快照與 SHA-256 manifest。
+- [第二週比較、消融與校準](docs/week2/RESULTS.md)、[事前驗收規則](docs/week2/EXECUTION_PLAN.md)。
 - [三週完整計畫](野革盃黑客松_專案計畫書_v3.md)。
 
 本週訓練截止 2024-08-14，驗證自 2024-08-16 起，校準自 2024-09-12 起；2025 年作為測試資料保留，未計算測試成績來挑模型。球員名單只由訓練期資料建立，未見過的 ID 不自動按姓名合併。
@@ -63,12 +76,14 @@ Python 依賴鎖在 `uv.lock`，部署用套件鎖在 `requirements-lock.txt`；
 ## 驗證
 
 ```powershell
-.venv\Scripts\python.exe -m pytest -q
-.venv\Scripts\python.exe scripts/supabase_sync.py
-.venv\Scripts\python.exe scripts/verify_local.py
+rtk proxy .venv\Scripts\python.exe -m pytest -q
+rtk proxy npm.cmd --prefix web test
+rtk proxy npm.cmd --prefix web run build
+rtk proxy .venv\Scripts\python.exe scripts/verify_week2.py --output docs/week2/local_verification.json
+rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2
 ```
 
-最後一項需先啟動本機服務，會檢查實際 API、Vite 代理與 20 次暖機 HTTP 請求。效能結果只代表本機單一使用者，不代表 Render 免費服務或冷啟動。瀏覽器控制服務目前不可用，本次未執行真實瀏覽器視覺驗收，不能把 HTTP 驗證當成完整瀏覽器端到端測試。
+`verify_week2.py` 自行啟停獨立本機 API，檢查真實歷程／打者效果、三任務與推薦、錯誤情境及 25 次暖機 HTTP。Windows 量測實際服務程序而非 venv launcher；本次峰值約 219 MiB、p95 約 4ms。這是本機單一使用者結果，不代表冷啟動或多人負載。雲端 HTTP／CORS 與真實瀏覽器操作分開記錄。
 
 ## Supabase：建立後匯入
 
@@ -77,8 +92,9 @@ Python 依賴鎖在 `uv.lock`，部署用套件鎖在 `requirements-lock.txt`；
 3. 先執行 dry run，再指定 `--apply`：
 
 ```powershell
-.venv\Scripts\python.exe scripts/supabase_sync.py
-.venv\Scripts\python.exe scripts/supabase_sync.py --apply
+rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2
+rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2 --apply
+rtk proxy .venv\Scripts\python.exe scripts/verify_supabase_model.py
 ```
 
 匯入包含球員、投手可用球種、聚合統計、私有模型包與版本登錄。採主鍵 upsert，可重跑；只有表與模型包成功上傳後才登錄可服務版本。不要對其他專案或不相容資料表執行此遷移。
@@ -87,10 +103,10 @@ Python 依賴鎖在 `uv.lock`，部署用套件鎖在 `requirements-lock.txt`；
 
 ## Render：部署 API
 
-1. 建立本專案 GitHub 儲存庫，提交原始碼、鎖定檔、`docs/` 與 `artifacts/baseline/`，排除原始資料、環境及 `.env`。
+1. 使用本專案 GitHub 儲存庫，提交原始碼、鎖定檔、`docs/`、`artifacts/baseline/` 與 `artifacts/week2/`，排除原始資料、環境及 `.env`。
 2. Render 以此儲存庫建立 Blueprint，使用根目錄 `render.yaml`，保持 Free 方案。
 3. 設定 `SUPABASE_URL`、`SUPABASE_SECRET_KEY`，以及 `ALLOWED_ORIGINS=https://<GitHub帳號>.github.io`。CORS 來源不含儲存庫路徑。
-4. 確認 `/health` 為 200 且版本符合。已提交的模型包可直接載入；缺少本機包時，會使用固定 `MODEL_VERSION` 從私有 Storage 下載並核對校驗碼。
+4. 設 `MODEL_BUNDLE_DIR=artifacts/week2`、`MODEL_VERSION=week2-sequence-v1`（與 `render.yaml` 一致），確認 `/health` 為 200、版本符合，且 `data_source=supabase_verified_snapshot`。已提交的模型包可直接載入；缺少本機包時，會使用固定版本從私有 Storage 下載並核對校驗碼。
 
 Render 的執行檔案系統不作持久儲存；模型仍需保留在儲存庫或私有 Storage。API 回傳資料來源狀態，無法確認 Supabase 時會明示快照；沒有可用一致模型時回報 503。
 
@@ -105,6 +121,6 @@ Render 的執行檔案系統不作持久儲存；模型仍需保留在儲存庫�
 
 ## 限制與授權
 
-人工座標可能有誤差；資料是實際落點，不是意圖落點。壘包移動若無法由事件唯一還原則標為未知；不完整半局不當作完整期望失分標籤。當前頻率基準與失分變化排序屬觀測資料分析，不宣稱因果或實戰保證。
+人工座標可能有誤差；資料是實際落點，不是意圖落點。壘包移動若無法由事件唯一還原則標為未知；不完整半局不當作完整期望失分標籤。候選依「候選球種／分區的條件結果機率 × 訓練期 ΔRE」排序，屬觀測資料分析，不宣稱因果或實戰保證。結果五分類排除觸身球等特殊事件；13 區預測集合平均仍達 10.27 區，不能宣稱精準控球。2025 保留到第三週最終測試，未拿來選模。
 
 資料來源：Rebas 野球革命 Open Data（ODC-By）。[官方授權](https://github.com/rebas-tw/rebas.tw-open-data/blob/main/LICENSE)與本機副本 `docs/sources/REBas-LICENSE`。第三方資料、程式套件與模型依各自授權使用；本文件沒有替原創專案程式碼另行指定開源授權。

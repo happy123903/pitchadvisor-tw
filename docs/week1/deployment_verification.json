@@ -1,0 +1,158 @@
+{
+  "verified_at": "2026-11-10T18:18:43+08:00",
+  "timezone": "Asia/Taipei",
+  "overall": "all_three_platforms_deployed_and_live_http_api_checks_passed",
+  "github_pages": {
+    "url": "https://happy123903.github.io/pitchadvisor-tw/",
+    "workflow": {
+      "id": 42796194047,
+      "name": "Build and deploy web",
+      "status": "completed",
+      "conclusion": "success",
+      "commit": "8a3c526af381b6162d52b0cf3f2229b9d3e499a4",
+      "url": "https://github.com/happy123903/pitchadvisor-tw/actions/runs/42796194047",
+      "updated_at": "2026-11-10T10:06:41Z"
+    },
+    "jobs": [
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "ci": {
+      "id": 42792033207,
+      "name": "Check reproducible baseline and web",
+      "status": "completed",
+      "conclusion": "success",
+      "commit": "8a3c526af381b6162d52b0cf3f2229b9d3e499a4",
+      "url": "https://github.com/happy123903/pitchadvisor-tw/actions/runs/42792033207",
+      "updated_at": "2026-11-10T09:36:18Z"
+    },
+    "repository": {
+      "tree_sha": "8a3c526af381b6162d52b0cf3f2229b9d3e499a4",
+      "truncated": false,
+      "files": 66,
+      "env_file_published": false,
+      "has_attributes": true,
+      "model_blob_sha": "6ba2192de5cfb4ea686e72c0aad603baf4c5b0d6"
+    }
+  },
+  "render": {
+    "url": "https://pitchadvisor-api.onrender.com",
+    "deploy": {
+      "id": "dep-dbpeu38u01pc73ddst6g",
+      "status": "live",
+      "commit": "8a3c526af381b6162d52b0cf3f2229b9d3e499a4",
+      "finished_at": "2026-11-10T10:18:14.066017Z"
+    },
+    "memory_snapshot": {
+      "sample_period_utc": {
+        "start": "2026-11-10T09:41:00Z",
+        "end": "2026-11-10T10:05:00Z"
+      },
+      "memory_peak_bytes": 115081220,
+      "memory_limit_bytes": 536870900,
+      "samples": 25
+    }
+  },
+  "supabase": {
+    "project_ref": "tffmdcuyzifepuaadglx",
+    "name": "pitchadvisor-tw",
+    "status": "ACTIVE_HEALTHY",
+    "players": 377,
+    "model_files": 2,
+    "model_sha256": "0783ab099c672bc7cc821de64bd0b9561f6c7ce54aec7170345e7728c0f234d8",
+    "bucket_private": true,
+    "model_versions": 1,
+    "aggregate_stats": 75424,
+    "all_rls_enabled": true,
+    "pitcher_repertoire": 826
+  },
+  "public_integration": {
+    "verified_on": "2026-11-10",
+    "timezone": "Asia/Taipei",
+    "requests": [
+      {
+        "method": "GET",
+        "url": "https://happy123903.github.io/pitchadvisor-tw/",
+        "http": 200,
+        "elapsed_seconds": 0.113
+      },
+      {
+        "method": "GET",
+        "url": "https://happy123903.github.io/pitchadvisor-tw/assets/index-CRTqAswG.js",
+        "http": 200,
+        "elapsed_seconds": 0.061
+      },
+      {
+        "method": "GET",
+        "url": "https://happy123903.github.io/pitchadvisor-tw/assets/index-DHubbF7w.css",
+        "http": 200,
+        "elapsed_seconds": 0.034
+      },
+      {
+        "method": "GET",
+        "url": "https://pitchadvisor-api.onrender.com/health",
+        "http": 200,
+        "elapsed_seconds": 0.182
+      },
+      {
+        "method": "GET",
+        "url": "https://pitchadvisor-api.onrender.com/players",
+        "http": 200,
+        "elapsed_seconds": 0.163
+      },
+      {
+        "method": "OPTIONS",
+        "url": "https://pitchadvisor-api.onrender.com/predict",
+        "http": 200,
+        "elapsed_seconds": 0.153
+      },
+      {
+        "method": "POST",
+        "url": "https://pitchadvisor-api.onrender.com/predict",
+        "http": 200,
+        "elapsed_seconds": 0.154
+      }
+    ],
+    "pages_url": "https://happy123903.github.io/pitchadvisor-tw/",
+    "pages_http": 200,
+    "frontend_uses_expected_api": true,
+    "public_assets_have_no_secret_keys": true,
+    "api_url": "https://pitchadvisor-api.onrender.com",
+    "health": {
+      "status": "ready",
+      "model_version": "week1-frequency-v1",
+      "data_version": "rebas-2023-2025-regular-v1",
+      "data_cutoff": "2024-08-14",
+      "data_source": "supabase_verified_snapshot",
+      "capabilities": {
+        "sequence": false,
+        "batter_conditioned_model": false,
+        "conformal": false
+      }
+    },
+    "players_count": 377,
+    "cors_allowed_origin": "https://happy123903.github.io",
+    "zone_count": 13,
+    "recommendations": 5,
+    "probabilities_sum_to_one": true,
+    "verification_scope": "Live HTTP, deployed frontend assets, API, and CORS; no browser click QA."
+  },
+  "recovery": {
+    "initial_health_checks": "Read timeouts after idle shutdown; tried 25-second and 60-second timeouts plus alternate HTTP clients.",
+    "action": "Redeployed the same tested commit 8a3c526; final deploy is live and public endpoints passed again after completion.",
+    "code_or_plan_changes": false
+  },
+  "limitations": [
+    "HTTP/API and published asset verification only; no browser visual/click QA in this audit.",
+    "Idle wake-up stability and load capacity are not certified by this verification.",
+    "Secret-key rotation was not verified; no credential values are included."
+  ]
+}

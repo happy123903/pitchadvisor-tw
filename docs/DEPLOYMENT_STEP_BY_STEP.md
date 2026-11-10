@@ -96,6 +96,8 @@ rtk git push -u origin main
 | Project URL | 專案的 **Connect** 視窗；例如 `https://你的專案ref.supabase.co` |
 | Secret key | **Settings → API Keys → Secret keys**，建立或複製 `sb_secret_...` |
 
+`SUPABASE_URL` 只填專案網域，**不要包含 `/rest/v1/`**。Data API 頁面可能顯示完整 REST 網址，但匯入程式會自行加上 `/rest/v1/`；填入完整 REST 網址會造成路徑重複並回傳 404。Render 的同名環境變數也使用不含路徑的 Project URL。
+
 此處使用伺服器端 secret key，不是 `sb_publishable_...`。如果介面顯示 legacy `service_role`，程式也相容，但新設定優先使用新型 secret key。不要貼到聊天、GitHub 原始碼或前端變數。[官方金鑰說明](https://supabase.com/docs/guides/getting-started/api-keys)
 
 在本機專案根目錄複製 `.env.example` 為 `.env`；若 `.env` 已存在，編輯既有檔案即可。可在 PowerShell 執行：
@@ -219,11 +221,15 @@ GitHub Pages 只取得公開的 API 網址。Supabase key 只留在本機 `.env`
 |---|---|
 | Git push 顯示 repository not found | GitHub 上已建立儲存庫、網址與登入帳號是否正確 |
 | Git commit 提示沒有 identity | 設定本儲存庫 `user.name` 與 `user.email`，再提交 |
+| `rtk` 顯示 No hook installed | 這是自動節省 token 功能的提示；手動執行 `rtk proxy` 仍會執行命令，無須為了解決 Supabase 匯入而安裝 hook |
+| Supabase 匯入 HTTP 404 | 先檢查 `.env` 的 `SUPABASE_URL` 只含專案網域，沒有 `/rest/v1/`；再確認正確專案的資料表與 Data API |
 | Supabase 匯入 401 | URL 與 secret key 是否來自同一個專案，是否複製完整 |
 | Supabase 匯入 403／permission denied | 遷移是否已在正確專案執行，是否使用伺服器 secret key |
 | Supabase 找不到資料表 | 確認遷移、`public` schema 與 Data API 已啟用 |
 | Render 看不到 GitHub repository | 重新檢查 Render 的 GitHub app 是否獲准存取此儲存庫 |
 | Render 503／模型尚未就緒 | `artifacts/baseline` 是否已提交；若從 Storage 載入，確認私有檔、模型版本與 key |
+| Render 建置成功，但 `/health` 一直 503；模型 checksum 不一致 | Windows 的 Git 換行轉換可能改變模型位元組。保留 `.gitattributes` 的模型 binary 設定，重新 `git add .gitattributes artifacts/baseline/model.json`、commit、push；不要略過 SHA-256 驗證 |
+| Blueprint 顯示 Failed sync，但服務已 Live／ready | 比對 Blueprint 的 lastSync 與服務部署版本；舊的同步失敗可與後來成功的服務部署同時存在。確認 API、Supabase 整合與 CORS 後可繼續 Pages，不因舊紀錄重建服務 |
 | Render ready，但資料來源為 local_snapshot | Supabase 尚未被成功驗證；檢查匯入與環境設定後重新部署 |
 | Actions 停在 Require deployed API | 到 Variables 設 `VITE_API_BASE_URL`，再 Run workflow |
 | API 單獨能開，網頁卻報跨來源錯誤 | Render 的 `ALLOWED_ORIGINS` 必須是 `https://happy123903.github.io`，更新後重新部署 |

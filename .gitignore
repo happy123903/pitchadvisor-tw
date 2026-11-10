@@ -3,6 +3,7 @@
 .cache/
 __pycache__/
 .pytest_cache/
+.playwright-cli/
 *.pyc
 .env
 .env.*
@@ -12,4 +13,7 @@ data/processed/
 web/node_modules/
 web/dist/
 artifacts/private/
+artifacts/week2-smoke/
+docs/week2/smoke/
+docs/week2/metrics_in_progress.json
 *.log

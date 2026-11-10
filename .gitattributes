@@ -1,2 +1,3 @@
 # The model payload is pinned by SHA-256. Preserve its bytes on every platform.
 artifacts/baseline/model.json binary
+artifacts/week2/model.json binary

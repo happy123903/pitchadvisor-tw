@@ -12,9 +12,9 @@ services:
       - key: PYTHONUNBUFFERED
         value: "1"
       - key: MODEL_BUNDLE_DIR
-        value: artifacts/baseline
+        value: artifacts/week2
       - key: MODEL_VERSION
-        value: week1-frequency-v1
+        value: week2-sequence-v1
       - key: ALLOWED_ORIGINS
         sync: false
       - key: SUPABASE_URL

@@ -1,0 +1,40 @@
+{
+  "verified_on": "2026-11-10",
+  "timezone": "Asia/Taipei",
+  "api_url": "https://pitchadvisor-api.onrender.com",
+  "commit": "8a3c526af381b6162d52b0cf3f2229b9d3e499a4",
+  "health_http": 200,
+  "health": {
+    "status": "ready",
+    "model_version": "week1-frequency-v1",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "data_source": "supabase_verified_snapshot",
+    "capabilities": {
+      "sequence": false,
+      "batter_conditioned_model": false,
+      "conformal": false
+    }
+  },
+  "players_http": 200,
+  "players_count": 377,
+  "predict_http": 200,
+  "recommendation_count": 5,
+  "pitch_probabilities_sum_to_one": true,
+  "cors_allowed_origin": "https://happy123903.github.io",
+  "blueprint": {
+    "id": "exs-dbpe7dmtlv9c73fb9gq0",
+    "status": "error",
+    "last_sync_utc": "2026-11-10T09:30:19.353737Z",
+    "note": "Latest service deployment is live; Blueprint still records the earlier failed sync."
+  },
+  "deploy": {
+    "id": "dep-dbpeasbnv7mc73bk4kag",
+    "status": "live",
+    "finished_at_utc": "2026-11-10T09:40:40.692968Z"
+  },
+  "limitations": [
+    "GitHub Pages publication and browser QA not verified here.",
+    "Cloud memory and cold-start measurements not performed here."
+  ]
+}

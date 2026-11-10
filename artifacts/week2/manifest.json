@@ -1,0 +1,16 @@
+{
+  "model_version": "week2-sequence-v1",
+  "data_version": "rebas-2023-2025-regular-v1",
+  "data_cutoff": "2024-08-14",
+  "file": "model.json",
+  "sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+  "smoke": false,
+  "test_evaluated": false,
+  "selection": {
+    "candidate": "lightgbm_history",
+    "rule": "validation pitch log loss; within 0.005 nats prefer context LGB then history LGB then GRU; GRU zone/result may degrade at most 0.03 nats vs history LGB",
+    "gru_secondary_eligible": true,
+    "reason": "lightgbm_history is the simplest eligible model within 0.005 nats of best validation pitch log loss (1.158778).",
+    "resource_gate": "Requires independent deployed p95<500ms and RSS<400MiB before promotion."
+  }
+}

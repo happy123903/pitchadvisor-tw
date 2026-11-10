@@ -1,4 +1,4 @@
-name: Check reproducible baseline and web
+name: Check model API and web
 on: [push, pull_request]
 permissions:
   contents: read
@@ -18,5 +18,5 @@ jobs:
           node-version: '24'
           cache: npm
           cache-dependency-path: web/package-lock.json
-      - run: npm ci && npm run build
+      - run: npm ci && npm test && npm run build
         working-directory: web
