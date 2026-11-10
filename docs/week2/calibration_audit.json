@@ -1,0 +1,107 @@
+{
+  "method": "temperature+split-conformal",
+  "temperature": {
+    "pitch": 1.0238362555396097,
+    "zone": 1.001160286377934,
+    "result": 1.0238362555396097,
+    "conditional_result": 1.001160286377934
+  },
+  "thresholds": {
+    "pitch": 0.8919821381568909,
+    "zone": 0.9618647247552872,
+    "result": 0.8838139325380325
+  },
+  "target_coverage": 0.9,
+  "audit": {
+    "pitch": {
+      "n": 3196,
+      "ece_before": 0.040633323397859654,
+      "ece_after": 0.034433553491874096,
+      "log_loss_before": 1.1059416925987313,
+      "log_loss_after": 1.1052705407615313,
+      "coverage": 0.8983103879849812,
+      "mean_set_size": 2.5168961201501876,
+      "conformal_n": 5099,
+      "finite_sample_rank": 4590
+    },
+    "zone": {
+      "n": 3193,
+      "ece_before": 0.008968731033290551,
+      "ece_after": 0.008215434557585881,
+      "log_loss_before": 2.362307044387179,
+      "log_loss_after": 2.3622892541377043,
+      "coverage": 0.9025994362668337,
+      "mean_set_size": 10.270905104917006,
+      "conformal_n": 5096,
+      "finite_sample_rank": 4588
+    },
+    "result": {
+      "n": 3196,
+      "ece_before": 0.03134550763960649,
+      "ece_after": 0.02702146410494483,
+      "log_loss_before": 1.452362686848165,
+      "log_loss_after": 1.4519888593701378,
+      "coverage": 0.8945556946182729,
+      "mean_set_size": 3.580413016270338,
+      "conformal_n": 5099,
+      "finite_sample_rank": 4590
+    },
+    "conditional_result": {
+      "n": 3193,
+      "ece_before": 0.021146326127477456,
+      "ece_after": 0.01940207080224299,
+      "log_loss_before": 1.1533601435295546,
+      "log_loss_after": 1.1533793202898324
+    }
+  },
+  "split": {
+    "temperature": {
+      "date_min": "2024-09-12",
+      "date_max": "2024-09-21",
+      "dates": [
+        "2024-09-12",
+        "2024-09-13",
+        "2024-09-14",
+        "2024-09-15",
+        "2024-09-16",
+        "2024-09-17",
+        "2024-09-19",
+        "2024-09-20",
+        "2024-09-21"
+      ],
+      "rows": 5516,
+      "games": 20
+    },
+    "conformal": {
+      "date_min": "2024-09-22",
+      "date_max": "2024-10-01",
+      "dates": [
+        "2024-09-22",
+        "2024-09-24",
+        "2024-09-26",
+        "2024-09-27",
+        "2024-09-28",
+        "2024-09-29",
+        "2024-10-01"
+      ],
+      "rows": 5099,
+      "games": 18
+    },
+    "audit": {
+      "date_min": "2024-10-05",
+      "date_max": "2024-10-11",
+      "dates": [
+        "2024-10-05",
+        "2024-10-06",
+        "2024-10-07",
+        "2024-10-08",
+        "2024-10-09",
+        "2024-10-10",
+        "2024-10-11"
+      ],
+      "rows": 3196,
+      "games": 12
+    }
+  },
+  "limitations": "Chronological observational samples may shift; empirical coverage is not an exchangeability guarantee."
+}

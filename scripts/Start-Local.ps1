@@ -7,7 +7,7 @@ $cachePath = Join-Path $projectRoot '.cache'
 New-Item -ItemType Directory -Path $cachePath -Force | Out-Null
 if (-not (Test-Path -LiteralPath $pythonExe)) { throw 'Run uv sync first (see README.md).' }
 if (-not (Test-Path -LiteralPath $viteEntry)) { throw 'Run npm install in web first.' }
-if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'artifacts\baseline\manifest.json'))) { throw 'Build the baseline first.' }
+if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'artifacts\week2\manifest.json'))) { throw 'Restore the committed week-two artifact or build it first (see README.md).' }
 $pidFile = Join-Path $cachePath 'local-servers.json'
 if (Test-Path -LiteralPath $pidFile) { throw 'A local server record already exists. Run Stop-Local.ps1 before restarting.' }
 $api = Start-Process -FilePath $pythonExe -ArgumentList @('-m','uvicorn','api.main:app','--app-dir',('"'+$projectRoot+'"'),'--host','127.0.0.1','--port',"$ApiPort") -WorkingDirectory $projectRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $cachePath 'api.stdout.log') -RedirectStandardError (Join-Path $cachePath 'api.stderr.log') -PassThru
