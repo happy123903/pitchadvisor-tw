@@ -1,0 +1,16 @@
+{
+  "league_count": {
+    "n": 16491,
+    "log_loss": 1.594073226050393,
+    "top1_accuracy": 0.45242859741677277,
+    "top2_accuracy": 0.6291310411739737
+  },
+  "pitcher_count_shrunk": {
+    "n": 16491,
+    "log_loss": 1.2446229857578635,
+    "top1_accuracy": 0.4856588442180583,
+    "top2_accuracy": 0.7499242010793766
+  },
+  "excluded_rows": 433,
+  "test_evaluated": false
+}

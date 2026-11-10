@@ -1,0 +1,5110 @@
+{
+  "policy": {
+    "validation_start": "2024-08-16",
+    "calibration_start": "2024-09-12",
+    "test_start": "2025-01-01",
+    "strategy": "2024 unique dates 70%/85%; whole games, no label tuning"
+  },
+  "games": [
+    {
+      "game_id": "CPBL-2023-sk:1",
+      "date": "2023-04-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:2",
+      "date": "2023-04-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:3",
+      "date": "2023-04-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:4",
+      "date": "2023-04-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:5",
+      "date": "2023-04-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:6",
+      "date": "2023-04-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:7",
+      "date": "2023-04-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:8",
+      "date": "2023-04-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:9",
+      "date": "2023-04-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:10",
+      "date": "2023-04-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:11",
+      "date": "2023-04-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:12",
+      "date": "2023-04-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:13",
+      "date": "2023-04-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:14",
+      "date": "2023-04-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:15",
+      "date": "2023-04-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:16",
+      "date": "2023-04-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:17",
+      "date": "2023-04-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:18",
+      "date": "2023-04-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:19",
+      "date": "2023-04-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:20",
+      "date": "2023-04-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:21",
+      "date": "2023-04-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:22",
+      "date": "2023-04-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:23",
+      "date": "2023-04-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:24",
+      "date": "2023-04-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:25",
+      "date": "2023-04-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:26",
+      "date": "2023-04-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:27",
+      "date": "2023-04-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:28",
+      "date": "2023-04-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:31",
+      "date": "2023-04-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:32",
+      "date": "2023-04-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:33",
+      "date": "2023-04-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:34",
+      "date": "2023-04-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:35",
+      "date": "2023-04-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:36",
+      "date": "2023-04-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:37",
+      "date": "2023-04-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:38",
+      "date": "2023-04-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:29",
+      "date": "2023-04-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:39",
+      "date": "2023-04-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:40",
+      "date": "2023-04-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:41",
+      "date": "2023-04-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:42",
+      "date": "2023-04-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:43",
+      "date": "2023-04-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:44",
+      "date": "2023-04-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:45",
+      "date": "2023-04-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:46",
+      "date": "2023-04-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:47",
+      "date": "2023-04-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:48",
+      "date": "2023-04-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:49",
+      "date": "2023-04-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:50",
+      "date": "2023-04-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:51",
+      "date": "2023-05-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:52",
+      "date": "2023-05-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:53",
+      "date": "2023-05-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:54",
+      "date": "2023-05-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:55",
+      "date": "2023-05-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:56",
+      "date": "2023-05-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:57",
+      "date": "2023-05-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:58",
+      "date": "2023-05-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:59",
+      "date": "2023-05-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:60",
+      "date": "2023-05-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:61",
+      "date": "2023-05-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:63",
+      "date": "2023-05-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:64",
+      "date": "2023-05-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:65",
+      "date": "2023-05-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:66",
+      "date": "2023-05-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:67",
+      "date": "2023-05-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:68",
+      "date": "2023-05-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:69",
+      "date": "2023-05-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:70",
+      "date": "2023-05-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:71",
+      "date": "2023-05-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:72",
+      "date": "2023-05-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:73",
+      "date": "2023-05-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:74",
+      "date": "2023-05-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:30",
+      "date": "2023-05-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:75",
+      "date": "2023-05-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:76",
+      "date": "2023-05-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:77",
+      "date": "2023-05-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:78",
+      "date": "2023-05-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:79",
+      "date": "2023-05-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:80",
+      "date": "2023-05-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:81",
+      "date": "2023-05-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:82",
+      "date": "2023-05-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:83",
+      "date": "2023-05-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:84",
+      "date": "2023-05-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:85",
+      "date": "2023-05-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:86",
+      "date": "2023-05-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:87",
+      "date": "2023-05-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:89",
+      "date": "2023-05-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:90",
+      "date": "2023-05-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:91",
+      "date": "2023-05-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:92",
+      "date": "2023-05-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:93",
+      "date": "2023-05-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:94",
+      "date": "2023-05-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:95",
+      "date": "2023-05-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:96",
+      "date": "2023-05-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:97",
+      "date": "2023-05-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:98",
+      "date": "2023-05-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:99",
+      "date": "2023-05-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:100",
+      "date": "2023-05-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:101",
+      "date": "2023-05-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:102",
+      "date": "2023-06-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:103",
+      "date": "2023-06-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:104",
+      "date": "2023-06-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:105",
+      "date": "2023-06-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:106",
+      "date": "2023-06-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:107",
+      "date": "2023-06-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:108",
+      "date": "2023-06-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:109",
+      "date": "2023-06-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:110",
+      "date": "2023-06-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:111",
+      "date": "2023-06-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:112",
+      "date": "2023-06-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:113",
+      "date": "2023-06-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:114",
+      "date": "2023-06-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:115",
+      "date": "2023-06-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:116",
+      "date": "2023-06-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:117",
+      "date": "2023-06-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:118",
+      "date": "2023-06-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:119",
+      "date": "2023-06-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:120",
+      "date": "2023-06-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:121",
+      "date": "2023-06-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:122",
+      "date": "2023-06-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:123",
+      "date": "2023-06-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:125",
+      "date": "2023-06-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:126",
+      "date": "2023-06-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:128",
+      "date": "2023-06-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:129",
+      "date": "2023-06-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:130",
+      "date": "2023-06-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:131",
+      "date": "2023-06-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:132",
+      "date": "2023-06-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:133",
+      "date": "2023-06-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:88",
+      "date": "2023-06-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:134",
+      "date": "2023-06-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:135",
+      "date": "2023-06-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:136",
+      "date": "2023-06-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:137",
+      "date": "2023-06-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:138",
+      "date": "2023-06-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:139",
+      "date": "2023-06-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:140",
+      "date": "2023-06-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:141",
+      "date": "2023-06-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:142",
+      "date": "2023-06-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:143",
+      "date": "2023-06-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:144",
+      "date": "2023-06-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:145",
+      "date": "2023-06-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:146",
+      "date": "2023-06-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:124",
+      "date": "2023-06-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:147",
+      "date": "2023-06-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:127",
+      "date": "2023-06-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:149",
+      "date": "2023-07-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:150",
+      "date": "2023-07-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:62",
+      "date": "2023-07-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:148",
+      "date": "2023-07-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:151",
+      "date": "2023-07-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:152",
+      "date": "2023-07-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:153",
+      "date": "2023-07-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:154",
+      "date": "2023-07-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:155",
+      "date": "2023-07-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:156",
+      "date": "2023-07-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:158",
+      "date": "2023-07-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:159",
+      "date": "2023-07-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:160",
+      "date": "2023-07-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:161",
+      "date": "2023-07-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:163",
+      "date": "2023-07-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:164",
+      "date": "2023-07-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:165",
+      "date": "2023-07-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:166",
+      "date": "2023-07-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:167",
+      "date": "2023-07-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:168",
+      "date": "2023-07-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:162",
+      "date": "2023-07-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:169",
+      "date": "2023-07-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:173",
+      "date": "2023-07-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:175",
+      "date": "2023-08-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:177",
+      "date": "2023-08-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:178",
+      "date": "2023-08-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:180",
+      "date": "2023-08-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:181",
+      "date": "2023-08-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:182",
+      "date": "2023-08-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:183",
+      "date": "2023-08-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:184",
+      "date": "2023-08-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:185",
+      "date": "2023-08-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:186",
+      "date": "2023-08-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:157",
+      "date": "2023-08-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:187",
+      "date": "2023-08-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:188",
+      "date": "2023-08-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:189",
+      "date": "2023-08-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:190",
+      "date": "2023-08-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:193",
+      "date": "2023-08-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:195",
+      "date": "2023-08-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:196",
+      "date": "2023-08-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:197",
+      "date": "2023-08-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:198",
+      "date": "2023-08-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:176",
+      "date": "2023-08-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:199",
+      "date": "2023-08-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:200",
+      "date": "2023-08-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:201",
+      "date": "2023-08-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:202",
+      "date": "2023-08-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:203",
+      "date": "2023-08-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:205",
+      "date": "2023-08-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:206",
+      "date": "2023-08-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:207",
+      "date": "2023-08-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:208",
+      "date": "2023-08-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:209",
+      "date": "2023-08-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:211",
+      "date": "2023-08-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:212",
+      "date": "2023-08-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:213",
+      "date": "2023-08-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:214",
+      "date": "2023-08-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:215",
+      "date": "2023-08-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:216",
+      "date": "2023-08-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:217",
+      "date": "2023-08-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:218",
+      "date": "2023-08-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:219",
+      "date": "2023-08-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:221",
+      "date": "2023-08-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:222",
+      "date": "2023-08-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:192",
+      "date": "2023-08-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:223",
+      "date": "2023-08-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:224",
+      "date": "2023-08-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:225",
+      "date": "2023-08-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:226",
+      "date": "2023-08-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:227",
+      "date": "2023-08-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:228",
+      "date": "2023-08-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:229",
+      "date": "2023-09-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:230",
+      "date": "2023-09-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:231",
+      "date": "2023-09-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:232",
+      "date": "2023-09-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:179",
+      "date": "2023-09-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:235",
+      "date": "2023-09-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:236",
+      "date": "2023-09-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:239",
+      "date": "2023-09-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:240",
+      "date": "2023-09-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:242",
+      "date": "2023-09-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:243",
+      "date": "2023-09-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:244",
+      "date": "2023-09-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:245",
+      "date": "2023-09-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:246",
+      "date": "2023-09-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:238",
+      "date": "2023-09-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:247",
+      "date": "2023-09-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:248",
+      "date": "2023-09-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:249",
+      "date": "2023-09-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:250",
+      "date": "2023-09-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:251",
+      "date": "2023-09-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:252",
+      "date": "2023-09-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:253",
+      "date": "2023-09-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:255",
+      "date": "2023-09-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:256",
+      "date": "2023-09-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:257",
+      "date": "2023-09-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:258",
+      "date": "2023-09-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:191",
+      "date": "2023-09-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:259",
+      "date": "2023-09-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:260",
+      "date": "2023-09-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:261",
+      "date": "2023-09-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:262",
+      "date": "2023-09-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:263",
+      "date": "2023-09-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:264",
+      "date": "2023-09-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:265",
+      "date": "2023-09-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:266",
+      "date": "2023-09-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:267",
+      "date": "2023-09-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:268",
+      "date": "2023-09-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:269",
+      "date": "2023-09-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:270",
+      "date": "2023-09-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:241",
+      "date": "2023-09-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:271",
+      "date": "2023-09-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:272",
+      "date": "2023-09-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:273",
+      "date": "2023-09-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:274",
+      "date": "2023-09-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:275",
+      "date": "2023-09-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:276",
+      "date": "2023-09-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:277",
+      "date": "2023-09-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:278",
+      "date": "2023-09-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:279",
+      "date": "2023-09-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:280",
+      "date": "2023-10-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:281",
+      "date": "2023-10-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:282",
+      "date": "2023-10-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:283",
+      "date": "2023-10-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:288",
+      "date": "2023-10-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:289",
+      "date": "2023-10-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:291",
+      "date": "2023-10-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:292",
+      "date": "2023-10-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:293",
+      "date": "2023-10-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:294",
+      "date": "2023-10-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:295",
+      "date": "2023-10-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:296",
+      "date": "2023-10-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:171",
+      "date": "2023-10-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:284",
+      "date": "2023-10-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:297",
+      "date": "2023-10-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:298",
+      "date": "2023-10-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:210",
+      "date": "2023-10-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:299",
+      "date": "2023-10-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:290",
+      "date": "2023-10-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:300",
+      "date": "2023-10-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:170",
+      "date": "2023-10-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:172",
+      "date": "2023-10-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:174",
+      "date": "2023-10-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:237",
+      "date": "2023-10-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:254",
+      "date": "2023-10-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:220",
+      "date": "2023-10-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:233",
+      "date": "2023-10-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:234",
+      "date": "2023-10-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:286",
+      "date": "2023-10-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:194",
+      "date": "2023-10-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:287",
+      "date": "2023-10-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:204",
+      "date": "2023-10-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2023-sk:285",
+      "date": "2023-10-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:1",
+      "date": "2024-03-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:2",
+      "date": "2024-03-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:4",
+      "date": "2024-03-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:5",
+      "date": "2024-04-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:6",
+      "date": "2024-04-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:7",
+      "date": "2024-04-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:10",
+      "date": "2024-04-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:8",
+      "date": "2024-04-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:9",
+      "date": "2024-04-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:11",
+      "date": "2024-04-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:12",
+      "date": "2024-04-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:13",
+      "date": "2024-04-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:14",
+      "date": "2024-04-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:15",
+      "date": "2024-04-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:16",
+      "date": "2024-04-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:17",
+      "date": "2024-04-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:18",
+      "date": "2024-04-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:19",
+      "date": "2024-04-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:20",
+      "date": "2024-04-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:21",
+      "date": "2024-04-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:22",
+      "date": "2024-04-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:23",
+      "date": "2024-04-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:24",
+      "date": "2024-04-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:25",
+      "date": "2024-04-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:26",
+      "date": "2024-04-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:27",
+      "date": "2024-04-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:28",
+      "date": "2024-04-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:29",
+      "date": "2024-04-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:30",
+      "date": "2024-04-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:31",
+      "date": "2024-04-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:32",
+      "date": "2024-04-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:33",
+      "date": "2024-04-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:34",
+      "date": "2024-04-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:35",
+      "date": "2024-04-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:36",
+      "date": "2024-04-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:37",
+      "date": "2024-04-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:38",
+      "date": "2024-04-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:39",
+      "date": "2024-04-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:40",
+      "date": "2024-04-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:41",
+      "date": "2024-04-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:42",
+      "date": "2024-04-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:43",
+      "date": "2024-04-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:44",
+      "date": "2024-04-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:45",
+      "date": "2024-04-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:46",
+      "date": "2024-04-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:47",
+      "date": "2024-04-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:48",
+      "date": "2024-04-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:49",
+      "date": "2024-04-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:50",
+      "date": "2024-04-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:51",
+      "date": "2024-04-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:52",
+      "date": "2024-04-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:55",
+      "date": "2024-04-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:59",
+      "date": "2024-04-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:60",
+      "date": "2024-04-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:61",
+      "date": "2024-04-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:62",
+      "date": "2024-04-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:63",
+      "date": "2024-04-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:64",
+      "date": "2024-04-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:65",
+      "date": "2024-04-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:66",
+      "date": "2024-05-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:67",
+      "date": "2024-05-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:69",
+      "date": "2024-05-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:70",
+      "date": "2024-05-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:71",
+      "date": "2024-05-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:72",
+      "date": "2024-05-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:73",
+      "date": "2024-05-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:74",
+      "date": "2024-05-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:75",
+      "date": "2024-05-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:76",
+      "date": "2024-05-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:77",
+      "date": "2024-05-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:78",
+      "date": "2024-05-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:79",
+      "date": "2024-05-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:81",
+      "date": "2024-05-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:82",
+      "date": "2024-05-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:83",
+      "date": "2024-05-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:84",
+      "date": "2024-05-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:85",
+      "date": "2024-05-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:86",
+      "date": "2024-05-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:87",
+      "date": "2024-05-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:88",
+      "date": "2024-05-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:89",
+      "date": "2024-05-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:90",
+      "date": "2024-05-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:91",
+      "date": "2024-05-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:92",
+      "date": "2024-05-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:93",
+      "date": "2024-05-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:94",
+      "date": "2024-05-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:95",
+      "date": "2024-05-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:96",
+      "date": "2024-05-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:97",
+      "date": "2024-05-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:100",
+      "date": "2024-05-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:98",
+      "date": "2024-05-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:99",
+      "date": "2024-05-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:101",
+      "date": "2024-05-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:102",
+      "date": "2024-05-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:103",
+      "date": "2024-05-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:104",
+      "date": "2024-05-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:105",
+      "date": "2024-05-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:106",
+      "date": "2024-05-19",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:108",
+      "date": "2024-05-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:109",
+      "date": "2024-05-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:110",
+      "date": "2024-05-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:111",
+      "date": "2024-05-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:112",
+      "date": "2024-05-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:113",
+      "date": "2024-05-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:114",
+      "date": "2024-05-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:115",
+      "date": "2024-05-24",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:116",
+      "date": "2024-05-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:117",
+      "date": "2024-05-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:118",
+      "date": "2024-05-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:119",
+      "date": "2024-05-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:120",
+      "date": "2024-05-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:121",
+      "date": "2024-05-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:122",
+      "date": "2024-05-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:124",
+      "date": "2024-05-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:125",
+      "date": "2024-05-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:126",
+      "date": "2024-05-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:127",
+      "date": "2024-05-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:128",
+      "date": "2024-05-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:129",
+      "date": "2024-05-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:130",
+      "date": "2024-05-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:131",
+      "date": "2024-06-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:132",
+      "date": "2024-06-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:133",
+      "date": "2024-06-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:134",
+      "date": "2024-06-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:137",
+      "date": "2024-06-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:139",
+      "date": "2024-06-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:141",
+      "date": "2024-06-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:138",
+      "date": "2024-06-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:143",
+      "date": "2024-06-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:144",
+      "date": "2024-06-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:145",
+      "date": "2024-06-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:146",
+      "date": "2024-06-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:147",
+      "date": "2024-06-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:148",
+      "date": "2024-06-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:149",
+      "date": "2024-06-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:150",
+      "date": "2024-06-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:151",
+      "date": "2024-06-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:152",
+      "date": "2024-06-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:153",
+      "date": "2024-06-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:154",
+      "date": "2024-06-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:140",
+      "date": "2024-06-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:142",
+      "date": "2024-06-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:155",
+      "date": "2024-06-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:156",
+      "date": "2024-06-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:157",
+      "date": "2024-06-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:158",
+      "date": "2024-06-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:159",
+      "date": "2024-06-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:160",
+      "date": "2024-06-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:161",
+      "date": "2024-06-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:162",
+      "date": "2024-06-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:163",
+      "date": "2024-06-15",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:164",
+      "date": "2024-06-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:165",
+      "date": "2024-06-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:166",
+      "date": "2024-06-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:167",
+      "date": "2024-06-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:168",
+      "date": "2024-06-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:169",
+      "date": "2024-06-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:170",
+      "date": "2024-06-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:171",
+      "date": "2024-06-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:57",
+      "date": "2024-06-20",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:172",
+      "date": "2024-06-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:173",
+      "date": "2024-06-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:174",
+      "date": "2024-06-21",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:175",
+      "date": "2024-06-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:176",
+      "date": "2024-06-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:177",
+      "date": "2024-06-22",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:178",
+      "date": "2024-06-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:179",
+      "date": "2024-06-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:180",
+      "date": "2024-06-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:123",
+      "date": "2024-06-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:54",
+      "date": "2024-06-25",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:53",
+      "date": "2024-06-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:58",
+      "date": "2024-06-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:56",
+      "date": "2024-06-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:68",
+      "date": "2024-06-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:136",
+      "date": "2024-06-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:3",
+      "date": "2024-06-29",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:135",
+      "date": "2024-06-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:80",
+      "date": "2024-07-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:107",
+      "date": "2024-07-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:181",
+      "date": "2024-07-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:182",
+      "date": "2024-07-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:183",
+      "date": "2024-07-05",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:184",
+      "date": "2024-07-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:185",
+      "date": "2024-07-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:186",
+      "date": "2024-07-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:187",
+      "date": "2024-07-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:188",
+      "date": "2024-07-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:189",
+      "date": "2024-07-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:190",
+      "date": "2024-07-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:191",
+      "date": "2024-07-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:192",
+      "date": "2024-07-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:193",
+      "date": "2024-07-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:194",
+      "date": "2024-07-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:195",
+      "date": "2024-07-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:196",
+      "date": "2024-07-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:197",
+      "date": "2024-07-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:198",
+      "date": "2024-07-12",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:199",
+      "date": "2024-07-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:200",
+      "date": "2024-07-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:201",
+      "date": "2024-07-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:202",
+      "date": "2024-07-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:203",
+      "date": "2024-07-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:204",
+      "date": "2024-07-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:205",
+      "date": "2024-07-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:206",
+      "date": "2024-07-16",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:207",
+      "date": "2024-07-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:208",
+      "date": "2024-07-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:209",
+      "date": "2024-07-17",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:210",
+      "date": "2024-07-18",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:211",
+      "date": "2024-07-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:212",
+      "date": "2024-07-23",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:219",
+      "date": "2024-07-26",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:220",
+      "date": "2024-07-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:221",
+      "date": "2024-07-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:222",
+      "date": "2024-07-27",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:223",
+      "date": "2024-07-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:224",
+      "date": "2024-07-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:225",
+      "date": "2024-07-28",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:226",
+      "date": "2024-07-30",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:228",
+      "date": "2024-07-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:229",
+      "date": "2024-07-31",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:231",
+      "date": "2024-08-01",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:232",
+      "date": "2024-08-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:233",
+      "date": "2024-08-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:234",
+      "date": "2024-08-02",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:235",
+      "date": "2024-08-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:236",
+      "date": "2024-08-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:237",
+      "date": "2024-08-03",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:238",
+      "date": "2024-08-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:239",
+      "date": "2024-08-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:240",
+      "date": "2024-08-04",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:241",
+      "date": "2024-08-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:242",
+      "date": "2024-08-06",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:243",
+      "date": "2024-08-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:244",
+      "date": "2024-08-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:245",
+      "date": "2024-08-07",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:246",
+      "date": "2024-08-08",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:247",
+      "date": "2024-08-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:248",
+      "date": "2024-08-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:249",
+      "date": "2024-08-09",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:250",
+      "date": "2024-08-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:252",
+      "date": "2024-08-10",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:253",
+      "date": "2024-08-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:254",
+      "date": "2024-08-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:255",
+      "date": "2024-08-11",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:256",
+      "date": "2024-08-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:257",
+      "date": "2024-08-13",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:258",
+      "date": "2024-08-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:259",
+      "date": "2024-08-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:260",
+      "date": "2024-08-14",
+      "split": "train"
+    },
+    {
+      "game_id": "CPBL-2024-xa:262",
+      "date": "2024-08-16",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:263",
+      "date": "2024-08-16",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:264",
+      "date": "2024-08-16",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:265",
+      "date": "2024-08-17",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:267",
+      "date": "2024-08-17",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:268",
+      "date": "2024-08-18",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:269",
+      "date": "2024-08-18",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:270",
+      "date": "2024-08-18",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:261",
+      "date": "2024-08-19",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:273",
+      "date": "2024-08-21",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:274",
+      "date": "2024-08-21",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:275",
+      "date": "2024-08-21",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:271",
+      "date": "2024-08-22",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:272",
+      "date": "2024-08-22",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:276",
+      "date": "2024-08-22",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:277",
+      "date": "2024-08-23",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:278",
+      "date": "2024-08-23",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:279",
+      "date": "2024-08-23",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:280",
+      "date": "2024-08-24",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:281",
+      "date": "2024-08-24",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:282",
+      "date": "2024-08-24",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:283",
+      "date": "2024-08-25",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:284",
+      "date": "2024-08-25",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:285",
+      "date": "2024-08-25",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:286",
+      "date": "2024-08-27",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:287",
+      "date": "2024-08-27",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:288",
+      "date": "2024-08-28",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:289",
+      "date": "2024-08-28",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:290",
+      "date": "2024-08-28",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:291",
+      "date": "2024-08-29",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:292",
+      "date": "2024-08-30",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:293",
+      "date": "2024-08-30",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:294",
+      "date": "2024-08-30",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:295",
+      "date": "2024-08-31",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:296",
+      "date": "2024-08-31",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:297",
+      "date": "2024-08-31",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:298",
+      "date": "2024-09-01",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:299",
+      "date": "2024-09-01",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:300",
+      "date": "2024-09-01",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:301",
+      "date": "2024-09-03",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:302",
+      "date": "2024-09-03",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:303",
+      "date": "2024-09-04",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:304",
+      "date": "2024-09-04",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:305",
+      "date": "2024-09-04",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:306",
+      "date": "2024-09-05",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:307",
+      "date": "2024-09-06",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:308",
+      "date": "2024-09-06",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:309",
+      "date": "2024-09-06",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:310",
+      "date": "2024-09-07",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:311",
+      "date": "2024-09-07",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:312",
+      "date": "2024-09-07",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:313",
+      "date": "2024-09-08",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:314",
+      "date": "2024-09-08",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:315",
+      "date": "2024-09-08",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:316",
+      "date": "2024-09-10",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:317",
+      "date": "2024-09-10",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:318",
+      "date": "2024-09-11",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:319",
+      "date": "2024-09-11",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:320",
+      "date": "2024-09-11",
+      "split": "validation"
+    },
+    {
+      "game_id": "CPBL-2024-xa:321",
+      "date": "2024-09-12",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:322",
+      "date": "2024-09-13",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:323",
+      "date": "2024-09-13",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:324",
+      "date": "2024-09-14",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:325",
+      "date": "2024-09-14",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:326",
+      "date": "2024-09-14",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:327",
+      "date": "2024-09-15",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:328",
+      "date": "2024-09-15",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:329",
+      "date": "2024-09-15",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:330",
+      "date": "2024-09-16",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:331",
+      "date": "2024-09-17",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:332",
+      "date": "2024-09-17",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:333",
+      "date": "2024-09-17",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:334",
+      "date": "2024-09-19",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:335",
+      "date": "2024-09-19",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:336",
+      "date": "2024-09-19",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:337",
+      "date": "2024-09-20",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:338",
+      "date": "2024-09-20",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:339",
+      "date": "2024-09-20",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:340",
+      "date": "2024-09-21",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:343",
+      "date": "2024-09-22",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:346",
+      "date": "2024-09-24",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:347",
+      "date": "2024-09-24",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:348",
+      "date": "2024-09-24",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:349",
+      "date": "2024-09-26",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:350",
+      "date": "2024-09-26",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:351",
+      "date": "2024-09-26",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:352",
+      "date": "2024-09-27",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:353",
+      "date": "2024-09-27",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:354",
+      "date": "2024-09-27",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:355",
+      "date": "2024-09-28",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:356",
+      "date": "2024-09-28",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:357",
+      "date": "2024-09-28",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:358",
+      "date": "2024-09-29",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:359",
+      "date": "2024-09-29",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:360",
+      "date": "2024-09-29",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:215",
+      "date": "2024-10-01",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:230",
+      "date": "2024-10-01",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:227",
+      "date": "2024-10-05",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:251",
+      "date": "2024-10-05",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:266",
+      "date": "2024-10-06",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:345",
+      "date": "2024-10-06",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:216",
+      "date": "2024-10-07",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:341",
+      "date": "2024-10-07",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:214",
+      "date": "2024-10-08",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:217",
+      "date": "2024-10-09",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:218",
+      "date": "2024-10-09",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:342",
+      "date": "2024-10-10",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:344",
+      "date": "2024-10-10",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2024-xa:213",
+      "date": "2024-10-11",
+      "split": "calibration"
+    },
+    {
+      "game_id": "CPBL-2025-JO:1",
+      "date": "2025-03-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:3",
+      "date": "2025-03-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:4",
+      "date": "2025-03-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:5",
+      "date": "2025-04-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:6",
+      "date": "2025-04-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:7",
+      "date": "2025-04-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:10",
+      "date": "2025-04-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:8",
+      "date": "2025-04-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:9",
+      "date": "2025-04-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:11",
+      "date": "2025-04-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:12",
+      "date": "2025-04-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:13",
+      "date": "2025-04-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:14",
+      "date": "2025-04-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:15",
+      "date": "2025-04-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:16",
+      "date": "2025-04-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:17",
+      "date": "2025-04-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:18",
+      "date": "2025-04-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:19",
+      "date": "2025-04-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:20",
+      "date": "2025-04-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:21",
+      "date": "2025-04-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:22",
+      "date": "2025-04-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:23",
+      "date": "2025-04-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:24",
+      "date": "2025-04-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:25",
+      "date": "2025-04-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:26",
+      "date": "2025-04-11",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:27",
+      "date": "2025-04-11",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:28",
+      "date": "2025-04-11",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:29",
+      "date": "2025-04-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:30",
+      "date": "2025-04-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:31",
+      "date": "2025-04-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:32",
+      "date": "2025-04-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:33",
+      "date": "2025-04-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:34",
+      "date": "2025-04-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:35",
+      "date": "2025-04-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:36",
+      "date": "2025-04-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:37",
+      "date": "2025-04-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:38",
+      "date": "2025-04-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:39",
+      "date": "2025-04-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:40",
+      "date": "2025-04-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:41",
+      "date": "2025-04-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:42",
+      "date": "2025-04-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:43",
+      "date": "2025-04-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:44",
+      "date": "2025-04-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:45",
+      "date": "2025-04-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:46",
+      "date": "2025-04-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:48",
+      "date": "2025-04-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:49",
+      "date": "2025-04-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:50",
+      "date": "2025-04-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:51",
+      "date": "2025-04-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:52",
+      "date": "2025-04-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:53",
+      "date": "2025-04-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:54",
+      "date": "2025-04-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:55",
+      "date": "2025-04-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:57",
+      "date": "2025-04-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:58",
+      "date": "2025-04-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:59",
+      "date": "2025-04-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:60",
+      "date": "2025-04-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:61",
+      "date": "2025-04-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:62",
+      "date": "2025-04-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:63",
+      "date": "2025-04-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:64",
+      "date": "2025-04-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:65",
+      "date": "2025-04-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:66",
+      "date": "2025-04-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:67",
+      "date": "2025-04-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:68",
+      "date": "2025-04-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:69",
+      "date": "2025-04-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:70",
+      "date": "2025-05-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:71",
+      "date": "2025-05-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:72",
+      "date": "2025-05-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:73",
+      "date": "2025-05-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:74",
+      "date": "2025-05-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:75",
+      "date": "2025-05-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:76",
+      "date": "2025-05-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:77",
+      "date": "2025-05-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:78",
+      "date": "2025-05-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:79",
+      "date": "2025-05-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:80",
+      "date": "2025-05-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:81",
+      "date": "2025-05-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:82",
+      "date": "2025-05-07",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:83",
+      "date": "2025-05-07",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:85",
+      "date": "2025-05-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:86",
+      "date": "2025-05-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:87",
+      "date": "2025-05-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:88",
+      "date": "2025-05-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:90",
+      "date": "2025-05-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:94",
+      "date": "2025-05-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:95",
+      "date": "2025-05-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:96",
+      "date": "2025-05-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:97",
+      "date": "2025-05-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:98",
+      "date": "2025-05-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:99",
+      "date": "2025-05-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:100",
+      "date": "2025-05-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:101",
+      "date": "2025-05-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:102",
+      "date": "2025-05-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:103",
+      "date": "2025-05-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:104",
+      "date": "2025-05-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:105",
+      "date": "2025-05-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:106",
+      "date": "2025-05-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:108",
+      "date": "2025-05-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:109",
+      "date": "2025-05-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:110",
+      "date": "2025-05-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:111",
+      "date": "2025-05-21",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:112",
+      "date": "2025-05-21",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:113",
+      "date": "2025-05-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:114",
+      "date": "2025-05-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:115",
+      "date": "2025-05-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:116",
+      "date": "2025-05-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:117",
+      "date": "2025-05-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:118",
+      "date": "2025-05-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:119",
+      "date": "2025-05-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:120",
+      "date": "2025-05-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:121",
+      "date": "2025-05-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:122",
+      "date": "2025-05-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:123",
+      "date": "2025-05-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:124",
+      "date": "2025-05-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:125",
+      "date": "2025-05-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:127",
+      "date": "2025-05-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:128",
+      "date": "2025-05-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:129",
+      "date": "2025-05-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:130",
+      "date": "2025-05-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:131",
+      "date": "2025-05-31",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:132",
+      "date": "2025-05-31",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:133",
+      "date": "2025-05-31",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:134",
+      "date": "2025-06-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:135",
+      "date": "2025-06-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:136",
+      "date": "2025-06-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:137",
+      "date": "2025-06-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:140",
+      "date": "2025-06-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:142",
+      "date": "2025-06-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:143",
+      "date": "2025-06-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:144",
+      "date": "2025-06-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:145",
+      "date": "2025-06-07",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:146",
+      "date": "2025-06-07",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:147",
+      "date": "2025-06-07",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:148",
+      "date": "2025-06-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:149",
+      "date": "2025-06-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:150",
+      "date": "2025-06-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:151",
+      "date": "2025-06-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:152",
+      "date": "2025-06-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:153",
+      "date": "2025-06-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:154",
+      "date": "2025-06-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:155",
+      "date": "2025-06-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:156",
+      "date": "2025-06-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:158",
+      "date": "2025-06-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:160",
+      "date": "2025-06-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:161",
+      "date": "2025-06-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:162",
+      "date": "2025-06-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:163",
+      "date": "2025-06-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:164",
+      "date": "2025-06-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:165",
+      "date": "2025-06-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:166",
+      "date": "2025-06-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:167",
+      "date": "2025-06-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:168",
+      "date": "2025-06-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:157",
+      "date": "2025-06-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:169",
+      "date": "2025-06-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:170",
+      "date": "2025-06-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:171",
+      "date": "2025-06-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:172",
+      "date": "2025-06-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:173",
+      "date": "2025-06-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:174",
+      "date": "2025-06-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:175",
+      "date": "2025-06-21",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:176",
+      "date": "2025-06-21",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:177",
+      "date": "2025-06-21",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:178",
+      "date": "2025-06-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:179",
+      "date": "2025-06-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:180",
+      "date": "2025-06-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:126",
+      "date": "2025-06-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:91",
+      "date": "2025-06-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:56",
+      "date": "2025-06-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:159",
+      "date": "2025-06-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:84",
+      "date": "2025-06-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:138",
+      "date": "2025-06-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:139",
+      "date": "2025-06-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:141",
+      "date": "2025-06-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:2",
+      "date": "2025-06-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:89",
+      "date": "2025-06-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:92",
+      "date": "2025-06-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:107",
+      "date": "2025-06-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:47",
+      "date": "2025-06-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:93",
+      "date": "2025-06-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:181",
+      "date": "2025-07-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:182",
+      "date": "2025-07-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:183",
+      "date": "2025-07-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:184",
+      "date": "2025-07-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:185",
+      "date": "2025-07-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:186",
+      "date": "2025-07-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:188",
+      "date": "2025-07-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:189",
+      "date": "2025-07-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:190",
+      "date": "2025-07-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:191",
+      "date": "2025-07-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:198",
+      "date": "2025-07-11",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:199",
+      "date": "2025-07-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:200",
+      "date": "2025-07-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:201",
+      "date": "2025-07-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:202",
+      "date": "2025-07-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:203",
+      "date": "2025-07-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:204",
+      "date": "2025-07-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:205",
+      "date": "2025-07-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:206",
+      "date": "2025-07-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:207",
+      "date": "2025-07-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:208",
+      "date": "2025-07-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:209",
+      "date": "2025-07-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:210",
+      "date": "2025-07-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:211",
+      "date": "2025-07-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:212",
+      "date": "2025-07-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:213",
+      "date": "2025-07-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:214",
+      "date": "2025-07-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:215",
+      "date": "2025-07-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:219",
+      "date": "2025-07-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:220",
+      "date": "2025-07-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:221",
+      "date": "2025-07-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:222",
+      "date": "2025-07-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:223",
+      "date": "2025-07-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:224",
+      "date": "2025-07-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:225",
+      "date": "2025-07-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:226",
+      "date": "2025-07-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:227",
+      "date": "2025-07-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:228",
+      "date": "2025-07-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:229",
+      "date": "2025-07-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:230",
+      "date": "2025-07-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:231",
+      "date": "2025-07-31",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:232",
+      "date": "2025-08-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:233",
+      "date": "2025-08-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:235",
+      "date": "2025-08-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:236",
+      "date": "2025-08-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:237",
+      "date": "2025-08-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:238",
+      "date": "2025-08-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:240",
+      "date": "2025-08-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:241",
+      "date": "2025-08-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:242",
+      "date": "2025-08-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:243",
+      "date": "2025-08-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:244",
+      "date": "2025-08-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:245",
+      "date": "2025-08-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:246",
+      "date": "2025-08-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:247",
+      "date": "2025-08-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:248",
+      "date": "2025-08-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:249",
+      "date": "2025-08-08",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:250",
+      "date": "2025-08-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:251",
+      "date": "2025-08-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:252",
+      "date": "2025-08-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:253",
+      "date": "2025-08-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:254",
+      "date": "2025-08-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:255",
+      "date": "2025-08-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:256",
+      "date": "2025-08-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:257",
+      "date": "2025-08-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:258",
+      "date": "2025-08-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:259",
+      "date": "2025-08-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:260",
+      "date": "2025-08-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:261",
+      "date": "2025-08-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:262",
+      "date": "2025-08-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:263",
+      "date": "2025-08-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:264",
+      "date": "2025-08-15",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:265",
+      "date": "2025-08-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:266",
+      "date": "2025-08-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:267",
+      "date": "2025-08-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:268",
+      "date": "2025-08-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:269",
+      "date": "2025-08-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:270",
+      "date": "2025-08-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:271",
+      "date": "2025-08-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:272",
+      "date": "2025-08-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:273",
+      "date": "2025-08-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:274",
+      "date": "2025-08-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:275",
+      "date": "2025-08-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:276",
+      "date": "2025-08-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:277",
+      "date": "2025-08-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:278",
+      "date": "2025-08-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:279",
+      "date": "2025-08-22",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:280",
+      "date": "2025-08-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:281",
+      "date": "2025-08-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:282",
+      "date": "2025-08-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:283",
+      "date": "2025-08-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:284",
+      "date": "2025-08-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:285",
+      "date": "2025-08-24",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:286",
+      "date": "2025-08-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:287",
+      "date": "2025-08-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:288",
+      "date": "2025-08-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:289",
+      "date": "2025-08-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:290",
+      "date": "2025-08-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:291",
+      "date": "2025-08-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:292",
+      "date": "2025-08-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:293",
+      "date": "2025-08-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:294",
+      "date": "2025-08-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:295",
+      "date": "2025-08-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:296",
+      "date": "2025-08-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:297",
+      "date": "2025-08-30",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:298",
+      "date": "2025-08-31",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:299",
+      "date": "2025-08-31",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:300",
+      "date": "2025-08-31",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:301",
+      "date": "2025-09-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:302",
+      "date": "2025-09-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:303",
+      "date": "2025-09-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:304",
+      "date": "2025-09-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:305",
+      "date": "2025-09-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:306",
+      "date": "2025-09-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:307",
+      "date": "2025-09-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:308",
+      "date": "2025-09-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:309",
+      "date": "2025-09-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:310",
+      "date": "2025-09-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:311",
+      "date": "2025-09-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:312",
+      "date": "2025-09-06",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:313",
+      "date": "2025-09-07",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:316",
+      "date": "2025-09-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:317",
+      "date": "2025-09-09",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:318",
+      "date": "2025-09-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:319",
+      "date": "2025-09-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:320",
+      "date": "2025-09-10",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:321",
+      "date": "2025-09-11",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:322",
+      "date": "2025-09-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:323",
+      "date": "2025-09-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:324",
+      "date": "2025-09-12",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:325",
+      "date": "2025-09-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:326",
+      "date": "2025-09-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:327",
+      "date": "2025-09-13",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:328",
+      "date": "2025-09-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:329",
+      "date": "2025-09-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:330",
+      "date": "2025-09-14",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:331",
+      "date": "2025-09-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:332",
+      "date": "2025-09-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:333",
+      "date": "2025-09-16",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:234",
+      "date": "2025-09-17",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:334",
+      "date": "2025-09-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:335",
+      "date": "2025-09-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:336",
+      "date": "2025-09-18",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:337",
+      "date": "2025-09-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:338",
+      "date": "2025-09-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:339",
+      "date": "2025-09-19",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:340",
+      "date": "2025-09-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:341",
+      "date": "2025-09-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:342",
+      "date": "2025-09-20",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:344",
+      "date": "2025-09-21",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:345",
+      "date": "2025-09-21",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:346",
+      "date": "2025-09-23",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:349",
+      "date": "2025-09-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:350",
+      "date": "2025-09-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:351",
+      "date": "2025-09-25",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:352",
+      "date": "2025-09-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:353",
+      "date": "2025-09-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:354",
+      "date": "2025-09-26",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:355",
+      "date": "2025-09-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:356",
+      "date": "2025-09-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:357",
+      "date": "2025-09-27",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:358",
+      "date": "2025-09-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:359",
+      "date": "2025-09-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:360",
+      "date": "2025-09-28",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:192",
+      "date": "2025-09-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:193",
+      "date": "2025-09-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:218",
+      "date": "2025-09-29",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:195",
+      "date": "2025-10-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:216",
+      "date": "2025-10-01",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:194",
+      "date": "2025-10-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:196",
+      "date": "2025-10-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:347",
+      "date": "2025-10-02",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:197",
+      "date": "2025-10-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:217",
+      "date": "2025-10-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:348",
+      "date": "2025-10-03",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:187",
+      "date": "2025-10-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:315",
+      "date": "2025-10-04",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:239",
+      "date": "2025-10-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:314",
+      "date": "2025-10-05",
+      "split": "test"
+    },
+    {
+      "game_id": "CPBL-2025-JO:343",
+      "date": "2025-10-06",
+      "split": "test"
+    }
+  ]
+}

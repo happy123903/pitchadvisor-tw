@@ -1,0 +1,260 @@
+{
+  "retrieved_at": "2026-11-09T08:17:47.447568+00:00",
+  "organizer_article": "https://blog.rebas.tw/articles/4136",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/PA.md",
+      "path": "docs/sources/schema/PA.md",
+      "bytes": 9331,
+      "sha256": "671f0a2695e7bfb643fb2d5018224f56daeb238a049dbc6c34d59c2a7d2a7ced"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/README.md",
+      "path": "docs/sources/schema/README.md",
+      "bytes": 562,
+      "sha256": "6d7ed05c18ca998e8a322d32b8b39a67e52b0b152c7f57e70dda5baf29d9eaa6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/batterBox.md",
+      "path": "docs/sources/schema/batterBox.md",
+      "bytes": 1148,
+      "sha256": "e872f0e438a06a5304a45b5ac33ca2fd7131b871e67de73fe11003068acadeba"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/event.md",
+      "path": "docs/sources/schema/event.md",
+      "bytes": 5226,
+      "sha256": "5efae58a6cdffb87b22404f7cfe8ef9872eb14957eafc4f3ed9d5ef3733635e2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/game.md",
+      "path": "docs/sources/schema/game.md",
+      "bytes": 1282,
+      "sha256": "a54b13ed2000e21eb0df9604beccf5593440df2cb46915f21aaed4cf29c4f658"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/location-code.png",
+      "path": "docs/sources/schema/location-code.png",
+      "bytes": 409511,
+      "sha256": "cc2987855349f216b58408a06e93fff2d2ba46fdf514705f670ceca3a321b85c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/pitcherBox.md",
+      "path": "docs/sources/schema/pitcherBox.md",
+      "bytes": 833,
+      "sha256": "2942f835f1b967cc7d6e64127b2c154dcbfdee22d698c3ef898e0f1e59f13e38"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/runner.md",
+      "path": "docs/sources/schema/runner.md",
+      "bytes": 825,
+      "sha256": "fbfc9e0a6fc712c084f2af30871bc052342581e2d35687501ac4bc54e7754668"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/schema.png",
+      "path": "docs/sources/schema/schema.png",
+      "bytes": 183824,
+      "sha256": "9e491387837b786601d02a16a8512cbc6cca462d545617b038fc9f891f8cba47"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/schema/zone-chart.png",
+      "path": "docs/sources/schema/zone-chart.png",
+      "bytes": 393785,
+      "sha256": "128c5c1c823c3342f4174aa005d3fbedd7b24460422ec8023b277e0317340a44"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/README.md",
+      "path": "docs/sources/REBas-README.md",
+      "bytes": 3460,
+      "sha256": "a91e5a861b8441f4bf49cd700b93de1436640072fcc1ff6a2ab1d359ff9ea652"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rebas-tw/rebas.tw-open-data/main/LICENSE",
+      "path": "docs/sources/REBas-LICENSE",
+      "bytes": 660,
+      "sha256": "537fa3b1384cfd31c7f8510d5326c56efed3aa2219ca6148ef5a126304202c83"
+    },
+    {
+      "url": "https://github.com/rebas-tw/rebas.tw-open-data/releases/download/v0.1.1-2026/CPBL-2025-OpenData.zip",
+      "path": "data/raw/CPBL-2025-OpenData.zip",
+      "bytes": 7054265,
+      "sha256": "3b3289736082076ba825a2931cdd608ba0b9289308daf11a099969d8eb7718f2",
+      "zip_members": 361,
+      "uncompressed_bytes": 97187581,
+      "release": "v0.1.1-2026"
+    },
+    {
+      "url": "https://github.com/rebas-tw/rebas.tw-open-data/releases/download/v0.1.0-2024/CPBL-2024-OpenData.zip",
+      "path": "data/raw/CPBL-2024-OpenData.zip",
+      "bytes": 7110760,
+      "sha256": "1711009c9d3bac68ca13b2b68f409587fdce2deea3c9fbb5ad68131fccb1d19f",
+      "zip_members": 362,
+      "uncompressed_bytes": 91632463,
+      "release": "v0.1.0-2024"
+    },
+    {
+      "url": "https://github.com/rebas-tw/rebas.tw-open-data/releases/download/v0.1.0-2023.1/CPBL-2023-G151-G300-OpenData.zip",
+      "path": "data/raw/CPBL-2023-G151-G300-OpenData.zip",
+      "bytes": 2969038,
+      "sha256": "08c92c86717ddc801b434145bb29540426deff330b8209f0f41734d090937f2c",
+      "zip_members": 151,
+      "uncompressed_bytes": 38096481,
+      "release": "v0.1.0-2023.1"
+    },
+    {
+      "url": "https://github.com/rebas-tw/rebas.tw-open-data/releases/download/v0.1.0-2023.0/CPBL-2023-G1-G150-OpenData.zip",
+      "path": "data/raw/CPBL-2023-G1-G150-OpenData.zip",
+      "bytes": 3048594,
+      "sha256": "65f2f063010e6e0d8d2883af41a61eec30ba808f87cb07267bff40947eaf4b0d",
+      "zip_members": 151,
+      "uncompressed_bytes": 39056661,
+      "release": "v0.1.0-2023.0"
+    }
+  ],
+  "article_links": [
+    {
+      "url": "https://blog.rebas.tw/"
+    },
+    {
+      "url": "https://www.rebas.tw/"
+    },
+    {
+      "url": "https://www.instagram.com/rebas_taiwan/"
+    },
+    {
+      "url": "https://www.facebook.com/rebastaiwan"
+    },
+    {
+      "url": "https://blog.rebas.tw/"
+    },
+    {
+      "url": "https://blog.rebas.tw/"
+    },
+    {
+      "url": "https://blog.rebas.tw/author/kevincheng"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/category/%e6%95%b8%e6%93%9a%e4%bb%8b%e7%b4%b9"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/category/%e6%96%b0%e8%81%9e%e6%99%82%e4%ba%8b"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/category/hit"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/category/hit/featured"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/category/%e7%b5%b1%e8%a8%88%e5%88%86%e6%9e%90"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/category/hit/headlines"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e4%b8%ad%e4%bf%a1%e5%85%84%e5%bc%9f"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e4%b8%ad%e8%8f%af%e8%81%b7%e6%a3%92"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e5%8f%b0%e7%81%a3%e6%a3%92%e7%90%83%e6%95%b8%e6%93%9a%e5%88%86%e6%9e%90"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e5%8f%b0%e9%8b%bc%e9%9b%84%e9%b7%b9"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e5%91%b3%e5%85%a8%e9%be%8d"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e5%af%8c%e9%82%a6%e6%82%8d%e5%b0%87"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e6%a3%92%e7%90%83%e6%95%b8%e6%93%9a"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e6%a8%82%e5%a4%a9%e6%a1%83%e7%8c%bf"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e7%b5%b1%e4%b8%80%e7%8d%85"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/tag/%e9%bb%91%e5%ae%a2%e6%9d%be"
+    },
+    {
+      "url": "https://rebastaiwan.pse.is/9nzxad"
+    },
+    {
+      "url": "https://rebastaiwan.pse.is/9nzxad"
+    },
+    {
+      "url": "https://www.cpbl.com.tw/"
+    },
+    {
+      "url": "https://stats.cpbl.com.tw/"
+    },
+    {
+      "url": "https://www.rebas.tw/"
+    },
+    {
+      "url": "https://github.com/rebas-tw/rebas.tw-open-data"
+    },
+    {
+      "url": "https://npb.jp/"
+    },
+    {
+      "url": "https://www.japan-baseball.jp/npb-plus/"
+    },
+    {
+      "url": "http://1point02.jp/op/index.aspx"
+    },
+    {
+      "url": "http://eng.koreabaseball.com/"
+    },
+    {
+      "url": "http://www.statiz.co.kr/main.php"
+    },
+    {
+      "url": "https://www.mlb.com/"
+    },
+    {
+      "url": "https://baseballsavant.mlb.com/"
+    },
+    {
+      "url": "https://www.fangraphs.com/"
+    },
+    {
+      "url": "https://www.baseball-reference.com/"
+    },
+    {
+      "url": "https://www.brooksbaseball.net/"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/4130"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/4144"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/4184"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/4179"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/4173"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/4165"
+    },
+    {
+      "url": "https://blog.rebas.tw/articles/4144"
+    },
+    {
+      "url": "https://www.facebook.com/rebastaiwan"
+    },
+    {
+      "url": "https://www.instagram.com/rebas_taiwan"
+    }
+  ]
+}

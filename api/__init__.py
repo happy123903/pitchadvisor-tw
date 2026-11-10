@@ -1,0 +1,1 @@
+"""PitchAdvisor FastAPI application."""
