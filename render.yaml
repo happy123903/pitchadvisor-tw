@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: pitchadvisor-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1 --limit-concurrency 8
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.13
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: MODEL_BUNDLE_DIR
+        value: artifacts/baseline
+      - key: MODEL_VERSION
+        value: week1-frequency-v1
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false

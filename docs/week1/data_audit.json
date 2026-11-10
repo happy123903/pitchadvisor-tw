@@ -1,0 +1,192 @@
+{
+  "data_version": "rebas-2023-2025-regular-v1",
+  "model_version": "week1-frequency-v1",
+  "games": 1020,
+  "pitches": 293482,
+  "date_min": "2023-04-01",
+  "date_max": "2025-10-06",
+  "by_year": [
+    {
+      "year": 2023,
+      "games": 300,
+      "pitches": 87374,
+      "coordinate_missing_rate": 0.004108773777096161,
+      "zone_unavailable_rate": 0.004108773777096161,
+      "velocity_missing_rate": 0.04096184219561883,
+      "valid_state_rate": 0.9711126879849841,
+      "resolved_identity_rate": 1.0
+    },
+    {
+      "year": 2024,
+      "games": 360,
+      "pitches": 103620,
+      "coordinate_missing_rate": 0.0013317892298784018,
+      "zone_unavailable_rate": 0.0013317892298784018,
+      "velocity_missing_rate": 0.03131634819532909,
+      "valid_state_rate": 0.9765392781316348,
+      "resolved_identity_rate": 1.0
+    },
+    {
+      "year": 2025,
+      "games": 360,
+      "pitches": 102488,
+      "coordinate_missing_rate": 0.0009074233080946062,
+      "zone_unavailable_rate": 0.0009074233080946062,
+      "velocity_missing_rate": 0.05469908672234798,
+      "valid_state_rate": 0.9736359378658965,
+      "resolved_identity_rate": 1.0
+    }
+  ],
+  "splits": {
+    "calibration": 50,
+    "test": 360,
+    "train": 551,
+    "validation": 59
+  },
+  "split_pitch_counts": {
+    "calibration": 14160,
+    "test": 102488,
+    "train": 159910,
+    "validation": 16924
+  },
+  "split_policy": {
+    "validation_start": "2024-08-16",
+    "calibration_start": "2024-09-12",
+    "test_start": "2025-01-01",
+    "strategy": "2024 unique dates 70%/85%; whole games, no label tuning"
+  },
+  "training_cutoff": "2024-08-14",
+  "unique_pitchers": 252,
+  "unique_batters": 217,
+  "same_name_multiple_ids": [
+    {
+      "role": "pitcher",
+      "name": "林子崴",
+      "id_count": 2
+    }
+  ],
+  "same_id_multiple_names": [
+    {
+      "role": "batter",
+      "id": "2mO1b",
+      "name_count": 2
+    },
+    {
+      "role": "batter",
+      "id": "JID82",
+      "name_count": 2
+    },
+    {
+      "role": "batter",
+      "id": "RkMfE",
+      "name_count": 2
+    },
+    {
+      "role": "batter",
+      "id": "svO50",
+      "name_count": 2
+    },
+    {
+      "role": "pitcher",
+      "id": "8llux",
+      "name_count": 2
+    },
+    {
+      "role": "pitcher",
+      "id": "QRk3",
+      "name_count": 2
+    },
+    {
+      "role": "pitcher",
+      "id": "ZE04R",
+      "name_count": 2
+    },
+    {
+      "role": "pitcher",
+      "id": "fDihN",
+      "name_count": 2
+    },
+    {
+      "role": "pitcher",
+      "id": "ftmEi",
+      "name_count": 2
+    },
+    {
+      "role": "pitcher",
+      "id": "mxPQL",
+      "name_count": 2
+    }
+  ],
+  "audit": {
+    "counters": {
+      "pa_count_mismatch": 1325,
+      "incomplete_half_innings": 88,
+      "velocity_outlier": 9
+    },
+    "event_types": {
+      "PITCH": 293482,
+      "SUB": 11215,
+      "BASE": 427,
+      "NO_PITCH": 136
+    },
+    "unknown_pitch_codes": {},
+    "pa_results": {
+      "uBB": 5888,
+      "SH": 894,
+      "GO": 13868,
+      "1B": 13605,
+      "SO": 13117,
+      "FC": 2346,
+      "FO": 19213,
+      "GIDP": 1561,
+      "HR": 1064,
+      "E": 760,
+      "2B": 2935,
+      "SF": 655,
+      "HBP": 995,
+      "": 466,
+      "IBB": 128,
+      "ID": 8,
+      "3B": 350,
+      "SH_FC": 34,
+      "SH_E": 53,
+      "SF_E": 6,
+      "TP": 1,
+      "H": 3,
+      "GIDP_E": 2,
+      "IH": 4
+    }
+  },
+  "pitch_types": {
+    "FF": 136599,
+    "SL": 49898,
+    "CH": 31189,
+    "CU": 26132,
+    "SI": 17052,
+    "FO": 16597,
+    "FC": 15706,
+    "UNKNOWN": 236,
+    "KN": 60,
+    "FS": 12,
+    "EP": 1
+  },
+  "zone_definition": {
+    "x_min": -50,
+    "x_max": 50,
+    "y_min": -60,
+    "y_max": 60,
+    "view": "pitcher",
+    "outer_rule": "largest abs normalized coordinate; vertical wins diagonal ties",
+    "outlier_limits": [
+      500,
+      600
+    ]
+  },
+  "known_limitations": [
+    "PA count/outs/bases are pre-final-pitch fields, not PA-start state.",
+    "Runner entries lack starting/ending base; uncertain intermediate bases are masked.",
+    "Incomplete half innings are excluded from run-expectancy targets.",
+    "Player identity is resolved from each game/team/role box score; names are never globally merged.",
+    "Week-one prediction is pitcher/count baseline; batter and sequence modeling are scheduled for week two."
+  ]
+}

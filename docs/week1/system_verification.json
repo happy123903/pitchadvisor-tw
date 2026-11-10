@@ -1,0 +1,22 @@
+{
+  "api_health": {
+    "status": "ready",
+    "model_version": "week1-frequency-v1",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "data_source": "local_snapshot",
+    "capabilities": {
+      "sequence": false,
+      "batter_conditioned_model": false,
+      "conformal": false
+    }
+  },
+  "frontend_http": 200,
+  "vite_proxy_http": 200,
+  "warm_requests": 20,
+  "warm_median_ms": 1.47,
+  "warm_p95_ms": 1.76,
+  "measurement": "local Windows HTTP round-trip; single client; excludes cloud cold start",
+  "browser_visual_qa": "not_run_browser_host_unavailable",
+  "cloud_deployment": "pending_accounts_and_repository"
+}

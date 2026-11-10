@@ -1,0 +1,13 @@
+{
+  "model_version": "week1-frequency-v1",
+  "data_version": "rebas-2023-2025-regular-v1",
+  "data_cutoff": "2024-08-14",
+  "sha256": "0783ab099c672bc7cc821de64bd0b9561f6c7ce54aec7170345e7728c0f234d8",
+  "file": "model.json",
+  "split": {
+    "validation_start": "2024-08-16",
+    "calibration_start": "2024-09-12",
+    "test_start": "2025-01-01",
+    "strategy": "2024 unique dates 70%/85%; whole games, no label tuning"
+  }
+}

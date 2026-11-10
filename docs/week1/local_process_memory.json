@@ -1,0 +1,33 @@
+﻿{
+    "measurement":  "Local process working set; API includes Windows venv launcher and child; not Render measurements",
+    "processes":  [
+                      {
+                          "peak_working_set_bytes":  5996544,
+                          "working_set_bytes":  5996544,
+                          "pid":  17256,
+                          "process":  "python",
+                          "role":  "api"
+                      },
+                      {
+                          "peak_working_set_bytes":  11141120,
+                          "working_set_bytes":  11141120,
+                          "pid":  9960,
+                          "process":  "conhost",
+                          "role":  "api"
+                      },
+                      {
+                          "peak_working_set_bytes":  97726464,
+                          "working_set_bytes":  84643840,
+                          "pid":  20172,
+                          "process":  "python",
+                          "role":  "api"
+                      },
+                      {
+                          "peak_working_set_bytes":  122507264,
+                          "working_set_bytes":  92078080,
+                          "pid":  31884,
+                          "process":  "node",
+                          "role":  "web"
+                      }
+                  ]
+}

@@ -1,0 +1,2 @@
+# Fully resolved deployment dependencies are exported from uv.lock.
+-r requirements-lock.txt

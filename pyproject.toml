@@ -1,0 +1,22 @@
+[project]
+name = "pitchadvisor-tw"
+version = "0.1.0"
+description = "Reproducible CPBL pitching analysis baseline and API"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1",
+  "pandas>=2.2,<3",
+  "numpy>=2,<3",
+  "pyarrow>=19,<24",
+  "httpx>=0.28,<1",
+  "matplotlib>=3.10,<4",
+  "python-dotenv>=1,<2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
