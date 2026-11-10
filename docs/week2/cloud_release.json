@@ -1,0 +1,84 @@
+{
+  "verified_at": "2026-11-10T15:13:40Z",
+  "commit": "dec516c94fd08c7778ddcd43f20336c904b37a17",
+  "github": [
+    {
+      "id": 42841424609,
+      "name": "Check model API and web",
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "dec516c94fd08c7778ddcd43f20336c904b37a17",
+      "url": "https://github.com/happy123903/pitchadvisor-tw/actions/runs/42841424609"
+    },
+    {
+      "id": 42841424607,
+      "name": "Build and deploy web",
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "dec516c94fd08c7778ddcd43f20336c904b37a17",
+      "url": "https://github.com/happy123903/pitchadvisor-tw/actions/runs/42841424607"
+    }
+  ],
+  "render": {
+    "workspace_id": "tea-d6rflqq4d50c73bt1q0g",
+    "service_id": "srv-dbpe8a8m7kps73amakrg",
+    "deploy": {
+      "commit": {
+        "createdAt": "2026-11-10T15:09:20Z",
+        "id": "dec516c94fd08c7778ddcd43f20336c904b37a17",
+        "message": "Add week-two sequence models, calibration and interactive analysis"
+      },
+      "createdAt": "2026-11-10T15:09:33.069445Z",
+      "finishedAt": "2026-11-10T15:12:57.159343Z",
+      "id": "dep-dbpj7aqfenjc739t653g",
+      "startedAt": "2026-11-10T15:11:08.280932Z",
+      "status": "live",
+      "trigger": "blueprint_sync",
+      "updatedAt": "2026-11-10T15:12:57.159544Z"
+    },
+    "blueprint_id": "exs-dbpe7dmtlv9c73fb9gq0",
+    "blueprint_status": "in_sync",
+    "memory_observation": {
+      "data": [
+        {
+          "labels": [
+            {
+              "field": "service",
+              "value": "srv-dbpe8a8m7kps73amakrg"
+            },
+            {
+              "field": "resource",
+              "value": "srv-dbpe8a8m7kps73amakrg"
+            },
+            {
+              "field": "instance",
+              "value": "srv-dbpe8a8m7kps73amakrg-5b97p"
+            }
+          ],
+          "unit": "bytes",
+          "values": [
+            {
+              "timestamp": "2026-11-10T15:13:00Z",
+              "value": 125403140
+            },
+            {
+              "timestamp": "2026-11-10T15:13:30Z",
+              "value": 125403140
+            }
+          ]
+        }
+      ],
+      "maximum_sampled_bytes": 125403140,
+      "maximum_sampled_mib": 119.59375381469727,
+      "under_400_mib": true,
+      "measurement": "Render sampled per-instance memory after week-two activation; not a concurrency stress-test peak. Old draining instances excluded."
+    }
+  },
+  "http_verification": "deployment_verification.json",
+  "supabase_verification": "supabase_verification.json",
+  "browser_verification": "BROWSER_QA.md",
+  "limitations": [
+    "Cold start and long-idle recovery are not accepted by this warm-request verification.",
+    "2025 final holdout remains unevaluated."
+  ]
+}

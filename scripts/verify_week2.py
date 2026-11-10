@@ -136,10 +136,14 @@ def verify(base, expected_version, frontend=None, pid=None):
             assets = [client.get(urljoin(frontend, path)) for path in scripts]
             assert all(r.status_code == 200 for r in assets)
             assert any(base in asset.text for asset in assets), 'Pages API URL does not match'
+            assert any('本打席已投球歷程' in asset.text and '/model-info' in asset.text for asset in assets), 'Pages week-two UI has not been published'
             origin = frontend.split('/pitchadvisor-tw')[0].rstrip('/')
             cors = client.options(base + '/predict', headers={'Origin': origin,
                 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type'})
             assert cors.status_code == 200 and cors.headers.get('access-control-allow-origin') == origin
+            cors_post = client.post(base + '/predict', json=with_history, headers={'Origin': origin})
+            cors_post.raise_for_status()
+            assert cors_post.headers.get('access-control-allow-origin') == origin
             checks.update({'frontend_html_and_assets': True, 'frontend_correct_api': True, 'cors': True})
     memory = process_memory(pid) if pid else None
     resource = {'samples': len(durations), 'http_median_ms': round(statistics.median(durations), 2),

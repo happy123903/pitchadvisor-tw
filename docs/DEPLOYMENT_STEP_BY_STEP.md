@@ -1,6 +1,28 @@
 # GitHub Pages＋Supabase＋Render 詳細上線步驟
 
-查核日期：2026-11-09。對應本專案第一週程式，GitHub 帳號為 `happy123903`；以下統一使用新儲存庫名稱 `pitchadvisor-tw`。本文件提供操作說明，未代為建立雲端專案。
+查核日期：2026-11-10。GitHub 帳號為 `happy123903`，專案儲存庫為 `pitchadvisor-tw`。三平台第一週已建立並驗收；第1–7節保留從零建立的說明，既有專案更新第二週請直接依下段，不必重建。
+
+## 既有專案更新第二週
+
+1. 保留本機 `.env` 及 Render 既有 secret；只更新 `MODEL_VERSION=week2-sequence-v1`、`MODEL_BUNDLE_DIR=artifacts/week2`。
+2. 在專案根目錄先測試與 dry run，再匯入已校驗的模型。每次部署不同版本都應先檢查 manifest，不上傳 smoke 產物。
+
+```powershell
+rtk proxy .venv\Scripts\python.exe -m pytest -q
+rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2
+rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2 --apply
+rtk proxy .venv\Scripts\python.exe scripts/verify_supabase_model.py
+```
+
+3. 提交原始碼、鎖定檔與 `artifacts/week2/`；保留 `.gitattributes` 兩版模型的 binary 設定。不要提交 `.env`、原始資料或訓練環境。
+4. 推送 main 後，Render Blueprint自動同步 `render.yaml` 的兩個非secret設定，服務與 Pages 的既有 workflow 自動發布。若需手動調整 Render，只合併上述兩個鍵，保留 Supabase key 與 CORS。不要同時重建服務或新增付費方案。
+5. 檢查 `/health` 200、`model_version=week2-sequence-v1`、`data_source=supabase_verified_snapshot`；網頁新增一球壞球後應顯示1–0及已使用歷程，再執行雲端查核：
+
+```powershell
+rtk proxy .venv\Scripts\python.exe scripts/verify_week2.py --api-url https://pitchadvisor-api.onrender.com --frontend-url https://happy123903.github.io/pitchadvisor-tw/ --output docs/week2/deployment_verification.json
+```
+
+上傳後會保留第一週版本與第二週版本。回復時同時設定 `artifacts/baseline`／`week1-frequency-v1`；不要只改其中一項。第二週 [API schema](week2/API.md)、[交付驗收](week2/COMPLETION.md) 與 [模型成果](week2/RESULTS.md) 分開記錄實際狀態。
 
 順序：建立 GitHub 儲存庫 → 上傳程式 → 建立 Supabase 並匯入 → 部署 Render → 啟用 GitHub Pages → 驗證完整網站。
 
@@ -197,7 +219,7 @@ rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --apply
 10. 到上方 **Actions**，左側選 **Build and deploy web**，按 **Run workflow**，Branch 選 `main`，再按執行。
 11. 等 `build`、`deploy` 均成功後，到 Settings → Pages 按 **Visit site**。
 
-預期正式網址：`https://happy123903.github.io/pitchadvisor-tw/`。這是建立上述帳號與儲存庫後的預期網址，目前尚未宣稱已上線。
+既有正式網址：`https://happy123903.github.io/pitchadvisor-tw/`。第二週目前版本與驗收證據以 `docs/week2/COMPLETION.md` 為準。
 
 GitHub Pages 只取得公開的 API 網址。Supabase key 只留在本機 `.env` 與 Render 後端，不需填入前端或 GitHub Pages 設定。
 

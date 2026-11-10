@@ -9,7 +9,7 @@
 | 8–9 | 共用完整打席歷程驗證；訓練專用投手×球種速度正規化；情境／序列摘要 LightGBM；網頁新增、編輯、刪除與清空歷程 |
 | 10–11 | CPU GRU、投打 embedding 與收縮、球種／分區／結果多任務，另建候選條件結果 head；NumPy 匯出與 PyTorch 四 head 一致性驗證 |
 | 12–13 | 候選條件結果 × 訓練期 ΔRE 排序；獨立溫度／conformal／audit；小樣本分組；序列、收縮、座標抖動與多任務消融 |
-| 14 | 依事前驗證規則採序列 LightGBM，固定模型包／校準器／SHA；本機 HTTP 與記憶體驗收通過，雲端發布驗收進行中 |
+| 14 | 依事前驗證規則採序列 LightGBM，固定模型包／校準器／SHA；本機 HTTP 與記憶體驗收通過，三平台發布與實際雲端查核通過 |
 
 完整 [比較與消融](RESULTS.md)、[方法](MODELING_METHOD.md)、[事前驗收規則](EXECUTION_PLAN.md)。
 
@@ -28,9 +28,11 @@
 - 前端 Node 測試 **5 passed**，TypeScript＋Vite 正式建置通過。
 - [本機獨立 API 實測](local_verification.json)：25 次暖機 sequential POST，p95 約 **4ms**；實際服務程序峰值 **229,220,352 bytes（218.60 MiB）**，低於 400 MiB 門檻。空歷程與完整歷程、切換打者確實改變預測；非法／終結歷程 422、未知 ID 404。
 - [Supabase 讀回](supabase_verification.json)：377 球員、826 球種庫列、75,424 聚合列、兩個模型版本；第二週 model／manifest 位元組與完整球員投影皆一致。
-- 真實瀏覽器桌面／手機操作、Render 與 Pages 最終發布驗收進行中，尚未以設定檔存在代替驗收成功。
+- [真實 Chrome 桌面／手機操作](BROWSER_QA.md) 通過，保留10張截圖；包括歷程、16球、球數同步、非法輸入、切換條件與資料分頁。測試自有瀏覽器與本機程序已關閉。
+- [正式網站／API實查](deployment_verification.json) 全部通過：`week2-sequence-v1`、`supabase_verified_snapshot`，三任務、歷程與打者效果、錯誤輸入、Pages新介面資源、OPTIONS與POST CORS均符合。25次雲端暖機HTTP p95 **186.63ms**，API內部p95 **17.31ms**。
+- [發布證據](cloud_release.json)：GitHub CI `42841424609`、Pages `42841424607` 均success，Render `dep-dbpj7aqfenjc739t653g` Live，功能版本commit `dec516c`；Blueprint已是`in_sync`。新實例兩筆記憶體樣本最大 **125,403,140 bytes（119.59 MiB）**，低於400MiB，但不是多人負載的峰值量測。
 
-本機 p95 包含 HTTP round trip，雲端會另報 HTTP 往返與 API `elapsed_ms`。以上不是並行負載測試，也沒有將免費服務冷啟動時間混入暖機結果。
+本機 p95 包含 HTTP round trip，雲端另報 HTTP 往返與 API `elapsed_ms`。以上不是並行負載測試，也沒有將免費服務冷啟動時間混入暖機結果。
 
 ## 已知限制與第三週
 

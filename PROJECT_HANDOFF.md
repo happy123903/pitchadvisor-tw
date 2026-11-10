@@ -1,5 +1,5 @@
 ---
-summary: 第二週模型與網頁已完成本機整合及Supabase讀回；序列LightGBM勝出，Render與Pages最後發布驗收進行中。
+summary: 第二週已完成並發布三平台；序列LightGBM勝出，Supabase讀回、正式API與Pages、桌面手機瀏覽器驗收通過。
 created: 2026-11-09
 updated: 2026-11-10
 tags: [project-handoff, pitchadvisor-tw, github-pages, supabase, render, week2]
@@ -50,7 +50,9 @@ tags: [project-handoff, pitchadvisor-tw, github-pages, supabase, render, week2]
 - 本機 Python 63 passed；模型9項含真artifact／NumPy-PyTorch parity已實跑。Node5passed；正式TS＋Vite build通過。
 - `docs/week2/local_verification.json`：真HTTP歷程／打者效果、三head、候選、sets及錯誤碼；25次暖機p95約4ms，真服務峰值約219MiB。已避免誤量約6MB venv launcher，驗收自有子程序會清理。
 - `docs/week2/supabase_verification.json`：model和manifest完整位元組讀回一致；球員完整投影一致；players377／repertoire826／aggregate75424／model_versions2。Feature_version登錄為week2-v1。
-- Render與Pages最終week2發布、瀏覽器桌面／手機驗收進行中；接手若見此狀態，先看下方證據檔是否已產出及最新Git/health，勿直接宣稱正式發布完成。
+- 第二週三平台已發布及驗收。正式API為week2-sequence-v1、supabase_verified_snapshot；Pages新介面與CORS／序列／打者效果查核通過。雲端25次暖機HTTP p95 186.63ms、內部17.31ms；新Render實例記憶體兩筆樣本最大119.59MiB（不是壓力峰值）。證據docs/week2/deployment_verification.json與cloud_release.json。
+- GitHub功能版本dec516c；CI42841424609、Pages42841424607 success；Render dep-dbpj7aqfenjc739t653g Live。Blueprint舊紅叉已在本次同步後變in_sync，未重建服務或改付費方案。
+- 桌面1440、手機viewport390真Chrome驗收通過，詳細docs/week2/BROWSER_QA.md與10張截圖。測試自有瀏覽器與8000/5173程序已關閉。
 - 第一步歷史證據仍保留 `docs/week1/deployment_verification.json`（8a3c526、2026-11-10 18:18）；它不能代替第二週發布驗收。
 
 ## 已存在的平台
@@ -62,12 +64,12 @@ tags: [project-handoff, pitchadvisor-tw, github-pages, supabase, render, week2]
 | Render | https://pitchadvisor-api.onrender.com |
 | Render workspace | `tea-d6rflqq4d50c73bt1q0g`（My Workspace，已核對） |
 | Render service | `srv-dbpe8a8m7kps73amakrg`，Free／Oregon／單worker |
-| Blueprint | `exs-dbpe7dmtlv9c73fb9gq0`，autoSync，先前仍有舊Failed sync紀錄 |
+| Blueprint | `exs-dbpe7dmtlv9c73fb9gq0`，autoSync，本輪已in_sync，舊Failed sync為歷史紀錄 |
 | Supabase | `tffmdcuyzifepuaadglx`，pitchadvisor-tw |
 
 Supabase沿用第一週四表／RLS／private `model-artifacts` bucket，沒有為第二週重建schema。模型包<20MiB。`SUPABASE_URL` 只能是project origin，不能加 `/rest/v1/`（先前404根因）。高權限key只用後端。
 
-`render.yaml` 是非secret設定的來源；本機`.env`及範例已設第二週MODEL_VERSION／BUNDLE_DIR，Render亦須與其一致。若舊Blueprint未自動套用，使用Render更新兩個非secret鍵並保留其他鍵。不要因舊紅叉刪除Live服務或自動升級付費。
+`render.yaml` 是非secret設定的來源；本機`.env`及範例已設第二週MODEL_VERSION／BUNDLE_DIR，Render亦須與其一致。本輪Blueprint已自動套用兩鍵並完成Live，無需重做；未透過MCP覆寫secret。不要因舊紅叉刪除Live服務或自動升級付費。
 
 第一週503曾因Windows autocrlf改變JSON位元組；`.gitattributes` 已把baseline及week2的model.json標binary。保留SHA核對，不跳過檢查。
 
