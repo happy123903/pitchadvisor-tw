@@ -59,7 +59,9 @@ def main():
               'checks': {'registration_matches_manifest': True, 'full_catalog_matches': True,
                          'private_model_bytes_match': True, 'private_manifest_bytes_match': True},
               'registration': registration}
-    (ROOT / args.output).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    target=ROOT / args.output
+    target.parent.mkdir(parents=True,exist_ok=True)
+    target.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k: report[k] for k in ['model_version', 'sha256', 'model_bytes', 'tables', 'checks']}))
 
 

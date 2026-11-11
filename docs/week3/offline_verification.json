@@ -1,0 +1,114 @@
+{
+  "verification": "real loopback HTTP and Windows process lifecycle",
+  "generated_at": "2026-11-11T02:56:41.065621+00:00",
+  "network_scope": "HTTP server checks use loopback; outbound-HTTP blocking is separately tested in tests/test_offline.py",
+  "model_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+  "checks": {
+    "request_diagnostics": {
+      "server_generated_request_id": true
+    },
+    "health": {
+      "status": "ready",
+      "model_version": "week2-sequence-v1",
+      "data_version": "rebas-2023-2025-regular-v1",
+      "data_cutoff": "2024-08-14",
+      "data_source": "local_snapshot",
+      "data_source_error": null,
+      "capabilities": {
+        "sequence": true,
+        "batter_conditioned_model": true,
+        "conformal": true,
+        "conditional_result": true
+      },
+      "bundle_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+      "test_evaluated": true
+    },
+    "compiled_static_reload": [
+      {
+        "asset": "./assets/index-DmIJJkY7.js",
+        "reload": 0,
+        "status": 200
+      },
+      {
+        "asset": "./assets/index-DmIJJkY7.js",
+        "reload": 1,
+        "status": 200
+      },
+      {
+        "asset": "./assets/index-DHiXWTsK.css",
+        "reload": 0,
+        "status": 200
+      },
+      {
+        "asset": "./assets/index-DHiXWTsK.css",
+        "reload": 1,
+        "status": 200
+      }
+    ],
+    "fixed_cases": {
+      "n": 3,
+      "bundle_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+      "mode": "fixed_demo_cases"
+    },
+    "metadata": {
+      "players": 377,
+      "model_version": "week2-sequence-v1",
+      "calibration_matches_frozen_bundle": true
+    },
+    "arbitrary_real_inference": {
+      "not_a_fixed_case": true,
+      "sequence_used": true,
+      "changed_with_new_input": true,
+      "probability_sums_valid": true,
+      "recommendations": 5,
+      "source_mode": "local_snapshot"
+    },
+    "final_evaluation": {
+      "same_bundle": true,
+      "test_evaluated": true,
+      "usable_rows": 99729
+    }
+  },
+  "actual_server_pid": 34256,
+  "launcher_pid": 3480,
+  "processes_before_stop": [
+    {
+      "creation_date": "2026-11-11T02:56:42.5649780Z",
+      "working_set_bytes": 5943296,
+      "pid": 3480,
+      "name": "python.exe",
+      "parent_pid": 13932
+    },
+    {
+      "creation_date": "2026-11-11T02:56:42.5886030Z",
+      "working_set_bytes": 218656768,
+      "pid": 34256,
+      "name": "python.exe",
+      "parent_pid": 3480
+    }
+  ],
+  "actual_server_working_set_bytes": 218656768,
+  "package": {
+    "files": 28,
+    "bytes": 4133834,
+    "archive_sha256": "914f7572eaec181acd730dce69b3268c26c8362b436e4e5e4b4c05572e464de3",
+    "all_file_checksums_match": true,
+    "private_cloud_values_found": 0,
+    "env_venv_raw_data_node_modules_included": false,
+    "python_runtime_included": false,
+    "dependencies_included": false,
+    "runtime_smoke": {
+      "executed_from_packaged_directory": true,
+      "provided_existing_python_runtime": true,
+      "html_health_arbitrary_inference_and_evaluation_passed": true,
+      "owned_packaged_processes_cleaned": true,
+      "port": 8766
+    }
+  },
+  "cleanup": {
+    "all_owned_python_processes_stopped": true,
+    "loopback_port_closed": true,
+    "ownership_record_removed": true
+  },
+  "passed": true
+}

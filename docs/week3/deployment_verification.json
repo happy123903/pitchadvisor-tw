@@ -1,0 +1,596 @@
+{
+  "verified_at": "2026-11-11T02:52:58.776587+00:00",
+  "api_url": "https://pitchadvisor-api.onrender.com",
+  "frontend_url": "https://happy123903.github.io/pitchadvisor-tw/",
+  "health": {
+    "status": "ready",
+    "model_version": "week2-sequence-v1",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "data_source": "supabase_verified_snapshot",
+    "data_source_error": null,
+    "capabilities": {
+      "sequence": true,
+      "batter_conditioned_model": true,
+      "conformal": true,
+      "conditional_result": true
+    },
+    "bundle_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+    "test_evaluated": true
+  },
+  "checks": {
+    "health": true,
+    "public_metadata": true,
+    "normalized_three_tasks": true,
+    "history_changes_prediction": true,
+    "batter_changes_prediction": true,
+    "conditional_recommendations": true,
+    "conformal_sets": true,
+    "invalid_history_422": true,
+    "terminal_history_422": true,
+    "unknown_player_404": true,
+    "frontend_html_and_assets": true,
+    "frontend_correct_api": true,
+    "cors": true,
+    "frozen_sha_matches": true,
+    "final_test_report": true,
+    "fixed_case_assets": true,
+    "untrusted_cors_denied": true,
+    "oversized_history_422": true,
+    "four_client_demo_load": true
+  },
+  "resource": {
+    "samples": 25,
+    "http_median_ms": 175.98,
+    "http_p95_ms": 250.96,
+    "server_p95_ms": 8.06,
+    "measurement": "Sequential warmed POST /predict, complete history and supported candidate scoring; no concurrent load.",
+    "memory": null
+  },
+  "history_max_probability_change": 0.12739604711532593,
+  "batter_max_probability_change": 0.02062000334262848,
+  "model_info": {
+    "model_version": "week2-sequence-v1",
+    "model_name": "lightgbm_history",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "capabilities": {
+      "sequence": true,
+      "batter_conditioned_model": true,
+      "conformal": true,
+      "conditional_result": true
+    },
+    "model_info": {
+      "selected_candidate": "lightgbm_history",
+      "selection_rule": "validation pitch log loss; within 0.005 nats prefer context LGB then history LGB then GRU; GRU zone/result may degrade at most 0.03 nats vs history LGB",
+      "selection_reason": "lightgbm_history is the simplest eligible model within 0.005 nats of best validation pitch log loss (1.158778).",
+      "training_rows": 155502,
+      "test_evaluated": true,
+      "validation": {
+        "league_count": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.594000476186874,
+            "top1_accuracy": 0.45244449836224676,
+            "top2_accuracy": 0.6291398762586436,
+            "ece": 0.015018744517735091
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3927523124293972,
+            "top1_accuracy": 0.18293867638129932,
+            "top2_accuracy": 0.3380692167577414,
+            "ece": 0.005661511892598684
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4487950185470817,
+            "top1_accuracy": 0.35982045371830645,
+            "top2_accuracy": 0.6241659589955113,
+            "ece": 0.00967625664437561
+          }
+        },
+        "pitcher_count_shrunk": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.2446976772740352,
+            "top1_accuracy": 0.4856241659589955,
+            "top2_accuracy": 0.7499090137086012,
+            "ece": 0.015604964358150971
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3885480787665356,
+            "top1_accuracy": 0.1875531268973892,
+            "top2_accuracy": 0.34705525197328474,
+            "ece": 0.005463679761587671
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4487950185470817,
+            "top1_accuracy": 0.35982045371830645,
+            "top2_accuracy": 0.6241659589955113,
+            "ece": 0.00967625664437561
+          }
+        },
+        "lightgbm_context": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.20101228953335,
+            "top1_accuracy": 0.4954506854300619,
+            "top2_accuracy": 0.772352298920296,
+            "ece": 0.0347511204665554
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.35234144906203,
+            "top1_accuracy": 0.21681845780206435,
+            "top2_accuracy": 0.3822707953855495,
+            "ece": 0.006255620168531591
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4345371128546662,
+            "top1_accuracy": 0.36157952201868254,
+            "top2_accuracy": 0.6307776295038214,
+            "ece": 0.014733409414248382
+          }
+        },
+        "lightgbm_history": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.1587782846819539,
+            "top1_accuracy": 0.512131505519835,
+            "top2_accuracy": 0.787577338347689,
+            "ece": 0.026350265807372823
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.348360980426171,
+            "top1_accuracy": 0.22088646023072253,
+            "top2_accuracy": 0.383485124468731,
+            "ece": 0.004808025385179064
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4336940294196565,
+            "top1_accuracy": 0.36473371345383965,
+            "top2_accuracy": 0.6301710542278297,
+            "ece": 0.014802941224530977
+          }
+        },
+        "gru": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.1744693517684937,
+            "top1_accuracy": 0.5085527113914837,
+            "top2_accuracy": 0.7838772291641393,
+            "ece": 0.02872751803959541
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3551571369171143,
+            "top1_accuracy": 0.21955069823922282,
+            "top2_accuracy": 0.3820279295689132,
+            "ece": 0.009051922677536043
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4368152618408203,
+            "top1_accuracy": 0.36588620647822395,
+            "top2_accuracy": 0.6267742326822758,
+            "ece": 0.017077117053814247
+          }
+        }
+      },
+      "calibration_audit": {
+        "pitch": {
+          "n": 3196,
+          "coverage": 0.8983103879849812,
+          "mean_set_size": 2.5168961201501876,
+          "ece_before": 0.040633323397859654,
+          "ece_after": 0.034433553491874096,
+          "log_loss_before": 1.1059416925987313,
+          "log_loss_after": 1.1052705407615313
+        },
+        "zone": {
+          "n": 3193,
+          "coverage": 0.9025994362668337,
+          "mean_set_size": 10.270905104917006,
+          "ece_before": 0.008968731033290551,
+          "ece_after": 0.008215434557585881,
+          "log_loss_before": 2.362307044387179,
+          "log_loss_after": 2.3622892541377043
+        },
+        "result": {
+          "n": 3196,
+          "coverage": 0.8945556946182729,
+          "mean_set_size": 3.580413016270338,
+          "ece_before": 0.03134550763960649,
+          "ece_after": 0.02702146410494483,
+          "log_loss_before": 1.452362686848165,
+          "log_loss_after": 1.4519888593701378
+        }
+      }
+    },
+    "calibration": {
+      "method": "temperature+split-conformal",
+      "target_coverage": 0.9,
+      "limitations": "Chronological observational samples may shift; empirical coverage is not an exchangeability guarantee.",
+      "temperature": {
+        "pitch": 1.0238362555396097,
+        "zone": 1.001160286377934,
+        "result": 1.0238362555396097,
+        "conditional_result": 1.001160286377934
+      },
+      "thresholds": {
+        "pitch": 0.8919821381568909,
+        "zone": 0.9618647247552872,
+        "result": 0.8838139325380325
+      },
+      "audit": {
+        "pitch": {
+          "n": 3196,
+          "coverage": 0.8983103879849812,
+          "mean_set_size": 2.5168961201501876,
+          "ece_before": 0.040633323397859654,
+          "ece_after": 0.034433553491874096,
+          "log_loss_before": 1.1059416925987313,
+          "log_loss_after": 1.1052705407615313
+        },
+        "zone": {
+          "n": 3193,
+          "coverage": 0.9025994362668337,
+          "mean_set_size": 10.270905104917006,
+          "ece_before": 0.008968731033290551,
+          "ece_after": 0.008215434557585881,
+          "log_loss_before": 2.362307044387179,
+          "log_loss_after": 2.3622892541377043
+        },
+        "result": {
+          "n": 3196,
+          "coverage": 0.8945556946182729,
+          "mean_set_size": 3.580413016270338,
+          "ece_before": 0.03134550763960649,
+          "ece_after": 0.02702146410494483,
+          "log_loss_before": 1.452362686848165,
+          "log_loss_after": 1.4519888593701378
+        }
+      },
+      "split": {
+        "temperature": {
+          "date_min": "2024-09-12",
+          "date_max": "2024-09-21",
+          "rows": 5516
+        },
+        "conformal": {
+          "date_min": "2024-09-22",
+          "date_max": "2024-10-01",
+          "rows": 5099
+        },
+        "audit": {
+          "date_min": "2024-10-05",
+          "date_max": "2024-10-11",
+          "rows": 3196
+        }
+      }
+    }
+  },
+  "browser_visual_qa": "separate_browser_report_required",
+  "final_evaluation": {
+    "schema_version": 1,
+    "test_evaluated": true,
+    "frozen_bundle": {
+      "model_version": "week2-sequence-v1",
+      "sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+      "data_cutoff": "2024-08-14"
+    },
+    "period": {
+      "start": "2025-03-29",
+      "end": "2025-10-06"
+    },
+    "sample_counts": {
+      "raw": 102488,
+      "usable": 99729,
+      "catalog_serving": 69044,
+      "outside_catalog": 30685,
+      "missing_zone": 68
+    },
+    "selected": {
+      "pitch": {
+        "n": 99729,
+        "log_loss": 1.400057024100469,
+        "top1_accuracy": 0.5028928395953033,
+        "top2_accuracy": 0.7417601700608649,
+        "ece": 0.05106983016711891,
+        "coverage": 0.8373792978973017,
+        "mean_set_size": 2.593388081701411
+      },
+      "zone": {
+        "n": 99661,
+        "log_loss": 2.377183741204384,
+        "top1_accuracy": 0.21017248472321168,
+        "top2_accuracy": 0.36832863406949556,
+        "ece": 0.009792715346262025,
+        "coverage": 0.8985460711813046,
+        "mean_set_size": 10.295792737379717
+      },
+      "result": {
+        "n": 99729,
+        "log_loss": 1.4386291020563406,
+        "top1_accuracy": 0.36481865856471035,
+        "top2_accuracy": 0.6281623198868935,
+        "ece": 0.014237610557814723,
+        "coverage": 0.8932005735543322,
+        "mean_set_size": 3.520540665202699
+      }
+    },
+    "baselines": {
+      "league_count": {
+        "pitch": {
+          "n": 99729,
+          "log_loss": 1.6007515792770985,
+          "top1_accuracy": 0.46431830260004614,
+          "top2_accuracy": 0.6228078091628313,
+          "ece": 0.0049468298178545825
+        },
+        "zone": {
+          "n": 99661,
+          "log_loss": 2.4105509891190007,
+          "top1_accuracy": 0.17878608482756544,
+          "top2_accuracy": 0.32715906924473964,
+          "ece": 0.0036692098300809897
+        },
+        "result": {
+          "n": 99729,
+          "log_loss": 1.4448513835448065,
+          "top1_accuracy": 0.36176037060433774,
+          "top2_accuracy": 0.6289544666044982,
+          "ece": 0.005988329582659417
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 99729,
+          "log_loss": 1.3689262886337115,
+          "top1_accuracy": 0.49265509530828544,
+          "top2_accuracy": 0.7070160133963039,
+          "ece": 0.009700038223570186
+        },
+        "zone": {
+          "n": 99661,
+          "log_loss": 2.4081953422187894,
+          "top1_accuracy": 0.17948846589939896,
+          "top2_accuracy": 0.32927624647555215,
+          "ece": 0.007071297771850646
+        },
+        "result": {
+          "n": 99729,
+          "log_loss": 1.4448513835448065,
+          "top1_accuracy": 0.36176037060433774,
+          "top2_accuracy": 0.6289544666044982,
+          "ece": 0.005988329582659417
+        }
+      }
+    },
+    "catalog_serving": {
+      "selected": {
+        "pitch": {
+          "n": 69044,
+          "log_loss": 1.2258679169941982,
+          "top1_accuracy": 0.5226811888071374,
+          "top2_accuracy": 0.7849342448293841,
+          "ece": 0.017445332696210805,
+          "coverage": 0.8930537048838422,
+          "mean_set_size": 2.6716731359712647
+        },
+        "zone": {
+          "n": 69001,
+          "log_loss": 2.368153519497898,
+          "top1_accuracy": 0.21727221344618194,
+          "top2_accuracy": 0.37458877407573804,
+          "ece": 0.0061998138409455955,
+          "coverage": 0.8996246431211142,
+          "mean_set_size": 10.263372994594281
+        },
+        "result": {
+          "n": 69044,
+          "log_loss": 1.4392947471378907,
+          "top1_accuracy": 0.36391286715717514,
+          "top2_accuracy": 0.6284688025027518,
+          "ece": 0.01418646823393186,
+          "coverage": 0.8951538149585772,
+          "mean_set_size": 3.532356178668675
+        }
+      },
+      "baselines": {
+        "league_count": {
+          "pitch": {
+            "n": 69044,
+            "log_loss": 1.5888799755885208,
+            "top1_accuracy": 0.4709605468976305,
+            "top2_accuracy": 0.6339001216615492,
+            "ece": 0.003492612623686086
+          },
+          "zone": {
+            "n": 69001,
+            "log_loss": 2.4056762384994093,
+            "top1_accuracy": 0.18608425964841088,
+            "top2_accuracy": 0.3384008927406849,
+            "ece": 0.0024979047719152314
+          },
+          "result": {
+            "n": 69044,
+            "log_loss": 1.445182335866699,
+            "top1_accuracy": 0.3595967788656509,
+            "top2_accuracy": 0.6295260992989977,
+            "ece": 0.008370100498209066
+          }
+        },
+        "pitcher_count_shrunk": {
+          "pitch": {
+            "n": 69044,
+            "log_loss": 1.2710663628058587,
+            "top1_accuracy": 0.5097329239325648,
+            "top2_accuracy": 0.7487689009906726,
+            "ece": 0.010597990423546278
+          },
+          "zone": {
+            "n": 69001,
+            "log_loss": 2.4025342111322523,
+            "top1_accuracy": 0.1870842451558673,
+            "top2_accuracy": 0.3415892523296764,
+            "ece": 0.005663361844303798
+          },
+          "result": {
+            "n": 69044,
+            "log_loss": 1.445182335866699,
+            "top1_accuracy": 0.3595967788656509,
+            "top2_accuracy": 0.6295260992989977,
+            "ece": 0.008370100498209066
+          }
+        }
+      }
+    },
+    "limitations": [
+      "Final test is a retrospective 2025 regular-season cohort, not a future-performance guarantee.",
+      "Temporal drift and correlated pitches can invalidate exchangeability assumptions; nominal 90% is not guaranteed.",
+      "All-supported metrics include unseen player IDs with frozen unknown-ID features; the public API accepts only the frozen catalog. Catalog-serving metrics are reported separately.",
+      "Hit-by-pitch and other outcomes outside the five-class task are excluded and counted. Missing zones mask only zone and conditional-result evaluation.",
+      "Recorded pitch location is an observed outcome, not the intended target. Conditional-result accuracy on observed actions does not establish causal recommendation benefit.",
+      "Calibration-audit versus final-test changes compare different time cohorts; they do not isolate the cause of drift.",
+      "Frozen model metadata retains test_evaluated=false as historical training provenance; this separate report records the later final evaluation."
+    ]
+  },
+  "concurrent_demo_load": {
+    "concurrent_clients": 4,
+    "requests": 20,
+    "successes": 20,
+    "duration_seconds": 1.284,
+    "http_p95_ms": 318.01,
+    "server_p95_ms": 97.97,
+    "samples": [
+      {
+        "index": 0,
+        "http_ms": 268.26,
+        "server_ms": 4.66,
+        "status": 200
+      },
+      {
+        "index": 1,
+        "http_ms": 290.33,
+        "server_ms": 98.38,
+        "status": 200
+      },
+      {
+        "index": 2,
+        "http_ms": 183.22,
+        "server_ms": 13.19,
+        "status": 200
+      },
+      {
+        "index": 3,
+        "http_ms": 178.8,
+        "server_ms": 14.49,
+        "status": 200
+      },
+      {
+        "index": 4,
+        "http_ms": 274.29,
+        "server_ms": 35.33,
+        "status": 200
+      },
+      {
+        "index": 5,
+        "http_ms": 198.81,
+        "server_ms": 35.35,
+        "status": 200
+      },
+      {
+        "index": 6,
+        "http_ms": 426.86,
+        "server_ms": 52.6,
+        "status": 200
+      },
+      {
+        "index": 7,
+        "http_ms": 188.43,
+        "server_ms": 5.69,
+        "status": 200
+      },
+      {
+        "index": 8,
+        "http_ms": 197.88,
+        "server_ms": 4.84,
+        "status": 200
+      },
+      {
+        "index": 9,
+        "http_ms": 236.77,
+        "server_ms": 67.99,
+        "status": 200
+      },
+      {
+        "index": 10,
+        "http_ms": 295.09,
+        "server_ms": 15.18,
+        "status": 200
+      },
+      {
+        "index": 11,
+        "http_ms": 207.92,
+        "server_ms": 7.4,
+        "status": 200
+      },
+      {
+        "index": 12,
+        "http_ms": 318.01,
+        "server_ms": 6.82,
+        "status": 200
+      },
+      {
+        "index": 13,
+        "http_ms": 283.3,
+        "server_ms": 31.93,
+        "status": 200
+      },
+      {
+        "index": 14,
+        "http_ms": 307.68,
+        "server_ms": 6.06,
+        "status": 200
+      },
+      {
+        "index": 15,
+        "http_ms": 289.62,
+        "server_ms": 97.97,
+        "status": 200
+      },
+      {
+        "index": 16,
+        "http_ms": 199.65,
+        "server_ms": 35.55,
+        "status": 200
+      },
+      {
+        "index": 17,
+        "http_ms": 171.94,
+        "server_ms": 13.07,
+        "status": 200
+      },
+      {
+        "index": 18,
+        "http_ms": 204.3,
+        "server_ms": 5.32,
+        "status": 200
+      },
+      {
+        "index": 19,
+        "http_ms": 196.02,
+        "server_ms": 37.84,
+        "status": 200
+      }
+    ],
+    "measurement": "Small demonstration load only; not a production capacity or abuse test."
+  }
+}

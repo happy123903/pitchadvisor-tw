@@ -2,7 +2,23 @@
 
 以 Rebas 中職歷史逐球資料，建立依投打、情境與本打席歷程即時推論的配球分析工具。React／TypeScript 前端部署於 GitHub Pages，FastAPI 在 Render 執行，Supabase 保存資料與私有模型版本。
 
-**第二週進度（2026-11-10）**：序列 LightGBM／GRU 實際訓練比較、消融、溫度校準、conformal、條件結果推薦與前端歷程編輯已完成。選定 `week2-sequence-v1`／`lightgbm_history`；GitHub Pages、Render、Supabase 三平台已發布並實查通過，本機 63 項測試、前端 5 項測試與桌面／手機瀏覽器驗收通過。詳細證據以 [第二週交付紀錄](docs/week2/COMPLETION.md) 為準。正式網站：[球路參謀](https://happy123903.github.io/pitchadvisor-tw/)。
+**第三週進度（2026-11-11）**：2025凍結模型最終測試、有限等待／重試、固定案例與本機完整推論、冷啟動及小型並發、九頁成果簡報與Demo腳本已完成；核心功能已發布至三平台並實查通過。Python75項、前端10項測試通過，4分40秒繁中字幕操作影片與最終交付封存亦已完成。完整證據見 [第三週交付紀錄](docs/week3/COMPLETION.md)。正式網站：[球路參謀](https://happy123903.github.io/pitchadvisor-tw/)。
+
+## 第三週交付與展示
+
+- [2025最終測試](docs/week3/FINAL_RESULTS.md)：99,729球，全部樣本球種log loss **1.400057**，比投手頻率基準1.368926差2.27%；API名單內69,044球則為1.225868，比基準1.271066改善3.56%。全部樣本球種集合覆蓋 **83.74%**，未知投手僅68.86%；名目90%不是保證。
+- [離線指南](docs/week3/OFFLINE_GUIDE.md)及 `deliverables/PitchAdvisor_Offline.zip`：同版模型可即時重算任意合法情境，網頁與API都在127.0.0.1:8765；新電腦仍須事先安裝Python3.12及runtime，包內不含環境與憑證。
+- 固定案例可由網站頂端切換，僅選三組已計算輸入輸出，所有情境編輯唯讀；即使後端不可用也可使用，不冒充自由輸入的即時推論。
+- `deliverables/球路參謀_成果簡報_v5.pptx`、同名PDF與 [五分鐘Demo腳本](docs/week3/DEMO_SCRIPT.md)；原v4簡報保留。[示範影片](deliverables/球路參謀_示範影片_v1.mp4)長4分40秒，字幕已燒錄，無旁白；另附同名SRT與[影片說明](docs/week3/VIDEO_GUIDE.md)。
+- [恢復手冊](docs/week3/RUNBOOK.md)：一次隔夜冷啟動51.514秒後恢復。網頁20秒顯示喚醒提示、65秒有限等待，失敗可重試或直接進入固定案例。
+
+已完成準備時，完整本機模式可直接啟動：
+
+```powershell
+rtk proxy powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/Start-Offline.ps1
+```
+
+結束時使用 `scripts/Stop-Offline.ps1`，只停止本次擁有的程序。重新產生離線包用 `scripts/build_offline_bundle.py`，需在斷網前備好依賴。
 
 ## 快速開啟本機網站
 
@@ -71,7 +87,7 @@ rtk proxy .venv\Scripts\python.exe scripts/build_week2.py --threads 4 --epochs 1
 - [第二週比較、消融與校準](docs/week2/RESULTS.md)、[事前驗收規則](docs/week2/EXECUTION_PLAN.md)。
 - [三週完整計畫](野革盃黑客松_專案計畫書_v3.md)。
 
-本週訓練截止 2024-08-14，驗證自 2024-08-16 起，校準自 2024-09-12 起；2025 年作為測試資料保留，未計算測試成績來挑模型。球員名單只由訓練期資料建立，未見過的 ID 不自動按姓名合併。
+訓練截止 2024-08-14，驗證自 2024-08-16 起，校準自 2024-09-12 起；2025已在模型凍結後作最終評估，未用來重選模型或校準。球員名單只由訓練期資料建立，未見過的 ID 不自動按姓名合併。
 
 ## 驗證
 
@@ -79,7 +95,7 @@ rtk proxy .venv\Scripts\python.exe scripts/build_week2.py --threads 4 --epochs 1
 rtk proxy .venv\Scripts\python.exe -m pytest -q
 rtk proxy npm.cmd --prefix web test
 rtk proxy npm.cmd --prefix web run build
-rtk proxy .venv\Scripts\python.exe scripts/verify_week2.py --output docs/week2/local_verification.json
+rtk proxy .venv\Scripts\python.exe scripts/verify_week2.py --output .cache/local-recheck.json
 rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2
 ```
 
@@ -94,7 +110,7 @@ rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifac
 ```powershell
 rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2
 rtk proxy .venv\Scripts\python.exe scripts/supabase_sync.py --bundle-dir artifacts/week2 --apply
-rtk proxy .venv\Scripts\python.exe scripts/verify_supabase_model.py
+rtk proxy .venv\Scripts\python.exe scripts/verify_supabase_model.py --output .cache/supabase-recheck.json
 ```
 
 匯入包含球員、投手可用球種、聚合統計、私有模型包與版本登錄。採主鍵 upsert，可重跑；只有表與模型包成功上傳後才登錄可服務版本。不要對其他專案或不相容資料表執行此遷移。
@@ -121,6 +137,6 @@ Render 的執行檔案系統不作持久儲存；模型仍需保留在儲存庫�
 
 ## 限制與授權
 
-人工座標可能有誤差；資料是實際落點，不是意圖落點。壘包移動若無法由事件唯一還原則標為未知；不完整半局不當作完整期望失分標籤。候選依「候選球種／分區的條件結果機率 × 訓練期 ΔRE」排序，屬觀測資料分析，不宣稱因果或實戰保證。結果五分類排除觸身球等特殊事件；13 區預測集合平均仍達 10.27 區，不能宣稱精準控球。2025 保留到第三週最終測試，未拿來選模。
+人工座標可能有誤差；資料是實際落點，不是意圖落點。壘包移動若無法由事件唯一還原則標為未知；不完整半局不當作完整期望失分標籤。候選依「候選球種／分區的條件結果機率 × 訓練期 ΔRE」排序，屬觀測資料分析，不宣稱因果或實戰保證。結果五分類排除觸身球等特殊事件；2025全部樣本13 區預測集合平均仍達 10.30 區，不能宣稱精準控球。2025最終成績已公開，未拿來選模；後續模型改動須另設新的前瞻評估。
 
 資料來源：Rebas 野球革命 Open Data（ODC-By）。[官方授權](https://github.com/rebas-tw/rebas.tw-open-data/blob/main/LICENSE)與本機副本 `docs/sources/REBas-LICENSE`。第三方資料、程式套件與模型依各自授權使用；本文件沒有替原創專案程式碼另行指定開源授權。

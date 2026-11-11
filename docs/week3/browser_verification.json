@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-11",
+  "timezone": "Asia/Taipei",
+  "browser": "Chrome headed via isolated Playwright CLI 0.1.24",
+  "development_url": "http://127.0.0.1:5173/",
+  "local_api": "http://127.0.0.1:8000/",
+  "offline_compiled_url": "http://127.0.0.1:8765/",
+  "model_version": "week2-sequence-v1",
+  "bundle_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+  "checks": {
+    "real_two_pitch_sequence": true,
+    "simulated_503_clears_old_result": true,
+    "retry_recovers_real_inference": true,
+    "actual_20s_warmup_notice": true,
+    "actual_65s_timeout": true,
+    "delayed_real_response_cannot_replace_latest": true,
+    "fixed_after_startup_api_failure": true,
+    "fixed_additional_api_calls": 0,
+    "fixed_inputs_readonly": true,
+    "full_and_catalog_final_test_tables": true,
+    "full_test_baseline_shortfall_disclosed": true,
+    "mobile_no_page_overflow": true,
+    "offline_compiled_reload_external_http_blocked": true,
+    "offline_external_negative_probe_blocked": 1,
+    "offline_arbitrary_request_received_by_real_local_api": true,
+    "offline_arbitrary_prediction_changed": true,
+    "physical_network_disabled": false
+  },
+  "node_tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "production_build": "passed",
+  "cleanup": {
+    "isolated_browser_closed": true,
+    "owned_api_8000_stopped": true,
+    "owned_vite_5173_stopped": true,
+    "screenshot_browser_closed": true,
+    "temporary_static_8770_stopped": true
+  },
+  "limitations": [
+    "Local browser checks do not establish production cloud health.",
+    "503 and API-unavailable cases were controlled interceptions.",
+    "Mobile checks used a viewport, not a physical phone.",
+    "Offline external HTTP was blocked in browser routes; loopback remained enabled and the physical network was not disabled."
+  ]
+}
