@@ -1,0 +1,25 @@
+.mode-panel { margin: 26px 0 0; padding: 18px 22px; border: 1px solid #d5dfc6; background: #f6f9f0; border-radius: 8px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.mode-panel > div:first-child { flex: 1; min-width: 220px; }
+.mode-panel b { font-size: 13px; color: #31543c; }
+.mode-panel p { color: #728462; font-size: 11px; line-height: 1.8; margin: 6px 0 0; }
+.mode-buttons { display: flex; gap: 7px; flex-wrap: wrap; }
+.mode-buttons button { border: 1px solid #cbd8bb; background: white; color: #617a4b; border-radius: 4px; padding: 9px 13px; font-size: 12px; }
+.mode-buttons button[aria-pressed="true"] { background: #315d43; border-color: #315d43; color: white; }
+.fixed-case-picker { width: 100%; border-top: 1px solid #dce5d0; padding-top: 15px; }
+.fixed-case-picker > strong { color: #8a602e; font-size: 14px; display: block; margin-bottom: 12px; }
+.fixed-case-picker label { display: block; font-size: 11px; margin-bottom: 7px; color: #667c52; }
+.fixed-case-picker select { width: 100%; max-width: 560px; padding: 10px; border: 1px solid #ccd8bc; background: white; border-radius: 4px; color: #38533c; }
+.fixed-case-picker small { display: block; font-size: 10px; line-height: 1.9; color: #7c8b6e; margin-top: 8px; }
+.fixed-case-picker code, .final-evaluation code { overflow-wrap: anywhere; }
+.warming-message { border-left: 3px solid #bd985d; background: #fff7e8; color: #8c6b3a; padding: 12px 16px; font-size: 12px; line-height: 1.8; }
+.control-fields { border: 0; margin: 0; padding: 0; min-width: 0; }
+.control-fields:disabled input, .control-fields:disabled select { background: #f1f4ec; color: #718267; cursor: not-allowed; }
+.control-fields > .subtle { line-height: 1.9; margin-bottom: 15px; }
+.final-table { min-width: 670px; }
+.final-evaluation details { color: #7a8b68; font-size: 11px; line-height: 1.9; margin-top: 12px; }
+@media (max-width: 760px) {
+  .mode-panel { padding: 16px; gap: 13px; }
+  .mode-panel > div:first-child { min-width: 0; width: 100%; flex-basis: 100%; }
+  .mode-buttons { width: 100%; }
+  .mode-buttons button { flex: 1; }
+}

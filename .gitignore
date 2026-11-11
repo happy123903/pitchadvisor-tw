@@ -4,6 +4,7 @@
 __pycache__/
 .pytest_cache/
 .playwright-cli/
+output/playwright/
 *.pyc
 .env
 .env.*

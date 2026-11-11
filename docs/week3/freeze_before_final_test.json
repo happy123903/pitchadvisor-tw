@@ -1,0 +1,10 @@
+{
+  "model_version": "week2-sequence-v1",
+  "sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+  "data_cutoff": "2024-08-14",
+  "data_version": "rebas-2023-2025-regular-v1",
+  "calibration_sha256": "b6b3bc0555dc956e1f6438a9f1f95a4dfbfd739cd5c5498148ebd868565c531b",
+  "encoder_sha256": "32ce3a06ea6185e741b9f1cd55709fbdd29161277f5b7aac89ef79ece3acb00c",
+  "baseline_sha256": "741d6d0c98c6481788b5aac375ca570839858a28a96cfcdaf20be8c38d6bbb6a",
+  "frozen_before_test_read": "2026-11-11T02:38:21.182208+00:00"
+}

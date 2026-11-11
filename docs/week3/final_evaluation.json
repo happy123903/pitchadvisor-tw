@@ -1,0 +1,4042 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-11T02:38:45.553232+00:00",
+  "test_evaluated": true,
+  "frozen_bundle": {
+    "model_version": "week2-sequence-v1",
+    "sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+    "data_cutoff": "2024-08-14",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "calibration_sha256": "b6b3bc0555dc956e1f6438a9f1f95a4dfbfd739cd5c5498148ebd868565c531b",
+    "encoder_sha256": "32ce3a06ea6185e741b9f1cd55709fbdd29161277f5b7aac89ef79ece3acb00c",
+    "baseline_sha256": "741d6d0c98c6481788b5aac375ca570839858a28a96cfcdaf20be8c38d6bbb6a",
+    "frozen_before_test_read": "2026-11-11T02:38:21.182208+00:00"
+  },
+  "period": {
+    "start": "2025-03-29",
+    "end": "2025-10-06",
+    "year": 2025
+  },
+  "protocol": {
+    "model_selected_using": "2024 validation only; no 2025-based reselection",
+    "training_or_calibration_performed": false,
+    "calibration": "fixed temperatures and thresholds from the frozen bundle",
+    "feature_history": "shared build_batch; full game chunks; same PA/side/previous pitches; no augmentation",
+    "labels": {
+      "pitch": [
+        "CH",
+        "CU",
+        "FC",
+        "FF",
+        "FO",
+        "FS",
+        "KN",
+        "SI",
+        "SL"
+      ],
+      "zone": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "result": [
+        "ball",
+        "called_strike",
+        "swinging_strike",
+        "foul",
+        "in_play"
+      ]
+    },
+    "common_row_mask": "valid state and identity; known pitch type; one of five supported outcomes",
+    "zone_and_conditional_mask": "common rows with a recorded zone",
+    "result_baseline_projection": "frozen seven-class count tables conditioned on the same five result labels",
+    "baseline_zone": "as in week two: both frequency baselines mix frozen pitcher/type zone estimates using their respective pitch probabilities",
+    "baseline_conditional_result": "frozen count/pitch/zone result_action table, alpha30 and frozen count-result prior; same for both baselines",
+    "ece": "15 equal-width confidence bins, top-label absolute calibration error",
+    "conformal": "1-p <= frozen threshold; no threshold fitting or correction on final test"
+  },
+  "cohort": {
+    "raw_rows": 102488,
+    "usable_rows": 99729,
+    "excluded_rows": 2759,
+    "catalog_serving_rows": 69044,
+    "outside_catalog_rows": 30685,
+    "games": 360,
+    "usable_games": 360,
+    "missing_zone_targets": 68,
+    "history_empty": 26739,
+    "history_available": 72990,
+    "exclusions": {
+      "priority_disjoint": {
+        "invalid_state": 2702,
+        "invalid_identity": 0,
+        "unsupported_pitch_type": 39,
+        "unsupported_result": 18
+      },
+      "overlapping_flags": {
+        "invalid_state": 2702,
+        "invalid_identity": 0,
+        "unsupported_pitch_type": 44,
+        "unsupported_result": 337
+      },
+      "unsupported_result_values": {
+        "hit_by_pitch": 337
+      },
+      "unsupported_pitch_values": {
+        "<missing>": 44
+      }
+    }
+  },
+  "all_supported_rows": {
+    "selected_calibrated": {
+      "pitch": {
+        "n": 99729,
+        "log_loss": 1.400057024100469,
+        "top1_accuracy": 0.5028928395953033,
+        "top2_accuracy": 0.7417601700608649,
+        "ece": 0.05106983016711891,
+        "coverage": 0.8373792978973017,
+        "mean_set_size": 2.593388081701411
+      },
+      "zone": {
+        "n": 99661,
+        "log_loss": 2.377183741204384,
+        "top1_accuracy": 0.21017248472321168,
+        "top2_accuracy": 0.36832863406949556,
+        "ece": 0.009792715346262025,
+        "coverage": 0.8985460711813046,
+        "mean_set_size": 10.295792737379717
+      },
+      "result": {
+        "n": 99729,
+        "log_loss": 1.4386291020563406,
+        "top1_accuracy": 0.36481865856471035,
+        "top2_accuracy": 0.6281623198868935,
+        "ece": 0.014237610557814723,
+        "coverage": 0.8932005735543322,
+        "mean_set_size": 3.520540665202699
+      },
+      "conditional_result": {
+        "n": 99661,
+        "log_loss": 1.1549552837506618,
+        "top1_accuracy": 0.5511684610830716,
+        "top2_accuracy": 0.7688363552442781,
+        "ece": 0.005038034388004259,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "selected_raw": {
+      "pitch": {
+        "n": 99729,
+        "log_loss": 1.407020837860733,
+        "top1_accuracy": 0.5028928395953033,
+        "top2_accuracy": 0.7417601700608649,
+        "ece": 0.05757474126313975,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 99661,
+        "log_loss": 2.3772208208643133,
+        "top1_accuracy": 0.21017248472321168,
+        "top2_accuracy": 0.36832863406949556,
+        "ece": 0.00999385112902482,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 99729,
+        "log_loss": 1.4388854850879584,
+        "top1_accuracy": 0.36481865856471035,
+        "top2_accuracy": 0.6281623198868935,
+        "ece": 0.0185268091604463,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 99661,
+        "log_loss": 1.1549402870412302,
+        "top1_accuracy": 0.5511684610830716,
+        "top2_accuracy": 0.7688363552442781,
+        "ece": 0.005079811620353823,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "league_count": {
+      "pitch": {
+        "n": 99729,
+        "log_loss": 1.6007515792770985,
+        "top1_accuracy": 0.46431830260004614,
+        "top2_accuracy": 0.6228078091628313,
+        "ece": 0.0049468298178545825,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 99661,
+        "log_loss": 2.4105509891190007,
+        "top1_accuracy": 0.17878608482756544,
+        "top2_accuracy": 0.32715906924473964,
+        "ece": 0.0036692098300809897,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 99729,
+        "log_loss": 1.4448513835448065,
+        "top1_accuracy": 0.36176037060433774,
+        "top2_accuracy": 0.6289544666044982,
+        "ece": 0.005988329582659417,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 99661,
+        "log_loss": 1.1847863891624046,
+        "top1_accuracy": 0.5470745828358134,
+        "top2_accuracy": 0.7637691775117649,
+        "ece": 0.03504305650525413,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "pitcher_count_shrunk": {
+      "pitch": {
+        "n": 99729,
+        "log_loss": 1.3689262886337115,
+        "top1_accuracy": 0.49265509530828544,
+        "top2_accuracy": 0.7070160133963039,
+        "ece": 0.009700038223570186,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 99661,
+        "log_loss": 2.4081953422187894,
+        "top1_accuracy": 0.17948846589939896,
+        "top2_accuracy": 0.32927624647555215,
+        "ece": 0.007071297771850646,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 99729,
+        "log_loss": 1.4448513835448065,
+        "top1_accuracy": 0.36176037060433774,
+        "top2_accuracy": 0.6289544666044982,
+        "ece": 0.005988329582659417,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 99661,
+        "log_loss": 1.1847863891624046,
+        "top1_accuracy": 0.5470745828358134,
+        "top2_accuracy": 0.7637691775117649,
+        "ece": 0.03504305650525413,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    }
+  },
+  "catalog_serving_rows": {
+    "selected_calibrated": {
+      "pitch": {
+        "n": 69044,
+        "log_loss": 1.2258679169941982,
+        "top1_accuracy": 0.5226811888071374,
+        "top2_accuracy": 0.7849342448293841,
+        "ece": 0.017445332696210805,
+        "coverage": 0.8930537048838422,
+        "mean_set_size": 2.6716731359712647
+      },
+      "zone": {
+        "n": 69001,
+        "log_loss": 2.368153519497898,
+        "top1_accuracy": 0.21727221344618194,
+        "top2_accuracy": 0.37458877407573804,
+        "ece": 0.0061998138409455955,
+        "coverage": 0.8996246431211142,
+        "mean_set_size": 10.263372994594281
+      },
+      "result": {
+        "n": 69044,
+        "log_loss": 1.4392947471378907,
+        "top1_accuracy": 0.36391286715717514,
+        "top2_accuracy": 0.6284688025027518,
+        "ece": 0.01418646823393186,
+        "coverage": 0.8951538149585772,
+        "mean_set_size": 3.532356178668675
+      },
+      "conditional_result": {
+        "n": 69001,
+        "log_loss": 1.1577021448508564,
+        "top1_accuracy": 0.5492239242909523,
+        "top2_accuracy": 0.7684961087520471,
+        "ece": 0.006771022353349781,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "selected_raw": {
+      "pitch": {
+        "n": 69044,
+        "log_loss": 1.2285753945142017,
+        "top1_accuracy": 0.5226811888071374,
+        "top2_accuracy": 0.7849342448293841,
+        "ece": 0.021628253445701802,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 69001,
+        "log_loss": 2.3681837119244076,
+        "top1_accuracy": 0.21727221344618194,
+        "top2_accuracy": 0.37458877407573804,
+        "ece": 0.006394992436361129,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 69044,
+        "log_loss": 1.439540112582646,
+        "top1_accuracy": 0.36391286715717514,
+        "top2_accuracy": 0.6284688025027518,
+        "ece": 0.018418184635194488,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 69001,
+        "log_loss": 1.157687174918095,
+        "top1_accuracy": 0.5492239242909523,
+        "top2_accuracy": 0.7684961087520471,
+        "ece": 0.006771988799787893,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "league_count": {
+      "pitch": {
+        "n": 69044,
+        "log_loss": 1.5888799755885208,
+        "top1_accuracy": 0.4709605468976305,
+        "top2_accuracy": 0.6339001216615492,
+        "ece": 0.003492612623686086,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 69001,
+        "log_loss": 2.4056762384994093,
+        "top1_accuracy": 0.18608425964841088,
+        "top2_accuracy": 0.3384008927406849,
+        "ece": 0.0024979047719152314,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 69044,
+        "log_loss": 1.445182335866699,
+        "top1_accuracy": 0.3595967788656509,
+        "top2_accuracy": 0.6295260992989977,
+        "ece": 0.008370100498209066,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 69001,
+        "log_loss": 1.1873986853055756,
+        "top1_accuracy": 0.5441950116664976,
+        "top2_accuracy": 0.7629019869277257,
+        "ece": 0.031449178950010946,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "pitcher_count_shrunk": {
+      "pitch": {
+        "n": 69044,
+        "log_loss": 1.2710663628058587,
+        "top1_accuracy": 0.5097329239325648,
+        "top2_accuracy": 0.7487689009906726,
+        "ece": 0.010597990423546278,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 69001,
+        "log_loss": 2.4025342111322523,
+        "top1_accuracy": 0.1870842451558673,
+        "top2_accuracy": 0.3415892523296764,
+        "ece": 0.005663361844303798,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 69044,
+        "log_loss": 1.445182335866699,
+        "top1_accuracy": 0.3595967788656509,
+        "top2_accuracy": 0.6295260992989977,
+        "ece": 0.008370100498209066,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 69001,
+        "log_loss": 1.1873986853055756,
+        "top1_accuracy": 0.5441950116664976,
+        "top2_accuracy": 0.7629019869277257,
+        "ece": 0.031449178950010946,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    }
+  },
+  "outside_catalog_rows": {
+    "selected_calibrated": {
+      "pitch": {
+        "n": 30685,
+        "log_loss": 1.791998125975828,
+        "top1_accuracy": 0.4583672804301776,
+        "top2_accuracy": 0.6446146325566238,
+        "ece": 0.1326278304595288,
+        "coverage": 0.7121068926185432,
+        "mean_set_size": 2.417239693661398
+      },
+      "zone": {
+        "n": 30660,
+        "log_loss": 2.3975064524884435,
+        "top1_accuracy": 0.19419439008480105,
+        "top2_accuracy": 0.35424005218525767,
+        "ece": 0.020037549838851417,
+        "coverage": 0.8961187214611872,
+        "mean_set_size": 10.368754076973255
+      },
+      "result": {
+        "n": 30685,
+        "log_loss": 1.4371313409675175,
+        "top1_accuracy": 0.3668567704089946,
+        "top2_accuracy": 0.6274727065341372,
+        "ece": 0.015257253299828594,
+        "coverage": 0.8888056053446309,
+        "mean_set_size": 3.493954700993971
+      },
+      "conditional_result": {
+        "n": 30660,
+        "log_loss": 1.1487734128186804,
+        "top1_accuracy": 0.5555446836268754,
+        "top2_accuracy": 0.7696020874103066,
+        "ece": 0.00699791660348886,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "selected_raw": {
+      "pitch": {
+        "n": 30685,
+        "log_loss": 1.8085390777309598,
+        "top1_accuracy": 0.4583672804301776,
+        "top2_accuracy": 0.6446146325566238,
+        "ece": 0.14043692166372537,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 30660,
+        "log_loss": 2.3975590320176883,
+        "top1_accuracy": 0.19419439008480105,
+        "top2_accuracy": 0.35424005218525767,
+        "ece": 0.02006888857416086,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 30685,
+        "log_loss": 1.4374125145569758,
+        "top1_accuracy": 0.3668567704089946,
+        "top2_accuracy": 0.6274727065341372,
+        "ece": 0.019118435727836672,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 30660,
+        "log_loss": 1.148758355847768,
+        "top1_accuracy": 0.5555446836268754,
+        "top2_accuracy": 0.7696020874103066,
+        "ece": 0.0068536567574428164,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "league_count": {
+      "pitch": {
+        "n": 30685,
+        "log_loss": 1.6274637515135062,
+        "top1_accuracy": 0.44937265765031775,
+        "top2_accuracy": 0.5978491119439465,
+        "ece": 0.017741092398549166,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 30660,
+        "log_loss": 2.421521721914252,
+        "top1_accuracy": 0.1623613829093281,
+        "top2_accuracy": 0.3018590998043053,
+        "ece": 0.011688356148152045,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 30685,
+        "log_loss": 1.4441067111604895,
+        "top1_accuracy": 0.3666286459182011,
+        "top2_accuracy": 0.6276682418119602,
+        "ece": 0.005496045791918852,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 30660,
+        "log_loss": 1.178907359606796,
+        "top1_accuracy": 0.5535551206784084,
+        "top2_accuracy": 0.7657208088714939,
+        "ece": 0.043317964656246974,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    },
+    "pitcher_count_shrunk": {
+      "pitch": {
+        "n": 30685,
+        "log_loss": 1.5891198919857816,
+        "top1_accuracy": 0.45422845038292325,
+        "top2_accuracy": 0.6130682744011732,
+        "ece": 0.019948706344320947,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "zone": {
+        "n": 30660,
+        "log_loss": 2.4209358414393423,
+        "top1_accuracy": 0.16239399869536855,
+        "top2_accuracy": 0.3015655577299413,
+        "ece": 0.011434892863689575,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "result": {
+        "n": 30685,
+        "log_loss": 1.4441067111604895,
+        "top1_accuracy": 0.3666286459182011,
+        "top2_accuracy": 0.6276682418119602,
+        "ece": 0.005496045791918852,
+        "coverage": null,
+        "mean_set_size": null
+      },
+      "conditional_result": {
+        "n": 30660,
+        "log_loss": 1.178907359606796,
+        "top1_accuracy": 0.5535551206784084,
+        "top2_accuracy": 0.7657208088714939,
+        "ece": 0.043317964656246974,
+        "coverage": null,
+        "mean_set_size": null
+      }
+    }
+  },
+  "training_count_groups": {
+    "pitcher_unseen": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 26931,
+          "log_loss": 1.8722891435540105,
+          "top1_accuracy": 0.4475140173034793,
+          "top2_accuracy": 0.62478184991274,
+          "ece": 0.14675496765553656,
+          "coverage": 0.6886487690765289,
+          "mean_set_size": 2.3956778433775203
+        },
+        "zone": {
+          "n": 26910,
+          "log_loss": 2.3994266099453543,
+          "top1_accuracy": 0.19312523225566705,
+          "top2_accuracy": 0.35388331475288,
+          "ece": 0.020857293192824658,
+          "coverage": 0.8949832775919733,
+          "mean_set_size": 10.34150873281308
+        },
+        "result": {
+          "n": 26931,
+          "log_loss": 1.433023030158347,
+          "top1_accuracy": 0.36879432624113473,
+          "top2_accuracy": 0.6291262856930675,
+          "ece": 0.014791306490987723,
+          "coverage": 0.8891983216367755,
+          "mean_set_size": 3.473283576547473
+        },
+        "conditional_result": {
+          "n": 26910,
+          "log_loss": 1.1457310666561638,
+          "top1_accuracy": 0.5568190263842437,
+          "top2_accuracy": 0.7695280564845782,
+          "ece": 0.008218926115467507,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 26931,
+          "log_loss": 1.8906293115852015,
+          "top1_accuracy": 0.4475140173034793,
+          "top2_accuracy": 0.62478184991274,
+          "ece": 0.15482320557916748,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 26910,
+          "log_loss": 2.3994816026211017,
+          "top1_accuracy": 0.19312523225566705,
+          "top2_accuracy": 0.35388331475288,
+          "ece": 0.02091953104772648,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 26931,
+          "log_loss": 1.4332778588657464,
+          "top1_accuracy": 0.36879432624113473,
+          "top2_accuracy": 0.6291262856930675,
+          "ece": 0.019057053696372943,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 26910,
+          "log_loss": 1.1457160602215968,
+          "top1_accuracy": 0.5568190263842437,
+          "top2_accuracy": 0.7695280564845782,
+          "ece": 0.008180161921734746,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 26931,
+          "log_loss": 1.6341998591320535,
+          "top1_accuracy": 0.44651145520032676,
+          "top2_accuracy": 0.5926998626118599,
+          "ece": 0.020701321251851305,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 26910,
+          "log_loss": 2.4245574592577905,
+          "top1_accuracy": 0.15782237086584913,
+          "top2_accuracy": 0.296098104793757,
+          "ece": 0.01198286219616626,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 26931,
+          "log_loss": 1.440108502535925,
+          "top1_accuracy": 0.3676432364189967,
+          "top2_accuracy": 0.6296090007797706,
+          "ece": 0.004779443054671023,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 26910,
+          "log_loss": 1.176803153739838,
+          "top1_accuracy": 0.5550724637681159,
+          "top2_accuracy": 0.7661835748792271,
+          "ece": 0.04505099767767623,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 26931,
+          "log_loss": 1.6341998591320535,
+          "top1_accuracy": 0.44651145520032676,
+          "top2_accuracy": 0.5926998626118599,
+          "ece": 0.020701321251851305,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 26910,
+          "log_loss": 2.4245574592577905,
+          "top1_accuracy": 0.15782237086584913,
+          "top2_accuracy": 0.296098104793757,
+          "ece": 0.01198286219616626,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 26931,
+          "log_loss": 1.440108502535925,
+          "top1_accuracy": 0.3676432364189967,
+          "top2_accuracy": 0.6296090007797706,
+          "ece": 0.004779443054671023,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 26910,
+          "log_loss": 1.176803153739838,
+          "top1_accuracy": 0.5550724637681159,
+          "top2_accuracy": 0.7661835748792271,
+          "ece": 0.04505099767767623,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "pitcher_1_99": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 5087,
+          "log_loss": 1.7762131353956923,
+          "top1_accuracy": 0.47120110084529193,
+          "top2_accuracy": 0.6756437979162572,
+          "ece": 0.045140961813790785,
+          "coverage": 0.7802241006487124,
+          "mean_set_size": 2.8333005700805978
+        },
+        "zone": {
+          "n": 5082,
+          "log_loss": 2.411151052001979,
+          "top1_accuracy": 0.1863439590712318,
+          "top2_accuracy": 0.3467138921684376,
+          "ece": 0.018525210258670807,
+          "coverage": 0.8720975993703266,
+          "mean_set_size": 10.061589925226288
+        },
+        "result": {
+          "n": 5087,
+          "log_loss": 1.4561396660402266,
+          "top1_accuracy": 0.36209946923530567,
+          "top2_accuracy": 0.6172596815411834,
+          "ece": 0.03024641744146559,
+          "coverage": 0.8757617456261058,
+          "mean_set_size": 3.4472183998427366
+        },
+        "conditional_result": {
+          "n": 5082,
+          "log_loss": 1.1738139933745282,
+          "top1_accuracy": 0.5454545454545454,
+          "top2_accuracy": 0.7628886265249901,
+          "ece": 0.0181280647392397,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 5087,
+          "log_loss": 1.7901132861561984,
+          "top1_accuracy": 0.47120110084529193,
+          "top2_accuracy": 0.6756437979162572,
+          "ece": 0.05157111716617057,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 5082,
+          "log_loss": 2.411220117086259,
+          "top1_accuracy": 0.1863439590712318,
+          "top2_accuracy": 0.3467138921684376,
+          "ece": 0.01862554199906261,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 5087,
+          "log_loss": 1.4570807483243275,
+          "top1_accuracy": 0.36209946923530567,
+          "top2_accuracy": 0.6172596815411834,
+          "ece": 0.0356200173741793,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 5082,
+          "log_loss": 1.1738436780524328,
+          "top1_accuracy": 0.5454545454545454,
+          "top2_accuracy": 0.7628886265249901,
+          "ece": 0.018923418458926734,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 5087,
+          "log_loss": 1.6879546602666111,
+          "top1_accuracy": 0.4741497935915078,
+          "top2_accuracy": 0.530764694318852,
+          "ece": 0.00793503169813102,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 5082,
+          "log_loss": 2.4322124212531646,
+          "top1_accuracy": 0.16961826052735143,
+          "top2_accuracy": 0.316607634789453,
+          "ece": 0.00967880325133212,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 5087,
+          "log_loss": 1.4550733862927179,
+          "top1_accuracy": 0.3593473560055042,
+          "top2_accuracy": 0.6253194417141734,
+          "ece": 0.01018390510313385,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 5082,
+          "log_loss": 1.1949466356356522,
+          "top1_accuracy": 0.5470287288469107,
+          "top2_accuracy": 0.7565918929555293,
+          "ece": 0.036678504647352374,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 5087,
+          "log_loss": 1.619455682393608,
+          "top1_accuracy": 0.4829958718301553,
+          "top2_accuracy": 0.598388047965402,
+          "ece": 0.03260070461361601,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 5082,
+          "log_loss": 2.431323926833527,
+          "top1_accuracy": 0.16942148760330578,
+          "top2_accuracy": 0.32959464777646597,
+          "ece": 0.01297015257753734,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 5087,
+          "log_loss": 1.4550733862927179,
+          "top1_accuracy": 0.3593473560055042,
+          "top2_accuracy": 0.6253194417141734,
+          "ece": 0.01018390510313385,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 5082,
+          "log_loss": 1.1949466356356522,
+          "top1_accuracy": 0.5470287288469107,
+          "top2_accuracy": 0.7565918929555293,
+          "ece": 0.036678504647352374,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "pitcher_100_499": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 12388,
+          "log_loss": 1.3157505328779908,
+          "top1_accuracy": 0.5292218275750726,
+          "top2_accuracy": 0.7963351630610268,
+          "ece": 0.06013783378527169,
+          "coverage": 0.8591378753632548,
+          "mean_set_size": 2.445834678721343
+        },
+        "zone": {
+          "n": 12384,
+          "log_loss": 2.383491316715047,
+          "top1_accuracy": 0.20268087855297157,
+          "top2_accuracy": 0.36886304909560724,
+          "ece": 0.02125667997164223,
+          "coverage": 0.8884043927648578,
+          "mean_set_size": 10.194282945736434
+        },
+        "result": {
+          "n": 12388,
+          "log_loss": 1.4384908835429344,
+          "top1_accuracy": 0.373022279625444,
+          "top2_accuracy": 0.6344849854698095,
+          "ece": 0.01847705699703098,
+          "coverage": 0.8850500484339684,
+          "mean_set_size": 3.46319018404908
+        },
+        "conditional_result": {
+          "n": 12384,
+          "log_loss": 1.157728244861426,
+          "top1_accuracy": 0.5598352713178295,
+          "top2_accuracy": 0.7646156330749354,
+          "ece": 0.014289636511442256,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 12388,
+          "log_loss": 1.322796691702528,
+          "top1_accuracy": 0.5292218275750726,
+          "top2_accuracy": 0.7963351630610268,
+          "ece": 0.06577064247713271,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 12384,
+          "log_loss": 2.3835360806656287,
+          "top1_accuracy": 0.20268087855297157,
+          "top2_accuracy": 0.36886304909560724,
+          "ece": 0.021954340453835656,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 12388,
+          "log_loss": 1.4389334772517735,
+          "top1_accuracy": 0.373022279625444,
+          "top2_accuracy": 0.6344849854698095,
+          "ece": 0.02295570401913566,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 12384,
+          "log_loss": 1.1577417254210958,
+          "top1_accuracy": 0.5598352713178295,
+          "top2_accuracy": 0.7646156330749354,
+          "ece": 0.01433840966573504,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 12388,
+          "log_loss": 1.504127005666102,
+          "top1_accuracy": 0.5070229254116887,
+          "top2_accuracy": 0.6898611559573781,
+          "ece": 0.035876274014439616,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 12384,
+          "log_loss": 2.3962954319430843,
+          "top1_accuracy": 0.18814599483204134,
+          "top2_accuracy": 0.33874354005167956,
+          "ece": 0.010202645427960153,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 12388,
+          "log_loss": 1.4365225419468195,
+          "top1_accuracy": 0.37391023571197934,
+          "top2_accuracy": 0.6401356151113982,
+          "ece": 0.007517747153399623,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 12384,
+          "log_loss": 1.1779109448434544,
+          "top1_accuracy": 0.5541828165374677,
+          "top2_accuracy": 0.7642118863049095,
+          "ece": 0.037382553046570365,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 12388,
+          "log_loss": 1.3172092527732973,
+          "top1_accuracy": 0.5107361963190185,
+          "top2_accuracy": 0.7614627058443655,
+          "ece": 0.03330471461090384,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 12384,
+          "log_loss": 2.3985883352665684,
+          "top1_accuracy": 0.1854812661498708,
+          "top2_accuracy": 0.3393087855297158,
+          "ece": 0.012974641157852126,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 12388,
+          "log_loss": 1.4365225419468195,
+          "top1_accuracy": 0.37391023571197934,
+          "top2_accuracy": 0.6401356151113982,
+          "ece": 0.007517747153399623,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 12384,
+          "log_loss": 1.1779109448434544,
+          "top1_accuracy": 0.5541828165374677,
+          "top2_accuracy": 0.7642118863049095,
+          "ece": 0.037382553046570365,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "pitcher_500_plus": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 55323,
+          "log_loss": 1.1544665728614174,
+          "top1_accuracy": 0.5268694756249661,
+          "top2_accuracy": 0.7925636715290205,
+          "ece": 0.009296269747342671,
+          "coverage": 0.9101639462791244,
+          "mean_set_size": 2.700612765034434
+        },
+        "zone": {
+          "n": 55285,
+          "log_loss": 2.3618216993048287,
+          "top1_accuracy": 0.22233878990684633,
+          "top2_accuracy": 0.37722709595731213,
+          "ece": 0.004080347463042504,
+          "coverage": 0.9049832685176811,
+          "mean_set_size": 10.317807723614001
+        },
+        "result": {
+          "n": 55323,
+          "log_loss": 1.4397789517435038,
+          "top1_accuracy": 0.36129638667461994,
+          "top2_accuracy": 0.6272797932143954,
+          "ece": 0.011736167430588912,
+          "coverage": 0.8985774451855467,
+          "mean_set_size": 3.5631292590785026
+        },
+        "conditional_result": {
+          "n": 55285,
+          "log_loss": 1.1570904627197989,
+          "top1_accuracy": 0.5470018992493443,
+          "top2_accuracy": 0.7699918603599529,
+          "ece": 0.005374130692362984,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 55323,
+          "log_loss": 1.1552361846831243,
+          "top1_accuracy": 0.5268694756249661,
+          "top2_accuracy": 0.7925636715290205,
+          "ece": 0.01141191789235042,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 55285,
+          "log_loss": 2.361845398274921,
+          "top1_accuracy": 0.22233878990684633,
+          "top2_accuracy": 0.37722709595731213,
+          "ece": 0.004149836060790919,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 55323,
+          "log_loss": 1.4399314361531872,
+          "top1_accuracy": 0.36129638667461994,
+          "top2_accuracy": 0.6272797932143954,
+          "ece": 0.015866234526665628,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 55285,
+          "log_loss": 1.15706498447636,
+          "top1_accuracy": 0.5470018992493443,
+          "top2_accuracy": 0.7699918603599529,
+          "ece": 0.005304962989762447,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 55323,
+          "log_loss": 1.5980870007134922,
+          "top1_accuracy": 0.46252010917701497,
+          "top2_accuracy": 0.6309130018256421,
+          "ece": 0.006121485590106415,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 55285,
+          "log_loss": 2.404935420891197,
+          "top1_accuracy": 0.18773627566247625,
+          "top2_accuracy": 0.34065298001266164,
+          "ece": 0.0014979035632315275,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 55323,
+          "log_loss": 1.4480852806615105,
+          "top1_accuracy": 0.35639788153209334,
+          "top2_accuracy": 0.6264663883014298,
+          "ece": 0.012004882124093884,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 55285,
+          "log_loss": 1.189278385094214,
+          "top1_accuracy": 0.5415935606403184,
+          "top2_accuracy": 0.7631545627204486,
+          "ece": 0.029728281799750938,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 55323,
+          "log_loss": 1.2283363908893987,
+          "top1_accuracy": 0.5119570522205954,
+          "top2_accuracy": 0.7604612909639752,
+          "ece": 0.011310995494916506,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 55285,
+          "log_loss": 2.400257007002451,
+          "top1_accuracy": 0.18961743691778962,
+          "top2_accuracy": 0.34314913629375055,
+          "ece": 0.006256852280630359,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 55323,
+          "log_loss": 1.4480852806615105,
+          "top1_accuracy": 0.35639788153209334,
+          "top2_accuracy": 0.6264663883014298,
+          "ece": 0.012004882124093884,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 55285,
+          "log_loss": 1.189278385094214,
+          "top1_accuracy": 0.5415935606403184,
+          "top2_accuracy": 0.7631545627204486,
+          "ece": 0.029728281799750938,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "batter_unseen": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 5195,
+          "log_loss": 1.3965941561774722,
+          "top1_accuracy": 0.5120307988450433,
+          "top2_accuracy": 0.7403272377285852,
+          "ece": 0.07482197841735161,
+          "coverage": 0.8227141482194418,
+          "mean_set_size": 2.4923965351299326
+        },
+        "zone": {
+          "n": 5191,
+          "log_loss": 2.392705027733898,
+          "top1_accuracy": 0.19456752070891928,
+          "top2_accuracy": 0.3506068194952803,
+          "ece": 0.021268318828315185,
+          "coverage": 0.9102292429204393,
+          "mean_set_size": 10.741475630899634
+        },
+        "result": {
+          "n": 5195,
+          "log_loss": 1.4620495683094392,
+          "top1_accuracy": 0.3595765158806545,
+          "top2_accuracy": 0.6159769008662175,
+          "ece": 0.016348884332856965,
+          "coverage": 0.8873917228103946,
+          "mean_set_size": 3.6404234841193457
+        },
+        "conditional_result": {
+          "n": 5191,
+          "log_loss": 1.1601911401389622,
+          "top1_accuracy": 0.553072625698324,
+          "top2_accuracy": 0.7713350028896166,
+          "ece": 0.02252271436721779,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 5195,
+          "log_loss": 1.4045942701703895,
+          "top1_accuracy": 0.5120307988450433,
+          "top2_accuracy": 0.7403272377285852,
+          "ece": 0.08159627257204324,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 5191,
+          "log_loss": 2.392746607049071,
+          "top1_accuracy": 0.19456752070891928,
+          "top2_accuracy": 0.3506068194952803,
+          "ece": 0.0215231022140661,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 5195,
+          "log_loss": 1.462379322173734,
+          "top1_accuracy": 0.3595765158806545,
+          "top2_accuracy": 0.6159769008662175,
+          "ece": 0.017062776955150915,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 5191,
+          "log_loss": 1.1601637951833537,
+          "top1_accuracy": 0.553072625698324,
+          "top2_accuracy": 0.7713350028896166,
+          "ece": 0.0232615062854869,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 5195,
+          "log_loss": 1.5948768931747024,
+          "top1_accuracy": 0.46410009624639076,
+          "top2_accuracy": 0.6207892204042348,
+          "ece": 0.009929359841822197,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 5191,
+          "log_loss": 2.409252224034072,
+          "top1_accuracy": 0.18377961857060296,
+          "top2_accuracy": 0.3407821229050279,
+          "ece": 0.0109827888709805,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 5195,
+          "log_loss": 1.46904341556215,
+          "top1_accuracy": 0.36304138594802693,
+          "top2_accuracy": 0.6155919153031761,
+          "ece": 0.01734361243063868,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 5191,
+          "log_loss": 1.1858868293072726,
+          "top1_accuracy": 0.5509535734925833,
+          "top2_accuracy": 0.7628587940666538,
+          "ece": 0.041007702537089866,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 5195,
+          "log_loss": 1.3683934803530988,
+          "top1_accuracy": 0.49278152069297404,
+          "top2_accuracy": 0.7106833493743985,
+          "ece": 0.019233528444759913,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 5191,
+          "log_loss": 2.4057917934117015,
+          "top1_accuracy": 0.18397225968021577,
+          "top2_accuracy": 0.3390483529185128,
+          "ece": 0.009485739304111082,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 5195,
+          "log_loss": 1.46904341556215,
+          "top1_accuracy": 0.36304138594802693,
+          "top2_accuracy": 0.6155919153031761,
+          "ece": 0.01734361243063868,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 5191,
+          "log_loss": 1.1858868293072726,
+          "top1_accuracy": 0.5509535734925833,
+          "top2_accuracy": 0.7628587940666538,
+          "ece": 0.041007702537089866,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "batter_1_99": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 3551,
+          "log_loss": 1.3721130268843411,
+          "top1_accuracy": 0.5359053787665446,
+          "top2_accuracy": 0.7530273162489439,
+          "ece": 0.04072888869025345,
+          "coverage": 0.8380737820332301,
+          "mean_set_size": 2.553928470853281
+        },
+        "zone": {
+          "n": 3549,
+          "log_loss": 2.3554542224350867,
+          "top1_accuracy": 0.22738799661876585,
+          "top2_accuracy": 0.39419554804170187,
+          "ece": 0.010316339260291038,
+          "coverage": 0.8898281205973514,
+          "mean_set_size": 10.171315863623557
+        },
+        "result": {
+          "n": 3551,
+          "log_loss": 1.4634888773481256,
+          "top1_accuracy": 0.3365249225570262,
+          "top2_accuracy": 0.6001126443255421,
+          "ece": 0.022575615846214408,
+          "coverage": 0.9098845395663193,
+          "mean_set_size": 3.733877780906787
+        },
+        "conditional_result": {
+          "n": 3549,
+          "log_loss": 1.2076482962268782,
+          "top1_accuracy": 0.5243730628346013,
+          "top2_accuracy": 0.7438715131022823,
+          "ece": 0.010855543790618673,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 3551,
+          "log_loss": 1.379194234456771,
+          "top1_accuracy": 0.5359053787665446,
+          "top2_accuracy": 0.7530273162489439,
+          "ece": 0.04767337600335646,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 3549,
+          "log_loss": 2.3554678347494162,
+          "top1_accuracy": 0.22738799661876585,
+          "top2_accuracy": 0.39419554804170187,
+          "ece": 0.010525220539189563,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 3551,
+          "log_loss": 1.4635696192340077,
+          "top1_accuracy": 0.3365249225570262,
+          "top2_accuracy": 0.6001126443255421,
+          "ece": 0.026354324562776185,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 3549,
+          "log_loss": 1.2076404613227274,
+          "top1_accuracy": 0.5243730628346013,
+          "top2_accuracy": 0.7438715131022823,
+          "ece": 0.010932260122468876,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 3551,
+          "log_loss": 1.5384367543311142,
+          "top1_accuracy": 0.49901436215150663,
+          "top2_accuracy": 0.6462968177978035,
+          "ece": 0.03565135562609581,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 3549,
+          "log_loss": 2.3962202829776063,
+          "top1_accuracy": 0.1755424063116371,
+          "top2_accuracy": 0.3251620174697098,
+          "ece": 0.00996157437124302,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 3551,
+          "log_loss": 1.456676672012649,
+          "top1_accuracy": 0.3435651929034075,
+          "top2_accuracy": 0.6068713038580682,
+          "ece": 0.024830633702794584,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 3549,
+          "log_loss": 1.2257988481161235,
+          "top1_accuracy": 0.5238095238095238,
+          "top2_accuracy": 0.7430262045646661,
+          "ece": 0.024056934710881776,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 3551,
+          "log_loss": 1.3335819053922895,
+          "top1_accuracy": 0.5215432272599267,
+          "top2_accuracy": 0.7178259645170375,
+          "ece": 0.029547771415963653,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 3549,
+          "log_loss": 2.39121308530591,
+          "top1_accuracy": 0.18399549168779938,
+          "top2_accuracy": 0.3344604113834883,
+          "ece": 0.006283991346141133,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 3551,
+          "log_loss": 1.456676672012649,
+          "top1_accuracy": 0.3435651929034075,
+          "top2_accuracy": 0.6068713038580682,
+          "ece": 0.024830633702794584,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 3549,
+          "log_loss": 1.2257988481161235,
+          "top1_accuracy": 0.5238095238095238,
+          "top2_accuracy": 0.7430262045646661,
+          "ece": 0.024056934710881776,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "batter_100_499": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 17106,
+          "log_loss": 1.3664619656314496,
+          "top1_accuracy": 0.5092949842160646,
+          "top2_accuracy": 0.7516660820764643,
+          "ece": 0.03978787830185921,
+          "coverage": 0.848123465450719,
+          "mean_set_size": 2.6066292528937214
+        },
+        "zone": {
+          "n": 17094,
+          "log_loss": 2.3782695410224215,
+          "top1_accuracy": 0.2046917046917047,
+          "top2_accuracy": 0.36515736515736513,
+          "ece": 0.011533739850948434,
+          "coverage": 0.9003744003744004,
+          "mean_set_size": 10.353925353925353
+        },
+        "result": {
+          "n": 17106,
+          "log_loss": 1.4498176612236204,
+          "top1_accuracy": 0.3590553022331346,
+          "top2_accuracy": 0.6189641061615807,
+          "ece": 0.012507094966031418,
+          "coverage": 0.9062901905764059,
+          "mean_set_size": 3.6862504384426518
+        },
+        "conditional_result": {
+          "n": 17094,
+          "log_loss": 1.1713943269948794,
+          "top1_accuracy": 0.5475020475020475,
+          "top2_accuracy": 0.7594477594477594,
+          "ece": 0.009733897096109048,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 17106,
+          "log_loss": 1.3725297700224326,
+          "top1_accuracy": 0.5092949842160646,
+          "top2_accuracy": 0.7516660820764643,
+          "ece": 0.046322113743452464,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 17094,
+          "log_loss": 2.378298098151057,
+          "top1_accuracy": 0.2046917046917047,
+          "top2_accuracy": 0.36515736515736513,
+          "ece": 0.011767024085469188,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 17106,
+          "log_loss": 1.449905490363107,
+          "top1_accuracy": 0.3590553022331346,
+          "top2_accuracy": 0.6189641061615807,
+          "ece": 0.01679853037651135,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 17094,
+          "log_loss": 1.1713747483480086,
+          "top1_accuracy": 0.5475020475020475,
+          "top2_accuracy": 0.7594477594477594,
+          "ece": 0.00964819420616668,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 17106,
+          "log_loss": 1.5649458010365787,
+          "top1_accuracy": 0.478779375657664,
+          "top2_accuracy": 0.6435753536770724,
+          "ece": 0.014974293754833523,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 17094,
+          "log_loss": 2.4088465153128475,
+          "top1_accuracy": 0.17725517725517725,
+          "top2_accuracy": 0.3219258219258219,
+          "ece": 0.005556331795545604,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 17106,
+          "log_loss": 1.4454673847822541,
+          "top1_accuracy": 0.3613352040219806,
+          "top2_accuracy": 0.6310066643283059,
+          "ece": 0.006564694921582225,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 17094,
+          "log_loss": 1.1839117880980805,
+          "top1_accuracy": 0.5460395460395461,
+          "top2_accuracy": 0.7619047619047619,
+          "ece": 0.03350327370760217,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 17106,
+          "log_loss": 1.3388972374321868,
+          "top1_accuracy": 0.5049690167192797,
+          "top2_accuracy": 0.7228457851046416,
+          "ece": 0.006729042347592273,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 17094,
+          "log_loss": 2.4068470552207257,
+          "top1_accuracy": 0.17544167544167544,
+          "top2_accuracy": 0.32678132678132676,
+          "ece": 0.011152856709074246,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 17106,
+          "log_loss": 1.4454673847822541,
+          "top1_accuracy": 0.3613352040219806,
+          "top2_accuracy": 0.6310066643283059,
+          "ece": 0.006564694921582225,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 17094,
+          "log_loss": 1.1839117880980805,
+          "top1_accuracy": 0.5460395460395461,
+          "top2_accuracy": 0.7619047619047619,
+          "ece": 0.03350327370760217,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "batter_500_plus": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 73877,
+          "log_loss": 1.40942253438304,
+          "top1_accuracy": 0.49918107124003414,
+          "top2_accuracy": 0.7390256778158291,
+          "ece": 0.053158100069191264,
+          "coverage": 0.835889383705348,
+          "mean_set_size": 2.599320492169417
+        },
+        "zone": {
+          "n": 73827,
+          "log_loss": 2.37688556305341,
+          "top1_accuracy": 0.2117111625827949,
+          "top2_accuracy": 0.3690655180354071,
+          "ece": 0.010335493534761007,
+          "coverage": 0.8977203462147995,
+          "mean_set_size": 10.25697915396806
+        },
+        "result": {
+          "n": 73877,
+          "log_loss": 1.4331965875070025,
+          "top1_accuracy": 0.36788174939426344,
+          "top2_accuracy": 0.6324972589574563,
+          "ece": 0.01499095669088275,
+          "coverage": 0.8897762497123597,
+          "mean_set_size": 3.4634866061155707
+        },
+        "conditional_result": {
+          "n": 73827,
+          "log_loss": 1.1482477670290503,
+          "top1_accuracy": 0.5531716038847576,
+          "top2_accuracy": 0.7720346214799464,
+          "ece": 0.006887217446484904,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 73877,
+          "log_loss": 1.41651530155418,
+          "top1_accuracy": 0.49918107124003414,
+          "top2_accuracy": 0.7390256778158291,
+          "ece": 0.059417472313599805,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 73827,
+          "log_loss": 2.3769254277655434,
+          "top1_accuracy": 0.2117111625827949,
+          "top2_accuracy": 0.3690655180354071,
+          "ece": 0.010544413619574283,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 73877,
+          "log_loss": 1.433495281719523,
+          "top1_accuracy": 0.36788174939426344,
+          "top2_accuracy": 0.6324972589574563,
+          "ece": 0.019205706524790075,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 73827,
+          "log_loss": 1.1482343551888068,
+          "top1_accuracy": 0.5531716038847576,
+          "top2_accuracy": 0.7720346214799464,
+          "ece": 0.006965469015672449,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 73877,
+          "log_loss": 1.612450654500341,
+          "top1_accuracy": 0.45931751424665324,
+          "top2_accuracy": 0.6170120605871923,
+          "ece": 0.008402608935337744,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 73827,
+          "log_loss": 2.4117258687821868,
+          "top1_accuracy": 0.17894537228927088,
+          "top2_accuracy": 0.3275089059558156,
+          "ece": 0.0033869102263537755,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 73877,
+          "log_loss": 1.44243917781302,
+          "top1_accuracy": 0.36264331253299403,
+          "top2_accuracy": 0.6304803930858048,
+          "ece": 0.005045484350201682,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 73827,
+          "log_loss": 1.1829399756412644,
+          "top1_accuracy": 0.5481598873041028,
+          "top2_accuracy": 0.7652620315060885,
+          "ece": 0.036245582537091946,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 73877,
+          "log_loss": 1.377615769713904,
+          "top1_accuracy": 0.48840640524114404,
+          "top2_accuracy": 0.7025731959879259,
+          "ece": 0.012119234932593485,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 73827,
+          "log_loss": 2.4094928955473325,
+          "top1_accuracy": 0.17989353488561097,
+          "top2_accuracy": 0.32891760467037806,
+          "ece": 0.0066418818321287,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 73877,
+          "log_loss": 1.44243917781302,
+          "top1_accuracy": 0.36264331253299403,
+          "top2_accuracy": 0.6304803930858048,
+          "ece": 0.005045484350201682,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 73827,
+          "log_loss": 1.1829399756412644,
+          "top1_accuracy": 0.5481598873041028,
+          "top2_accuracy": 0.7652620315060885,
+          "ece": 0.036245582537091946,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "matchup_unseen": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 52820,
+          "log_loss": 1.5938475643809413,
+          "top1_accuracy": 0.48455130632336235,
+          "top2_accuracy": 0.6973684210526315,
+          "ece": 0.08636074787409907,
+          "coverage": 0.7781522150700492,
+          "mean_set_size": 2.5169822037107155
+        },
+        "zone": {
+          "n": 52778,
+          "log_loss": 2.38863811728545,
+          "top1_accuracy": 0.20031073553374512,
+          "top2_accuracy": 0.36088900678312935,
+          "ece": 0.015152918643047535,
+          "coverage": 0.8951646519383076,
+          "mean_set_size": 10.312289211413846
+        },
+        "result": {
+          "n": 52820,
+          "log_loss": 1.4429375546368215,
+          "top1_accuracy": 0.36308216584627034,
+          "top2_accuracy": 0.6255206361226808,
+          "ece": 0.01709634723485262,
+          "coverage": 0.8908368042408179,
+          "mean_set_size": 3.5258803483528967
+        },
+        "conditional_result": {
+          "n": 52778,
+          "log_loss": 1.1609763709860021,
+          "top1_accuracy": 0.5505892606767971,
+          "top2_accuracy": 0.7650536208268597,
+          "ece": 0.00476125241914917,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 52820,
+          "log_loss": 1.605510159738687,
+          "top1_accuracy": 0.48455130632336235,
+          "top2_accuracy": 0.6973684210526315,
+          "ece": 0.0934703936243796,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 52778,
+          "log_loss": 2.388684456452448,
+          "top1_accuracy": 0.20031073553374512,
+          "top2_accuracy": 0.36088900678312935,
+          "ece": 0.01509231680056398,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 52820,
+          "log_loss": 1.443267321132485,
+          "top1_accuracy": 0.36308216584627034,
+          "top2_accuracy": 0.6255206361226808,
+          "ece": 0.02153909127784683,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 52778,
+          "log_loss": 1.1609687604737349,
+          "top1_accuracy": 0.5505892606767971,
+          "top2_accuracy": 0.7650536208268597,
+          "ece": 0.00500625799244617,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 52820,
+          "log_loss": 1.6011735451993014,
+          "top1_accuracy": 0.46558121923513823,
+          "top2_accuracy": 0.6171336614918591,
+          "ece": 0.004174661019829295,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 52778,
+          "log_loss": 2.416020404904691,
+          "top1_accuracy": 0.17096138542574557,
+          "top2_accuracy": 0.3152639357307969,
+          "ece": 0.006924333806029114,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 52820,
+          "log_loss": 1.4471972088863128,
+          "top1_accuracy": 0.36294964028776977,
+          "top2_accuracy": 0.6270541461567588,
+          "ece": 0.0046586934317468685,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 52778,
+          "log_loss": 1.1879794160876205,
+          "top1_accuracy": 0.5467808556595551,
+          "top2_accuracy": 0.7603736405320398,
+          "ece": 0.03506018883251834,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 52820,
+          "log_loss": 1.4804113953308211,
+          "top1_accuracy": 0.47731919727375993,
+          "top2_accuracy": 0.6614161302536918,
+          "ece": 0.013641552081876196,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 52778,
+          "log_loss": 2.414926361117565,
+          "top1_accuracy": 0.1703929667664557,
+          "top2_accuracy": 0.3162302474515897,
+          "ece": 0.009529388241739052,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 52820,
+          "log_loss": 1.4471972088863128,
+          "top1_accuracy": 0.36294964028776977,
+          "top2_accuracy": 0.6270541461567588,
+          "ece": 0.0046586934317468685,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 52778,
+          "log_loss": 1.1879794160876205,
+          "top1_accuracy": 0.5467808556595551,
+          "top2_accuracy": 0.7603736405320398,
+          "ece": 0.03506018883251834,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "matchup_1_29": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 33691,
+          "log_loss": 1.1787257252898828,
+          "top1_accuracy": 0.5291324092487608,
+          "top2_accuracy": 0.7997684841649105,
+          "ece": 0.016381055118864903,
+          "coverage": 0.9010715027752219,
+          "mean_set_size": 2.620314030453237
+        },
+        "zone": {
+          "n": 33671,
+          "log_loss": 2.3601284289871685,
+          "top1_accuracy": 0.22063496777642483,
+          "top2_accuracy": 0.38106976329779335,
+          "ece": 0.00350310888797144,
+          "coverage": 0.9021413085444447,
+          "mean_set_size": 10.263639333551128
+        },
+        "result": {
+          "n": 33691,
+          "log_loss": 1.4355844817530778,
+          "top1_accuracy": 0.3681398593096079,
+          "top2_accuracy": 0.6309696951708171,
+          "ece": 0.011171544473642044,
+          "coverage": 0.8944228428957288,
+          "mean_set_size": 3.517497254459648
+        },
+        "conditional_result": {
+          "n": 33671,
+          "log_loss": 1.1516234826641234,
+          "top1_accuracy": 0.5524338451486442,
+          "top2_accuracy": 0.7719402453149594,
+          "ece": 0.007282498280095204,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 33691,
+          "log_loss": 1.1807894018326963,
+          "top1_accuracy": 0.5291324092487608,
+          "top2_accuracy": 0.7997684841649105,
+          "ece": 0.02196379395311214,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 33671,
+          "log_loss": 2.360150691045943,
+          "top1_accuracy": 0.22063496777642483,
+          "top2_accuracy": 0.38106976329779335,
+          "ece": 0.0035581789496109658,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 33691,
+          "log_loss": 1.4357745539918971,
+          "top1_accuracy": 0.3681398593096079,
+          "top2_accuracy": 0.6309696951708171,
+          "ece": 0.015170717890703778,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 33671,
+          "log_loss": 1.151603747282501,
+          "top1_accuracy": 0.5524338451486442,
+          "top2_accuracy": 0.7719402453149594,
+          "ece": 0.007281332416471997,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 33691,
+          "log_loss": 1.5797562153731635,
+          "top1_accuracy": 0.4793565047045205,
+          "top2_accuracy": 0.6409130034727375,
+          "ece": 0.010683824446177659,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 33671,
+          "log_loss": 2.3982672754221657,
+          "top1_accuracy": 0.18838169344539812,
+          "top2_accuracy": 0.3439755279023492,
+          "ece": 0.0028776634303587212,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 33691,
+          "log_loss": 1.441587262008553,
+          "top1_accuracy": 0.3645780772313081,
+          "top2_accuracy": 0.6312071473093704,
+          "ece": 0.0038971705226323924,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 33671,
+          "log_loss": 1.1805584581786501,
+          "top1_accuracy": 0.5483056636274539,
+          "top2_accuracy": 0.7675744706126935,
+          "ece": 0.03495515729492114,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 33691,
+          "log_loss": 1.2382270504769801,
+          "top1_accuracy": 0.5181205663233505,
+          "top2_accuracy": 0.7664955032501262,
+          "ece": 0.01389564184571204,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 33671,
+          "log_loss": 2.394374955400452,
+          "top1_accuracy": 0.19188619286626474,
+          "top2_accuracy": 0.3472721332897746,
+          "ece": 0.003467951454095692,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 33691,
+          "log_loss": 1.441587262008553,
+          "top1_accuracy": 0.3645780772313081,
+          "top2_accuracy": 0.6312071473093704,
+          "ece": 0.0038971705226323924,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 33671,
+          "log_loss": 1.1805584581786501,
+          "top1_accuracy": 0.5483056636274539,
+          "top2_accuracy": 0.7675744706126935,
+          "ece": 0.03495515729492114,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "matchup_30_99": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 12458,
+          "log_loss": 1.1896640829821798,
+          "top1_accuracy": 0.5091507465082677,
+          "top2_accuracy": 0.7717129555305827,
+          "ece": 0.012213351933124424,
+          "coverage": 0.9112217049285599,
+          "mean_set_size": 2.822363140150907
+        },
+        "zone": {
+          "n": 12452,
+          "log_loss": 2.3720292427601346,
+          "top1_accuracy": 0.22309669129457116,
+          "top2_accuracy": 0.36708962415676194,
+          "ece": 0.00618694749936926,
+          "coverage": 0.9027465467394796,
+          "mean_set_size": 10.29264375200771
+        },
+        "result": {
+          "n": 12458,
+          "log_loss": 1.4294036046812613,
+          "top1_accuracy": 0.3630598812008348,
+          "top2_accuracy": 0.6306790817145609,
+          "ece": 0.012977343848638094,
+          "coverage": 0.8986996307593514,
+          "mean_set_size": 3.5018462032428963
+        },
+        "conditional_result": {
+          "n": 12452,
+          "log_loss": 1.1396746345333952,
+          "top1_accuracy": 0.5495502730485062,
+          "top2_accuracy": 0.7757789913266945,
+          "ece": 0.009703261967433664,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 12458,
+          "log_loss": 1.190366378271007,
+          "top1_accuracy": 0.5091507465082677,
+          "top2_accuracy": 0.7717129555305827,
+          "ece": 0.013514857626773569,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 12452,
+          "log_loss": 2.3720642452835667,
+          "top1_accuracy": 0.22309669129457116,
+          "top2_accuracy": 0.36708962415676194,
+          "ece": 0.006054156504851598,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 12458,
+          "log_loss": 1.4295640428346983,
+          "top1_accuracy": 0.3630598812008348,
+          "top2_accuracy": 0.6306790817145609,
+          "ece": 0.017363401870057152,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 12452,
+          "log_loss": 1.1396440130270524,
+          "top1_accuracy": 0.5495502730485062,
+          "top2_accuracy": 0.7757789913266945,
+          "ece": 0.009361019297623622,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 12458,
+          "log_loss": 1.636315558217421,
+          "top1_accuracy": 0.4303258950072243,
+          "top2_accuracy": 0.6084443730935944,
+          "ece": 0.03459586356588613,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 12452,
+          "log_loss": 2.4175568160188625,
+          "top1_accuracy": 0.18599421779633793,
+          "top2_accuracy": 0.3327176357211693,
+          "ece": 0.006419948752962644,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 12458,
+          "log_loss": 1.4437761020171491,
+          "top1_accuracy": 0.34989564938192325,
+          "top2_accuracy": 0.6312409696580511,
+          "ece": 0.018745340110229703,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 12452,
+          "log_loss": 1.1819476076630204,
+          "top1_accuracy": 0.5448923867651783,
+          "top2_accuracy": 0.7682300032123354,
+          "ece": 0.035218244376768404,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 12458,
+          "log_loss": 1.2572647975540332,
+          "top1_accuracy": 0.48868197142398456,
+          "top2_accuracy": 0.7376786000963237,
+          "ece": 0.019974523943314598,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 12452,
+          "log_loss": 2.413910167929493,
+          "top1_accuracy": 0.18374558303886926,
+          "top2_accuracy": 0.33649212977834886,
+          "ece": 0.016408727557377958,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 12458,
+          "log_loss": 1.4437761020171491,
+          "top1_accuracy": 0.34989564938192325,
+          "top2_accuracy": 0.6312409696580511,
+          "ece": 0.018745340110229703,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 12452,
+          "log_loss": 1.1819476076630204,
+          "top1_accuracy": 0.5448923867651783,
+          "top2_accuracy": 0.7682300032123354,
+          "ece": 0.035218244376768404,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "matchup_100_plus": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 760,
+          "log_loss": 1.1920724333959556,
+          "top1_accuracy": 0.5118421052631579,
+          "top2_accuracy": 0.7644736842105263,
+          "ece": 0.02642316081021961,
+          "coverage": 0.9197368421052632,
+          "mean_set_size": 2.956578947368421
+        },
+        "zone": {
+          "n": 760,
+          "log_loss": 2.4218076510559143,
+          "top1_accuracy": 0.21973684210526315,
+          "top2_accuracy": 0.34078947368421053,
+          "ece": 0.02446921164856145,
+          "coverage": 0.9052631578947369,
+          "mean_set_size": 10.626315789473685
+        },
+        "result": {
+          "n": 760,
+          "log_loss": 1.4253857910497219,
+          "top1_accuracy": 0.3671052631578947,
+          "top2_accuracy": 0.6460526315789473,
+          "ece": 0.04013233790664297,
+          "coverage": 0.9131578947368421,
+          "mean_set_size": 3.5907894736842105
+        },
+        "conditional_result": {
+          "n": 760,
+          "log_loss": 1.1347957789236027,
+          "top1_accuracy": 0.5618421052631579,
+          "top2_accuracy": 0.7802631578947369,
+          "ece": 0.0537267607293631,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 760,
+          "log_loss": 1.1923347683815928,
+          "top1_accuracy": 0.5118421052631579,
+          "top2_accuracy": 0.7644736842105263,
+          "ece": 0.02656410548331824,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 760,
+          "log_loss": 2.4218922171475223,
+          "top1_accuracy": 0.21973684210526315,
+          "top2_accuracy": 0.34078947368421053,
+          "ece": 0.026279738519209353,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 760,
+          "log_loss": 1.4250543367677402,
+          "top1_accuracy": 0.3671052631578947,
+          "top2_accuracy": 0.6460526315789473,
+          "ece": 0.029207413961921603,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 760,
+          "log_loss": 1.1347337915411972,
+          "top1_accuracy": 0.5618421052631579,
+          "top2_accuracy": 0.7802631578947369,
+          "ece": 0.05493011462798927,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 760,
+          "log_loss": 1.9191864682747193,
+          "top1_accuracy": 0.26710526315789473,
+          "top2_accuracy": 0.45,
+          "ece": 0.19599406879165862,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 760,
+          "log_loss": 2.460160911476733,
+          "top1_accuracy": 0.17894736842105263,
+          "top2_accuracy": 0.3171052631578947,
+          "ece": 0.008920289122353037,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 760,
+          "log_loss": 1.4441420169804724,
+          "top1_accuracy": 0.34868421052631576,
+          "top2_accuracy": 0.6236842105263158,
+          "ece": 0.021359678581475135,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 760,
+          "log_loss": 1.1968727001167212,
+          "top1_accuracy": 0.5486842105263158,
+          "top2_accuracy": 0.7578947368421053,
+          "ece": 0.044641077703153925,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 760,
+          "log_loss": 1.2450099108281123,
+          "top1_accuracy": 0.49473684210526314,
+          "top2_accuracy": 0.7368421052631579,
+          "ece": 0.018808471678099636,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 760,
+          "log_loss": 2.4594262887595626,
+          "top1_accuracy": 0.19210526315789472,
+          "top2_accuracy": 0.31973684210526315,
+          "ece": 0.020736847168870316,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 760,
+          "log_loss": 1.4441420169804724,
+          "top1_accuracy": 0.34868421052631576,
+          "top2_accuracy": 0.6236842105263158,
+          "ece": 0.021359678581475135,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 760,
+          "log_loss": 1.1968727001167212,
+          "top1_accuracy": 0.5486842105263158,
+          "top2_accuracy": 0.7578947368421053,
+          "ece": 0.044641077703153925,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "history_empty": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 26739,
+          "log_loss": 1.4654406034920375,
+          "top1_accuracy": 0.5206253038632709,
+          "top2_accuracy": 0.730206814016979,
+          "ece": 0.06170699567337206,
+          "coverage": 0.8215714873405886,
+          "mean_set_size": 2.6165526010695985
+        },
+        "zone": {
+          "n": 26714,
+          "log_loss": 2.4246124488698326,
+          "top1_accuracy": 0.1960020962791046,
+          "top2_accuracy": 0.3354420902897357,
+          "ece": 0.012099745851340571,
+          "coverage": 0.9107584038331961,
+          "mean_set_size": 10.748671108781911
+        },
+        "result": {
+          "n": 26739,
+          "log_loss": 1.359349910047696,
+          "top1_accuracy": 0.4070458880287221,
+          "top2_accuracy": 0.7294214443322488,
+          "ece": 0.01061238900861878,
+          "coverage": 0.8419910991435731,
+          "mean_set_size": 2.872844908186544
+        },
+        "conditional_result": {
+          "n": 26714,
+          "log_loss": 1.0175090347635123,
+          "top1_accuracy": 0.6491352848693569,
+          "top2_accuracy": 0.8148910683536722,
+          "ece": 0.01991458551047175,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 26739,
+          "log_loss": 1.4743393091602293,
+          "top1_accuracy": 0.5206253038632709,
+          "top2_accuracy": 0.730206814016979,
+          "ece": 0.06810080285023315,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 26714,
+          "log_loss": 2.424672176980187,
+          "top1_accuracy": 0.1960020962791046,
+          "top2_accuracy": 0.3354420902897357,
+          "ece": 0.01229575952004274,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 26739,
+          "log_loss": 1.3593131483270118,
+          "top1_accuracy": 0.4070458880287221,
+          "top2_accuracy": 0.7294214443322488,
+          "ece": 0.015043652474284436,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 26714,
+          "log_loss": 1.0174646717717801,
+          "top1_accuracy": 0.6491352848693569,
+          "top2_accuracy": 0.8148910683536722,
+          "ece": 0.019477314948570065,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 26739,
+          "log_loss": 1.5687464240251514,
+          "top1_accuracy": 0.49496989416208537,
+          "top2_accuracy": 0.6459478664123565,
+          "ece": 0.01260744899661211,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 26714,
+          "log_loss": 2.4469814580479636,
+          "top1_accuracy": 0.1608894212772329,
+          "top2_accuracy": 0.296398891966759,
+          "ece": 0.013829677218591907,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 26739,
+          "log_loss": 1.369706559520517,
+          "top1_accuracy": 0.3972474662478028,
+          "top2_accuracy": 0.7317775533864392,
+          "ece": 0.0060462148039987194,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 26714,
+          "log_loss": 1.0399426264340847,
+          "top1_accuracy": 0.6493973197574305,
+          "top2_accuracy": 0.8140675301340121,
+          "ece": 0.043065966742942274,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 26739,
+          "log_loss": 1.3553758459719072,
+          "top1_accuracy": 0.5203635139683608,
+          "top2_accuracy": 0.7142002318710498,
+          "ece": 0.033077083509603825,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 26714,
+          "log_loss": 2.444870813700149,
+          "top1_accuracy": 0.16223702927304035,
+          "top2_accuracy": 0.30178932394998875,
+          "ece": 0.016737374439045792,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 26739,
+          "log_loss": 1.369706559520517,
+          "top1_accuracy": 0.3972474662478028,
+          "top2_accuracy": 0.7317775533864392,
+          "ece": 0.0060462148039987194,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 26714,
+          "log_loss": 1.0399426264340847,
+          "top1_accuracy": 0.6493973197574305,
+          "top2_accuracy": 0.8140675301340121,
+          "ece": 0.043065966742942274,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "history_available": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 72990,
+          "log_loss": 1.3761045439065913,
+          "top1_accuracy": 0.4963967666803672,
+          "top2_accuracy": 0.7459926017262639,
+          "ece": 0.04827444983383681,
+          "coverage": 0.8431702973010001,
+          "mean_set_size": 2.584902041375531
+        },
+        "zone": {
+          "n": 72947,
+          "log_loss": 2.3598148227214475,
+          "top1_accuracy": 0.2153618380468011,
+          "top2_accuracy": 0.3803720509410942,
+          "ece": 0.009006753821776596,
+          "coverage": 0.8940737795934034,
+          "mean_set_size": 10.129943657724102
+        },
+        "result": {
+          "n": 72990,
+          "log_loss": 1.46767207116333,
+          "top1_accuracy": 0.3493492259213591,
+          "top2_accuracy": 0.591067269488971,
+          "ece": 0.016281865694773075,
+          "coverage": 0.911960542540074,
+          "mean_set_size": 3.7578161391971503
+        },
+        "conditional_result": {
+          "n": 72947,
+          "log_loss": 1.2052896236884618,
+          "top1_accuracy": 0.5152919242737878,
+          "top2_accuracy": 0.7519706087981686,
+          "ece": 0.006715958480812279,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 72990,
+          "log_loss": 1.3823595335166141,
+          "top1_accuracy": 0.4963967666803672,
+          "top2_accuracy": 0.7459926017262639,
+          "ece": 0.05446775485623787,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 72947,
+          "log_loss": 2.3598436082677785,
+          "top1_accuracy": 0.2153618380468011,
+          "top2_accuracy": 0.3803720509410942,
+          "ece": 0.009217226786168795,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 72990,
+          "log_loss": 1.4680358442145645,
+          "top1_accuracy": 0.3493492259213591,
+          "top2_accuracy": 0.591067269488971,
+          "ece": 0.020390229458402007,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 72947,
+          "log_loss": 1.2052853812371271,
+          "top1_accuracy": 0.5152919242737878,
+          "top2_accuracy": 0.7519706087981686,
+          "ece": 0.006882825044393045,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 72990,
+          "log_loss": 1.6124762791850562,
+          "top1_accuracy": 0.4530894643101795,
+          "top2_accuracy": 0.6143307302370188,
+          "ece": 0.004355819277312731,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 72947,
+          "log_loss": 2.3972097475742036,
+          "top1_accuracy": 0.1853400413999205,
+          "top2_accuracy": 0.33842378713312404,
+          "ece": 0.0007600173039845383,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 72990,
+          "log_loss": 1.472379777154691,
+          "top1_accuracy": 0.3487601041238526,
+          "top2_accuracy": 0.5912864775996712,
+          "ece": 0.006051198241215985,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 72947,
+          "log_loss": 1.237829780631887,
+          "top1_accuracy": 0.5096028623521187,
+          "top2_accuracy": 0.7453493632363223,
+          "ece": 0.032104977844176895,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 72990,
+          "log_loss": 1.3738903287259707,
+          "top1_accuracy": 0.4825044526647486,
+          "top2_accuracy": 0.7043841622140019,
+          "ece": 0.009373378231127051,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 72947,
+          "log_loss": 2.39476437802351,
+          "top1_accuracy": 0.18580613322000905,
+          "top2_accuracy": 0.3393422621903574,
+          "ece": 0.0035511769488395474,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 72990,
+          "log_loss": 1.472379777154691,
+          "top1_accuracy": 0.3487601041238526,
+          "top2_accuracy": 0.5912864775996712,
+          "ece": 0.006051198241215985,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 72947,
+          "log_loss": 1.237829780631887,
+          "top1_accuracy": 0.5096028623521187,
+          "top2_accuracy": 0.7453493632363223,
+          "ece": 0.032104977844176895,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    }
+  },
+  "monthly": {
+    "2025-03": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 817,
+          "log_loss": 1.3683771729547396,
+          "top1_accuracy": 0.5471236230110159,
+          "top2_accuracy": 0.7600979192166463,
+          "ece": 0.025153839785145137,
+          "coverage": 0.847001223990208,
+          "mean_set_size": 2.5458996328029375
+        },
+        "zone": {
+          "n": 817,
+          "log_loss": 2.41340628604568,
+          "top1_accuracy": 0.193390452876377,
+          "top2_accuracy": 0.34516523867809057,
+          "ece": 0.03883208499507775,
+          "coverage": 0.9020807833537332,
+          "mean_set_size": 10.342717258261933
+        },
+        "result": {
+          "n": 817,
+          "log_loss": 1.4481244023843889,
+          "top1_accuracy": 0.3598531211750306,
+          "top2_accuracy": 0.5960832313341493,
+          "ece": 0.03518903459738052,
+          "coverage": 0.8873929008567931,
+          "mean_set_size": 3.485924112607099
+        },
+        "conditional_result": {
+          "n": 817,
+          "log_loss": 1.180902868279247,
+          "top1_accuracy": 0.5336597307221542,
+          "top2_accuracy": 0.758873929008568,
+          "ece": 0.04449192714516068,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 817,
+          "log_loss": 1.3751055291358423,
+          "top1_accuracy": 0.5471236230110159,
+          "top2_accuracy": 0.7600979192166463,
+          "ece": 0.027289356546424393,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 817,
+          "log_loss": 2.413488229941374,
+          "top1_accuracy": 0.193390452876377,
+          "top2_accuracy": 0.34516523867809057,
+          "ece": 0.039142156903407437,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 817,
+          "log_loss": 1.4487837022313352,
+          "top1_accuracy": 0.3598531211750306,
+          "top2_accuracy": 0.5960832313341493,
+          "ece": 0.03590041331426103,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 817,
+          "log_loss": 1.1809377529691099,
+          "top1_accuracy": 0.5336597307221542,
+          "top2_accuracy": 0.758873929008568,
+          "ece": 0.04554892778281199,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 817,
+          "log_loss": 1.4508025443381127,
+          "top1_accuracy": 0.554467564259486,
+          "top2_accuracy": 0.7135862913096696,
+          "ece": 0.09570378770257083,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 817,
+          "log_loss": 2.4407493715994297,
+          "top1_accuracy": 0.15667074663402691,
+          "top2_accuracy": 0.2937576499388005,
+          "ece": 0.023244356790926454,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 817,
+          "log_loss": 1.451605103211804,
+          "top1_accuracy": 0.3574051407588739,
+          "top2_accuracy": 0.6132190942472461,
+          "ece": 0.031001423977624495,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 817,
+          "log_loss": 1.196932775383643,
+          "top1_accuracy": 0.5361077111383109,
+          "top2_accuracy": 0.7527539779681762,
+          "ece": 0.047909357525429415,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 817,
+          "log_loss": 1.2867896124446063,
+          "top1_accuracy": 0.5520195838433293,
+          "top2_accuracy": 0.7539779681762546,
+          "ece": 0.05196212750768142,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 817,
+          "log_loss": 2.442532363074781,
+          "top1_accuracy": 0.1456548347613219,
+          "top2_accuracy": 0.2778457772337821,
+          "ece": 0.039347500021171614,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 817,
+          "log_loss": 1.451605103211804,
+          "top1_accuracy": 0.3574051407588739,
+          "top2_accuracy": 0.6132190942472461,
+          "ece": 0.031001423977624495,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 817,
+          "log_loss": 1.196932775383643,
+          "top1_accuracy": 0.5361077111383109,
+          "top2_accuracy": 0.7527539779681762,
+          "ece": 0.047909357525429415,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "2025-04": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 17102,
+          "log_loss": 1.402132069773079,
+          "top1_accuracy": 0.49263244065021633,
+          "top2_accuracy": 0.7383931703894281,
+          "ece": 0.05899133990329128,
+          "coverage": 0.8413635832066425,
+          "mean_set_size": 2.623435855455502
+        },
+        "zone": {
+          "n": 17085,
+          "log_loss": 2.3577077317035817,
+          "top1_accuracy": 0.21580333625987708,
+          "top2_accuracy": 0.37822651448639155,
+          "ece": 0.008148875826452429,
+          "coverage": 0.9046532045654082,
+          "mean_set_size": 10.294234708808897
+        },
+        "result": {
+          "n": 17102,
+          "log_loss": 1.4413511411809752,
+          "top1_accuracy": 0.3683194947959303,
+          "top2_accuracy": 0.6288738159279617,
+          "ece": 0.01132829497779494,
+          "coverage": 0.888960355513975,
+          "mean_set_size": 3.5146766460063152
+        },
+        "conditional_result": {
+          "n": 17085,
+          "log_loss": 1.1731917789161754,
+          "top1_accuracy": 0.5440444834650278,
+          "top2_accuracy": 0.7589113257243196,
+          "ece": 0.014144442198846563,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 17102,
+          "log_loss": 1.4091606251258382,
+          "top1_accuracy": 0.49263244065021633,
+          "top2_accuracy": 0.7383931703894281,
+          "ece": 0.06559835529549221,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 17085,
+          "log_loss": 2.357723463211037,
+          "top1_accuracy": 0.21580333625987708,
+          "top2_accuracy": 0.37822651448639155,
+          "ece": 0.008729520303510506,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 17102,
+          "log_loss": 1.4416820702016964,
+          "top1_accuracy": 0.3683194947959303,
+          "top2_accuracy": 0.6288738159279617,
+          "ece": 0.015481687811461598,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 17085,
+          "log_loss": 1.1731978892790649,
+          "top1_accuracy": 0.5440444834650278,
+          "top2_accuracy": 0.7589113257243196,
+          "ece": 0.014139102016398158,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 17102,
+          "log_loss": 1.630787806835178,
+          "top1_accuracy": 0.44708221260671266,
+          "top2_accuracy": 0.6198105484738627,
+          "ece": 0.020623756711642637,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 17085,
+          "log_loss": 2.393773768935931,
+          "top1_accuracy": 0.18378694761486683,
+          "top2_accuracy": 0.33719637108574774,
+          "ece": 0.0008882333808092663,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 17102,
+          "log_loss": 1.4503912721821828,
+          "top1_accuracy": 0.35837913694304757,
+          "top2_accuracy": 0.6254823997193311,
+          "ece": 0.009154711055200295,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 17085,
+          "log_loss": 1.2030374523030458,
+          "top1_accuracy": 0.5366110623353819,
+          "top2_accuracy": 0.7522973368451858,
+          "ece": 0.02327759401205532,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 17102,
+          "log_loss": 1.3791501305792733,
+          "top1_accuracy": 0.4772541223248743,
+          "top2_accuracy": 0.7050052625423927,
+          "ece": 0.027897045575231375,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 17085,
+          "log_loss": 2.3901550213377054,
+          "top1_accuracy": 0.1894059116183787,
+          "top2_accuracy": 0.34100087796312556,
+          "ece": 0.0019307010539641313,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 17102,
+          "log_loss": 1.4503912721821828,
+          "top1_accuracy": 0.35837913694304757,
+          "top2_accuracy": 0.6254823997193311,
+          "ece": 0.009154711055200295,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 17085,
+          "log_loss": 1.2030374523030458,
+          "top1_accuracy": 0.5366110623353819,
+          "top2_accuracy": 0.7522973368451858,
+          "ece": 0.02327759401205532,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "2025-05": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 15847,
+          "log_loss": 1.4231043090630737,
+          "top1_accuracy": 0.4997791380071938,
+          "top2_accuracy": 0.7367956080015144,
+          "ece": 0.056644075616019716,
+          "coverage": 0.8331545402915378,
+          "mean_set_size": 2.568372562630151
+        },
+        "zone": {
+          "n": 15833,
+          "log_loss": 2.3650559275865017,
+          "top1_accuracy": 0.21568875134213353,
+          "top2_accuracy": 0.3751026337396577,
+          "ece": 0.004688320472165455,
+          "coverage": 0.9019137244994632,
+          "mean_set_size": 10.333038590286112
+        },
+        "result": {
+          "n": 15847,
+          "log_loss": 1.4455572550559797,
+          "top1_accuracy": 0.35647125638922195,
+          "top2_accuracy": 0.6211901306240929,
+          "ece": 0.023116093617647968,
+          "coverage": 0.8893165898908311,
+          "mean_set_size": 3.5049536189815105
+        },
+        "conditional_result": {
+          "n": 15833,
+          "log_loss": 1.1728173315918506,
+          "top1_accuracy": 0.5400745278847976,
+          "top2_accuracy": 0.7603739026084759,
+          "ece": 0.01429132410022003,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 15847,
+          "log_loss": 1.4306564338728767,
+          "top1_accuracy": 0.4997791380071938,
+          "top2_accuracy": 0.7367956080015144,
+          "ece": 0.06333183648070945,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 15833,
+          "log_loss": 2.3650777685906483,
+          "top1_accuracy": 0.21568875134213353,
+          "top2_accuracy": 0.3751026337396577,
+          "ece": 0.0048458003570540625,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 15847,
+          "log_loss": 1.4460234890328707,
+          "top1_accuracy": 0.35647125638922195,
+          "top2_accuracy": 0.6211901306240929,
+          "ece": 0.027399430641828492,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 15833,
+          "log_loss": 1.1728248114058877,
+          "top1_accuracy": 0.5400745278847976,
+          "top2_accuracy": 0.7603739026084759,
+          "ece": 0.014504576050463814,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 15847,
+          "log_loss": 1.622854862934465,
+          "top1_accuracy": 0.4594560484634316,
+          "top2_accuracy": 0.6167728907679687,
+          "ece": 0.011161900580657858,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 15833,
+          "log_loss": 2.3995219615905605,
+          "top1_accuracy": 0.17861428661656034,
+          "top2_accuracy": 0.33474388934503885,
+          "ece": 0.0024712265607190562,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 15847,
+          "log_loss": 1.4524712285160872,
+          "top1_accuracy": 0.3538840159020635,
+          "top2_accuracy": 0.6226415094339622,
+          "ece": 0.01418605395405647,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 15833,
+          "log_loss": 1.204357055778713,
+          "top1_accuracy": 0.5330638539758732,
+          "top2_accuracy": 0.7539316617191941,
+          "ece": 0.021155368021131587,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 15847,
+          "log_loss": 1.3902293549884668,
+          "top1_accuracy": 0.48961948633810815,
+          "top2_accuracy": 0.6984918281062662,
+          "ece": 0.015758405932047508,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 15833,
+          "log_loss": 2.3963656834840896,
+          "top1_accuracy": 0.18221436240762964,
+          "top2_accuracy": 0.33556495926230023,
+          "ece": 0.002828779812299943,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 15847,
+          "log_loss": 1.4524712285160872,
+          "top1_accuracy": 0.3538840159020635,
+          "top2_accuracy": 0.6226415094339622,
+          "ece": 0.01418605395405647,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 15833,
+          "log_loss": 1.204357055778713,
+          "top1_accuracy": 0.5330638539758732,
+          "top2_accuracy": 0.7539316617191941,
+          "ece": 0.021155368021131587,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "2025-06": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 16127,
+          "log_loss": 1.4236668260915133,
+          "top1_accuracy": 0.48006448812550384,
+          "top2_accuracy": 0.7248093259750729,
+          "ece": 0.07132009937162695,
+          "coverage": 0.8309667018044273,
+          "mean_set_size": 2.6115830594654925
+        },
+        "zone": {
+          "n": 16119,
+          "log_loss": 2.37893607914669,
+          "top1_accuracy": 0.20925615732985917,
+          "top2_accuracy": 0.3695638687263478,
+          "ece": 0.010729106834256638,
+          "coverage": 0.9001799119052051,
+          "mean_set_size": 10.286618276568026
+        },
+        "result": {
+          "n": 16127,
+          "log_loss": 1.4396391152571617,
+          "top1_accuracy": 0.3652880262913127,
+          "top2_accuracy": 0.6267129658336951,
+          "ece": 0.014283912755429314,
+          "coverage": 0.8934085694797544,
+          "mean_set_size": 3.521733738451045
+        },
+        "conditional_result": {
+          "n": 16119,
+          "log_loss": 1.1428080053379297,
+          "top1_accuracy": 0.5553694397915503,
+          "top2_accuracy": 0.7741175010856753,
+          "ece": 0.008922548412840315,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 16127,
+          "log_loss": 1.4309839438797085,
+          "top1_accuracy": 0.48006448812550384,
+          "top2_accuracy": 0.7248093259750729,
+          "ece": 0.0779790766197884,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 16119,
+          "log_loss": 2.3789762335330598,
+          "top1_accuracy": 0.20925615732985917,
+          "top2_accuracy": 0.3695638687263478,
+          "ece": 0.010939737546296563,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 16127,
+          "log_loss": 1.4399322890119113,
+          "top1_accuracy": 0.3652880262913127,
+          "top2_accuracy": 0.6267129658336951,
+          "ece": 0.018905480857215416,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 16119,
+          "log_loss": 1.142781656041178,
+          "top1_accuracy": 0.5553694397915503,
+          "top2_accuracy": 0.7741175010856753,
+          "ece": 0.008778345163825576,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 16127,
+          "log_loss": 1.6403431680247897,
+          "top1_accuracy": 0.4395733862466671,
+          "top2_accuracy": 0.5947169343337261,
+          "ece": 0.027082420859771267,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 16119,
+          "log_loss": 2.411654379878428,
+          "top1_accuracy": 0.18394441342515044,
+          "top2_accuracy": 0.33072771263726036,
+          "ece": 0.003824282192775674,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 16127,
+          "log_loss": 1.4484436421223357,
+          "top1_accuracy": 0.36466794816146836,
+          "top2_accuracy": 0.6270850127116017,
+          "ece": 0.005472402826555437,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 16119,
+          "log_loss": 1.1762863971949493,
+          "top1_accuracy": 0.5540045908555121,
+          "top2_accuracy": 0.7667349091134685,
+          "ece": 0.04246455252650355,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 16127,
+          "log_loss": 1.4072515505494225,
+          "top1_accuracy": 0.46964717554411856,
+          "top2_accuracy": 0.6858064116078626,
+          "ece": 0.026932794613722104,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 16119,
+          "log_loss": 2.4091612527818267,
+          "top1_accuracy": 0.1840684906011539,
+          "top2_accuracy": 0.33134809851727776,
+          "ece": 0.0023858643155835416,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 16127,
+          "log_loss": 1.4484436421223357,
+          "top1_accuracy": 0.36466794816146836,
+          "top2_accuracy": 0.6270850127116017,
+          "ece": 0.005472402826555437,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 16119,
+          "log_loss": 1.1762863971949493,
+          "top1_accuracy": 0.5540045908555121,
+          "top2_accuracy": 0.7667349091134685,
+          "ece": 0.04246455252650355,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "2025-07": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 11802,
+          "log_loss": 1.3659777983328414,
+          "top1_accuracy": 0.5120318590069479,
+          "top2_accuracy": 0.7533468903575665,
+          "ece": 0.05056560529912655,
+          "coverage": 0.8452804609388239,
+          "mean_set_size": 2.5763429927130996
+        },
+        "zone": {
+          "n": 11797,
+          "log_loss": 2.3829244740631434,
+          "top1_accuracy": 0.21166398236839876,
+          "top2_accuracy": 0.3687378146986522,
+          "ece": 0.006685014273833963,
+          "coverage": 0.8961600406883106,
+          "mean_set_size": 10.232177672289565
+        },
+        "result": {
+          "n": 11802,
+          "log_loss": 1.4413376635971291,
+          "top1_accuracy": 0.36180308422301305,
+          "top2_accuracy": 0.6254024741569225,
+          "ece": 0.018407310066415484,
+          "coverage": 0.8944246737841044,
+          "mean_set_size": 3.5533807829181496
+        },
+        "conditional_result": {
+          "n": 11797,
+          "log_loss": 1.1639217903405865,
+          "top1_accuracy": 0.5454776638128338,
+          "top2_accuracy": 0.7658726794947868,
+          "ece": 0.00813986676683302,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 11802,
+          "log_loss": 1.3722429292990002,
+          "top1_accuracy": 0.5120318590069479,
+          "top2_accuracy": 0.7533468903575665,
+          "ece": 0.056486213024139094,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 11797,
+          "log_loss": 2.3829680942762597,
+          "top1_accuracy": 0.21166398236839876,
+          "top2_accuracy": 0.3687378146986522,
+          "ece": 0.006843850659585073,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 11802,
+          "log_loss": 1.4416260307138224,
+          "top1_accuracy": 0.36180308422301305,
+          "top2_accuracy": 0.6254024741569225,
+          "ece": 0.022390957791173848,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 11797,
+          "log_loss": 1.1639139636226459,
+          "top1_accuracy": 0.5454776638128338,
+          "top2_accuracy": 0.7658726794947868,
+          "ece": 0.007915144391146656,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 11802,
+          "log_loss": 1.5863425984165413,
+          "top1_accuracy": 0.4760210133875614,
+          "top2_accuracy": 0.6254872055583799,
+          "ece": 0.009674325463835636,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 11797,
+          "log_loss": 2.418171534006086,
+          "top1_accuracy": 0.18131728405526829,
+          "top2_accuracy": 0.3250826481308807,
+          "ece": 0.002395340414288589,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 11802,
+          "log_loss": 1.4472030981555337,
+          "top1_accuracy": 0.3623962040332147,
+          "top2_accuracy": 0.6222674123029995,
+          "ece": 0.005053578005985869,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 11797,
+          "log_loss": 1.1886563110069053,
+          "top1_accuracy": 0.5465796388912435,
+          "top2_accuracy": 0.762821056200729,
+          "ece": 0.03644481914605078,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 11802,
+          "log_loss": 1.3381820518833916,
+          "top1_accuracy": 0.5055922724961871,
+          "top2_accuracy": 0.718013895949839,
+          "ece": 0.018449734784923556,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 11797,
+          "log_loss": 2.4176010116287596,
+          "top1_accuracy": 0.17724845299652453,
+          "top2_accuracy": 0.3237263711112995,
+          "ece": 0.009950007529638816,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 11802,
+          "log_loss": 1.4472030981555337,
+          "top1_accuracy": 0.3623962040332147,
+          "top2_accuracy": 0.6222674123029995,
+          "ece": 0.005053578005985869,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 11797,
+          "log_loss": 1.1886563110069053,
+          "top1_accuracy": 0.5465796388912435,
+          "top2_accuracy": 0.762821056200729,
+          "ece": 0.03644481914605078,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "2025-08": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 18345,
+          "log_loss": 1.3587388638373636,
+          "top1_accuracy": 0.5193240665031343,
+          "top2_accuracy": 0.7530117198146634,
+          "ece": 0.03901414349573643,
+          "coverage": 0.8454619787408013,
+          "mean_set_size": 2.6103570455164897
+        },
+        "zone": {
+          "n": 18337,
+          "log_loss": 2.3766042362443356,
+          "top1_accuracy": 0.20810383377869882,
+          "top2_accuracy": 0.36848993837596117,
+          "ece": 0.012301104966758902,
+          "coverage": 0.8957299449201069,
+          "mean_set_size": 10.265692316082237
+        },
+        "result": {
+          "n": 18345,
+          "log_loss": 1.4369075068507386,
+          "top1_accuracy": 0.3672390297083674,
+          "top2_accuracy": 0.6300899427636958,
+          "ece": 0.011295445749531582,
+          "coverage": 0.8932134096484056,
+          "mean_set_size": 3.523793949304988
+        },
+        "conditional_result": {
+          "n": 18337,
+          "log_loss": 1.1446373351846053,
+          "top1_accuracy": 0.5551071603861046,
+          "top2_accuracy": 0.7749904564541638,
+          "ece": 0.012292261177973274,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 18345,
+          "log_loss": 1.364730311066567,
+          "top1_accuracy": 0.5193240665031343,
+          "top2_accuracy": 0.7530117198146634,
+          "ece": 0.044167207121591216,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 18337,
+          "log_loss": 2.376642285819339,
+          "top1_accuracy": 0.20810383377869882,
+          "top2_accuracy": 0.36848993837596117,
+          "ece": 0.012423124488034662,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 18345,
+          "log_loss": 1.4370773433299238,
+          "top1_accuracy": 0.3672390297083674,
+          "top2_accuracy": 0.6300899427636958,
+          "ece": 0.015582380623026035,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 18337,
+          "log_loss": 1.1446088205761236,
+          "top1_accuracy": 0.5551071603861046,
+          "top2_accuracy": 0.7749904564541638,
+          "ece": 0.01265613658218794,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 18345,
+          "log_loss": 1.5619676970819518,
+          "top1_accuracy": 0.4833469610248024,
+          "top2_accuracy": 0.6378304715181248,
+          "ece": 0.014962628299446584,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 18337,
+          "log_loss": 2.409378209479404,
+          "top1_accuracy": 0.17832797076948248,
+          "top2_accuracy": 0.32464416207667557,
+          "ece": 0.0054655000250309,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 18345,
+          "log_loss": 1.4405532450673244,
+          "top1_accuracy": 0.36347778686290544,
+          "top2_accuracy": 0.6304170073589533,
+          "ece": 0.005373710996577281,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 18337,
+          "log_loss": 1.1740091415036569,
+          "top1_accuracy": 0.552544036647216,
+          "top2_accuracy": 0.770300485357474,
+          "ece": 0.04032698518996177,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 18345,
+          "log_loss": 1.330312722276836,
+          "top1_accuracy": 0.5097846824747888,
+          "top2_accuracy": 0.7188334696102481,
+          "ece": 0.015178214784050646,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 18337,
+          "log_loss": 2.406730510821187,
+          "top1_accuracy": 0.17865517805529804,
+          "top2_accuracy": 0.3317336532693461,
+          "ece": 0.008689421331179153,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 18345,
+          "log_loss": 1.4405532450673244,
+          "top1_accuracy": 0.36347778686290544,
+          "top2_accuracy": 0.6304170073589533,
+          "ece": 0.005373710996577281,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 18337,
+          "log_loss": 1.1740091415036569,
+          "top1_accuracy": 0.552544036647216,
+          "top2_accuracy": 0.770300485357474,
+          "ece": 0.04032698518996177,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "2025-09": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 16249,
+          "log_loss": 1.4251764836945167,
+          "top1_accuracy": 0.5039079327958643,
+          "top2_accuracy": 0.7412148439903994,
+          "ece": 0.048782260661947165,
+          "coverage": 0.8305741891808727,
+          "mean_set_size": 2.588036186842267
+        },
+        "zone": {
+          "n": 16238,
+          "log_loss": 2.395889242041957,
+          "top1_accuracy": 0.20655253109988914,
+          "top2_accuracy": 0.358356940509915,
+          "ece": 0.014688129272403231,
+          "coverage": 0.8930902820544402,
+          "mean_set_size": 10.32645646015519
+        },
+        "result": {
+          "n": 16249,
+          "log_loss": 1.429569499074936,
+          "top1_accuracy": 0.3670379715674811,
+          "top2_accuracy": 0.6354852606314235,
+          "ece": 0.013320314921051232,
+          "coverage": 0.8991937965413256,
+          "mean_set_size": 3.513077727860176
+        },
+        "conditional_result": {
+          "n": 16238,
+          "log_loss": 1.1321749657435995,
+          "top1_accuracy": 0.5654021431210741,
+          "top2_accuracy": 0.7799605862790984,
+          "ece": 0.016721584714975746,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 16249,
+          "log_loss": 1.4325694867957306,
+          "top1_accuracy": 0.5039079327958643,
+          "top2_accuracy": 0.7412148439903994,
+          "ece": 0.05544888961220342,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 16238,
+          "log_loss": 2.395946138138364,
+          "top1_accuracy": 0.20655253109988914,
+          "top2_accuracy": 0.358356940509915,
+          "ece": 0.014696534331621826,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 16249,
+          "log_loss": 1.4296240118898025,
+          "top1_accuracy": 0.3670379715674811,
+          "top2_accuracy": 0.6354852606314235,
+          "ece": 0.017935408712385047,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 16238,
+          "log_loss": 1.13213321239851,
+          "top1_accuracy": 0.5654021431210741,
+          "top2_accuracy": 0.7799605862790984,
+          "ece": 0.016368410929363985,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 16249,
+          "log_loss": 1.593064686511571,
+          "top1_accuracy": 0.46618253430980366,
+          "top2_accuracy": 0.6245922826020063,
+          "ece": 0.007259559796072025,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 16238,
+          "log_loss": 2.4288591285153895,
+          "top1_accuracy": 0.1716960216775465,
+          "top2_accuracy": 0.3156176869072546,
+          "ece": 0.011730567904109937,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 16249,
+          "log_loss": 1.4336243413497343,
+          "top1_accuracy": 0.3657455843436519,
+          "top2_accuracy": 0.6409009785217552,
+          "ece": 0.0027049052979360422,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 16238,
+          "log_loss": 1.1626257471143449,
+          "top1_accuracy": 0.5585663259022047,
+          "top2_accuracy": 0.7774972287227491,
+          "ece": 0.04856828749582492,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 16249,
+          "log_loss": 1.3766864922895183,
+          "top1_accuracy": 0.49523047572158285,
+          "top2_accuracy": 0.7100129238722382,
+          "ece": 0.00874654173942835,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 16238,
+          "log_loss": 2.42701185394401,
+          "top1_accuracy": 0.16898632836556227,
+          "top2_accuracy": 0.31697253356324673,
+          "ece": 0.018747443464160688,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 16249,
+          "log_loss": 1.4336243413497343,
+          "top1_accuracy": 0.3657455843436519,
+          "top2_accuracy": 0.6409009785217552,
+          "ece": 0.0027049052979360422,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 16238,
+          "log_loss": 1.1626257471143449,
+          "top1_accuracy": 0.5585663259022047,
+          "top2_accuracy": 0.7774972287227491,
+          "ece": 0.04856828749582492,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    },
+    "2025-10": {
+      "selected_calibrated": {
+        "pitch": {
+          "n": 3440,
+          "log_loss": 1.399018646011419,
+          "top1_accuracy": 0.5409883720930233,
+          "top2_accuracy": 0.7593023255813953,
+          "ece": 0.04160873319867049,
+          "coverage": 0.8267441860465117,
+          "mean_set_size": 2.478488372093023
+        },
+        "zone": {
+          "n": 3435,
+          "log_loss": 2.4080689159417648,
+          "top1_accuracy": 0.18806404657933043,
+          "top2_accuracy": 0.3324599708879185,
+          "ece": 0.028369478475752535,
+          "coverage": 0.8931586608442503,
+          "mean_set_size": 10.397962154294031
+        },
+        "result": {
+          "n": 3440,
+          "log_loss": 1.4288723615432004,
+          "top1_accuracy": 0.37180232558139537,
+          "top2_accuracy": 0.6357558139534883,
+          "ece": 0.019855084218258094,
+          "coverage": 0.9,
+          "mean_set_size": 3.529360465116279
+        },
+        "conditional_result": {
+          "n": 3435,
+          "log_loss": 1.1647228613971659,
+          "top1_accuracy": 0.5534206695778748,
+          "top2_accuracy": 0.7595342066957788,
+          "ece": 0.021329540356971998,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "selected_raw": {
+        "pitch": {
+          "n": 3440,
+          "log_loss": 1.4069052736129781,
+          "top1_accuracy": 0.5409883720930233,
+          "top2_accuracy": 0.7593023255813953,
+          "ece": 0.04536908720757737,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 3435,
+          "log_loss": 2.408136000752118,
+          "top1_accuracy": 0.18806404657933043,
+          "top2_accuracy": 0.3324599708879185,
+          "ece": 0.02857174277806286,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 3440,
+          "log_loss": 1.4288286018477403,
+          "top1_accuracy": 0.37180232558139537,
+          "top2_accuracy": 0.6357558139534883,
+          "ece": 0.02474532257867294,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 3435,
+          "log_loss": 1.1647147123442634,
+          "top1_accuracy": 0.5534206695778748,
+          "top2_accuracy": 0.7595342066957788,
+          "ece": 0.020655726819507208,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "league_count": {
+        "pitch": {
+          "n": 3440,
+          "log_loss": 1.4921800506514886,
+          "top1_accuracy": 0.5165697674418605,
+          "top2_accuracy": 0.6779069767441861,
+          "ece": 0.046007813635801365,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 3435,
+          "log_loss": 2.4260158771095695,
+          "top1_accuracy": 0.16302765647743814,
+          "top2_accuracy": 0.30858806404657935,
+          "ece": 0.018543720284656673,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 3440,
+          "log_loss": 1.43164720371262,
+          "top1_accuracy": 0.37209302325581395,
+          "top2_accuracy": 0.6465116279069767,
+          "ece": 0.005418088728271206,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 3435,
+          "log_loss": 1.1897993215007054,
+          "top1_accuracy": 0.5519650655021834,
+          "top2_accuracy": 0.7583697234352256,
+          "ece": 0.043349287146550716,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 3440,
+          "log_loss": 1.3345397002023132,
+          "top1_accuracy": 0.5290697674418605,
+          "top2_accuracy": 0.7296511627906976,
+          "ece": 0.0381050920727149,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "zone": {
+          "n": 3435,
+          "log_loss": 2.4263189010278654,
+          "top1_accuracy": 0.16593886462882096,
+          "top2_accuracy": 0.30858806404657935,
+          "ece": 0.019975578125385748,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "result": {
+          "n": 3440,
+          "log_loss": 1.43164720371262,
+          "top1_accuracy": 0.37209302325581395,
+          "top2_accuracy": 0.6465116279069767,
+          "ece": 0.005418088728271206,
+          "coverage": null,
+          "mean_set_size": null
+        },
+        "conditional_result": {
+          "n": 3435,
+          "log_loss": 1.1897993215007054,
+          "top1_accuracy": 0.5519650655021834,
+          "top2_accuracy": 0.7583697234352256,
+          "ece": 0.043349287146550716,
+          "coverage": null,
+          "mean_set_size": null
+        }
+      }
+    }
+  },
+  "frozen_calibration_audit": {
+    "pitch": {
+      "n": 3196,
+      "ece_before": 0.040633323397859654,
+      "ece_after": 0.034433553491874096,
+      "log_loss_before": 1.1059416925987313,
+      "log_loss_after": 1.1052705407615313,
+      "coverage": 0.8983103879849812,
+      "mean_set_size": 2.5168961201501876,
+      "conformal_n": 5099,
+      "finite_sample_rank": 4590
+    },
+    "zone": {
+      "n": 3193,
+      "ece_before": 0.008968731033290551,
+      "ece_after": 0.008215434557585881,
+      "log_loss_before": 2.362307044387179,
+      "log_loss_after": 2.3622892541377043,
+      "coverage": 0.9025994362668337,
+      "mean_set_size": 10.270905104917006,
+      "conformal_n": 5096,
+      "finite_sample_rank": 4588
+    },
+    "result": {
+      "n": 3196,
+      "ece_before": 0.03134550763960649,
+      "ece_after": 0.02702146410494483,
+      "log_loss_before": 1.452362686848165,
+      "log_loss_after": 1.4519888593701378,
+      "coverage": 0.8945556946182729,
+      "mean_set_size": 3.580413016270338,
+      "conformal_n": 5099,
+      "finite_sample_rank": 4590
+    },
+    "conditional_result": {
+      "n": 3193,
+      "ece_before": 0.021146326127477456,
+      "ece_after": 0.01940207080224299,
+      "log_loss_before": 1.1533601435295546,
+      "log_loss_after": 1.1533793202898324
+    }
+  },
+  "calibration_audit_to_test": {
+    "pitch": {
+      "audit_n": 3196,
+      "test_n": 99729,
+      "log_loss_change": 0.29478648333893775,
+      "ece_change": 0.016636276675244817,
+      "coverage_change": -0.060931090087679496
+    },
+    "zone": {
+      "audit_n": 3193,
+      "test_n": 99661,
+      "log_loss_change": 0.01489448706667984,
+      "ece_change": 0.0015772807886761438,
+      "coverage_change": -0.004053365085529115
+    },
+    "result": {
+      "audit_n": 3196,
+      "test_n": 99729,
+      "log_loss_change": -0.013359757313797127,
+      "ece_change": -0.012783853547130106,
+      "coverage_change": -0.0013551210639406452
+    },
+    "conditional_result": {
+      "audit_n": 3193,
+      "test_n": 99661,
+      "log_loss_change": 0.0015759634608294437,
+      "ece_change": -0.014364036414238732,
+      "coverage_change": null
+    }
+  },
+  "limitations": [
+    "Final test is a retrospective 2025 regular-season cohort, not a future-performance guarantee.",
+    "Temporal drift and correlated pitches can invalidate exchangeability assumptions; nominal 90% is not guaranteed.",
+    "All-supported metrics include unseen player IDs with frozen unknown-ID features; the public API accepts only the frozen catalog. Catalog-serving metrics are reported separately.",
+    "Hit-by-pitch and other outcomes outside the five-class task are excluded and counted. Missing zones mask only zone and conditional-result evaluation.",
+    "Recorded pitch location is an observed outcome, not the intended target. Conditional-result accuracy on observed actions does not establish causal recommendation benefit.",
+    "Calibration-audit versus final-test changes compare different time cohorts; they do not isolate the cause of drift.",
+    "Frozen model metadata retains test_evaluated=false as historical training provenance; this separate report records the later final evaluation."
+  ],
+  "duration_seconds": 26.547863899999356,
+  "immutability_verified_after": {
+    "bundle_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+    "calibration_sha256": "b6b3bc0555dc956e1f6438a9f1f95a4dfbfd739cd5c5498148ebd868565c531b",
+    "encoder_sha256": "32ce3a06ea6185e741b9f1cd55709fbdd29161277f5b7aac89ef79ece3acb00c",
+    "unchanged": true
+  }
+}

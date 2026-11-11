@@ -209,7 +209,7 @@ def test_week2_real_model_uses_history_and_returns_calibration(week2_client):
         assert data['calibration']['method']=='temperature+split-conformal'
         assert set(data['prediction_sets'])=={'pitch','zone','result'}
         assert data['prediction_set']==data['prediction_sets']['pitch']['labels']
-        assert data['model_info']['test_evaluated'] is False
+        assert data['model_info']['test_evaluated'] is True
         assert data['model_info']['selected_candidate']=='lightgbm_history'
         candidates=data['recommendations']
         assert candidates

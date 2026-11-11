@@ -108,15 +108,20 @@ class FeatureBatch:
         return np.column_stack([context, self.lengths / MAX_HISTORY, self.lengths == 0, mean, last]).astype(np.float32)
 
 
-def build_batch(frame, encoder, *, jitter=0.0, seed=42):
-    """Rows may contain train/validation/calibration, never the 2025 test split.
+def build_batch(frame, encoder, *, jitter=0.0, seed=42, final_test=False):
+    """Use frozen encoders; 2025 is available only to explicit final evaluation.
 
     Histories are constructed before current-row filtering, sorted within the same
     game and PA. Invalid or terminal histories are missing, never silently repaired.
     Jitter is a train-only experiment on recorded location coordinates; it does not
     perturb validation/calibration or the current state.
     """
-    if frame.year.gt(2024).any() or frame.split.eq('test').any():
+    if final_test:
+        if frame.empty or not frame.year.eq(2025).all() or not frame.split.eq('test').all():
+            raise ValueError('Final evaluation accepts only the 2025 test partition')
+        if jitter:
+            raise ValueError('Final evaluation cannot augment test coordinates')
+    elif frame.year.gt(2024).any() or frame.split.eq('test').any():
         raise ValueError('The 2025 holdout must not enter week-two feature construction')
     if jitter and not frame.split.eq('train').all():
         raise ValueError('Coordinate augmentation is training-only')
@@ -157,7 +162,7 @@ def build_batch(frame, encoder, *, jitter=0.0, seed=42):
                         'velocity': finite(row.velocity), 'result': row.result})
         history_pitchers.append(row.pitcher_id)
     if not rows:
-        raise ValueError('No usable pre-2025 rows')
+        raise ValueError('No usable evaluation rows' if final_test else 'No usable pre-2025 rows')
     targets = np.asarray(targets, dtype=np.int64)
     return FeatureBatch(np.asarray(ids, dtype=np.int64), np.asarray(contexts, dtype=np.float32),
                         np.asarray(token_rows, dtype=np.float32), np.asarray(lengths, dtype=np.int64),
