@@ -1,0 +1,11 @@
+{
+  "archive": "deliverables\\PitchAdvisor_Offline.zip",
+  "bytes": 4133834,
+  "sha256": "914f7572eaec181acd730dce69b3268c26c8362b436e4e5e4b4c05572e464de3",
+  "staging_directory": ".cache\\offline-bundle\\PitchAdvisor_Offline",
+  "files": 28,
+  "bundle_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+  "python_runtime_included": false,
+  "dependencies_included": false,
+  "credentials_included": false
+}

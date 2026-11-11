@@ -1,0 +1,295 @@
+{
+  "source": "output\\playwright\\week3-walkthrough.webm",
+  "source_metadata": {
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "vp9",
+    "pix_fmt": "yuv420p(tv, progressive)",
+    "fps": 25.0,
+    "source_size": [
+      1440,
+      1000
+    ],
+    "size": [
+      1440,
+      1000
+    ],
+    "rotate": 0,
+    "duration": 459.36
+  },
+  "output": "deliverables\\球路參謀_示範影片_v1.mp4",
+  "output_metadata": {
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "fps": 25.0,
+    "source_size": [
+      1440,
+      1120
+    ],
+    "size": [
+      1440,
+      1120
+    ],
+    "rotate": 0,
+    "duration": 280.0
+  },
+  "bytes": 19269849,
+  "sha256": "fa333585925a5adecd34f2ea0c17a5253830f2973800e2c71a0975ee9dd45ffb",
+  "audio": "none; silent browser recording, no narration track",
+  "captions": "Traditional Chinese burned-in plus UTF-8 sidecar SRT",
+  "font": "Microsoft JhengHei",
+  "caption_region": "120 pixel padding below original recording",
+  "source_edit": "Original speed. Removed only observed waiting intervals between completed scene and next chapter.",
+  "chapters": [
+    {
+      "title": "01 投打與目前情境",
+      "source_start": 60,
+      "source_end": 88,
+      "caption_breaks": [
+        0,
+        10,
+        20,
+        28
+      ],
+      "start": 0.0,
+      "end": 28.0
+    },
+    {
+      "title": "02 歷程與即時機率",
+      "source_start": 90,
+      "source_end": 130,
+      "caption_breaks": [
+        0,
+        19,
+        28,
+        40
+      ],
+      "start": 28.0,
+      "end": 68.0
+    },
+    {
+      "title": "03 推薦與不確定性",
+      "source_start": 150,
+      "source_end": 185,
+      "caption_breaks": [
+        0,
+        16,
+        28,
+        35
+      ],
+      "start": 68.0,
+      "end": 103.0
+    },
+    {
+      "title": "04 驗證選模與校準",
+      "source_start": 195,
+      "source_end": 240,
+      "caption_breaks": [
+        0,
+        15,
+        25,
+        45
+      ],
+      "start": 103.0,
+      "end": 148.0
+    },
+    {
+      "title": "05 2025 最終測試與基準限制",
+      "source_start": 249,
+      "source_end": 300,
+      "caption_breaks": [
+        0,
+        21,
+        32,
+        51
+      ],
+      "start": 148.0,
+      "end": 199.0
+    },
+    {
+      "title": "06 模擬服務錯誤與固定案例",
+      "source_start": 309,
+      "source_end": 355,
+      "caption_breaks": [
+        0,
+        19,
+        34,
+        46
+      ],
+      "start": 199.0,
+      "end": 245.0
+    },
+    {
+      "title": "07 手機寬度與回到即時模式",
+      "source_start": 399,
+      "source_end": 434,
+      "caption_breaks": [
+        0,
+        12,
+        25,
+        35
+      ],
+      "start": 245.0,
+      "end": 280.0
+    }
+  ],
+  "caption_events": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "text": "本機完整推論操作錄影\n無旁白，以繁體中文字幕說明",
+      "chapter": "01 投打與目前情境"
+    },
+    {
+      "start": 10.0,
+      "end": 20.0,
+      "text": "選擇德保拉對李凱威\n依投打與目前情境重新計算",
+      "chapter": "01 投打與目前情境"
+    },
+    {
+      "start": 20.0,
+      "end": 28.0,
+      "text": "修改出局數與壘包狀態\n新結果完成前先清除舊推薦",
+      "chapter": "01 投打與目前情境"
+    },
+    {
+      "start": 28.0,
+      "end": 47.0,
+      "text": "新增本打席第一球與第二球\n球種、落點、球速與結果可編輯",
+      "chapter": "02 歷程與即時機率"
+    },
+    {
+      "start": 47.0,
+      "end": 56.0,
+      "text": "從完整歷程自動重建球數\n兩球後顯示一壞一好",
+      "chapter": "02 歷程與即時機率"
+    },
+    {
+      "start": 56.0,
+      "end": 68.0,
+      "text": "本次推論已使用兩球歷程\n機率圖與熱圖依目前輸入更新",
+      "chapter": "02 歷程與即時機率"
+    },
+    {
+      "start": 68.0,
+      "end": 84.0,
+      "text": "候選配球依估計失分變化排序\n只比較有資料支持的球種與落點",
+      "chapter": "03 推薦與不確定性"
+    },
+    {
+      "start": 84.0,
+      "end": 96.0,
+      "text": "分開呈現投手、打者與直接對戰樣本\n預測集合可能包含多個球種或區域",
+      "chapter": "03 推薦與不確定性"
+    },
+    {
+      "start": 96.0,
+      "end": 103.0,
+      "text": "推薦根據歷史觀測資料\n尚未證實能降低實戰失分",
+      "chapter": "03 推薦與不確定性"
+    },
+    {
+      "start": 103.0,
+      "end": 118.0,
+      "text": "相同驗證集比較三項預測任務\n依事前規則選擇歷程 LightGBM",
+      "chapter": "04 驗證選模與校準"
+    },
+    {
+      "start": 118.0,
+      "end": 128.0,
+      "text": "球種、落點、投球結果分別檢查\n保留 GRU 與基準的比較結果",
+      "chapter": "04 驗證選模與校準"
+    },
+    {
+      "start": 128.0,
+      "end": 148.0,
+      "text": "校準與集合門檻使用獨立日期\n保留稽核呈現實測覆蓋率",
+      "chapter": "04 驗證選模與校準"
+    },
+    {
+      "start": 148.0,
+      "end": 169.0,
+      "text": "2025 最終測試保持模型與校準器凍結\n全體球種 log loss 比頻率基準差 2.27%",
+      "chapter": "05 2025 最終測試與基準限制"
+    },
+    {
+      "start": 169.0,
+      "end": 180.0,
+      "text": "線上名單內子集另行揭露\n球種 log loss 比頻率基準改善 3.56%",
+      "chapter": "05 2025 最終測試與基準限制"
+    },
+    {
+      "start": 180.0,
+      "end": 199.0,
+      "text": "全體球種集合實測覆蓋 83.74%\n低於名目 90%，沒有重調測試門檻",
+      "chapter": "05 2025 最終測試與基準限制"
+    },
+    {
+      "start": 199.0,
+      "end": 218.0,
+      "text": "此段模擬推論 API 回應 503\n呈現服務失敗提示與展示備案",
+      "chapter": "06 模擬服務錯誤與固定案例"
+    },
+    {
+      "start": 218.0,
+      "end": 233.0,
+      "text": "切換固定示範案例\n僅讀取預存結果，欄位唯讀",
+      "chapter": "06 模擬服務錯誤與固定案例"
+    },
+    {
+      "start": 233.0,
+      "end": 245.0,
+      "text": "少量樣本案例揭露直接對戰 0 球\n固定案例不接受任意情境即時推論",
+      "chapter": "06 模擬服務錯誤與固定案例"
+    },
+    {
+      "start": 245.0,
+      "end": 257.0,
+      "text": "以 390 px viewport 模擬手機寬度\n這是桌面瀏覽器，未使用實體手機",
+      "chapter": "07 手機寬度與回到即時模式"
+    },
+    {
+      "start": 257.0,
+      "end": 270.0,
+      "text": "固定案例在窄畫面仍顯示唯讀與可信度\n頁面採正常縱向捲動閱讀",
+      "chapter": "07 手機寬度與回到即時模式"
+    },
+    {
+      "start": 270.0,
+      "end": 280.0,
+      "text": "回到桌面與本機即時模式\n模型版本與歷史資料截止日保持可見",
+      "chapter": "07 手機寬度與回到即時模式"
+    }
+  ],
+  "validation": {
+    "decode_exit_code": 0,
+    "decode_errors": "",
+    "mp4_box_order": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ],
+    "faststart": true,
+    "stream_handlers": [
+      "vide"
+    ],
+    "audio_track_count": 0,
+    "keyframes": 140,
+    "maximum_keyframe_interval_seconds": 2.0,
+    "visual_frames_seconds": [
+      6,
+      48,
+      84,
+      135,
+      170,
+      190,
+      213,
+      259,
+      275
+    ],
+    "visual_result": "All nine frames opened and inspected; Traditional Chinese captions readable in separate bottom region."
+  },
+  "subtitle_bytes": 2438,
+  "subtitle_sha256": "fce49a097931d97dac39825f444850e115cb40570aba60c182dc0b4013eba7f5"
+}

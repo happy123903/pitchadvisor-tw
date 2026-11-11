@@ -1,0 +1,82 @@
+{
+  "verified_at": "2026-11-11T02:54:40Z",
+  "functional_commit": "501dddc0e277332f170af7d0cf1f239886aea013",
+  "github": [
+    {
+      "id": 42948712495,
+      "name": "Check model API and web",
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "501dddc0e277332f170af7d0cf1f239886aea013",
+      "url": "https://github.com/happy123903/pitchadvisor-tw/actions/runs/42948712495"
+    },
+    {
+      "id": 42948712357,
+      "name": "Build and deploy web",
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "501dddc0e277332f170af7d0cf1f239886aea013",
+      "url": "https://github.com/happy123903/pitchadvisor-tw/actions/runs/42948712357"
+    }
+  ],
+  "render": {
+    "workspace_id": "tea-d6rflqq4d50c73bt1q0g",
+    "service_id": "srv-dbpe8a8m7kps73amakrg",
+    "deploy_id": "dep-dbptfqgae00c73fh7at0",
+    "status": "live",
+    "finished_at": "2026-11-11T02:52:17.703366Z",
+    "new_runtime_errors": 0,
+    "memory_observation": {
+      "series": [
+        {
+          "labels": [
+            {
+              "field": "instance",
+              "value": "srv-dbpe8a8m7kps73amakrg-d9rhc"
+            },
+            {
+              "field": "service",
+              "value": "srv-dbpe8a8m7kps73amakrg"
+            },
+            {
+              "field": "resource",
+              "value": "srv-dbpe8a8m7kps73amakrg"
+            }
+          ],
+          "unit": "bytes",
+          "values": [
+            {
+              "timestamp": "2026-11-11T02:52:30Z",
+              "value": 156102660
+            },
+            {
+              "timestamp": "2026-11-11T02:53:00Z",
+              "value": 156569600
+            },
+            {
+              "timestamp": "2026-11-11T02:53:30Z",
+              "value": 156815360
+            },
+            {
+              "timestamp": "2026-11-11T02:54:00Z",
+              "value": 156811260
+            },
+            {
+              "timestamp": "2026-11-11T02:54:30Z",
+              "value": 156811260
+            }
+          ]
+        }
+      ],
+      "maximum_sampled_bytes": 156815360,
+      "maximum_sampled_mib": 149.55078125,
+      "under_400_mib": true,
+      "measurement": "30-second Render per-instance samples, not an instantaneous peak or production capacity test."
+    }
+  },
+  "public_http": "deployment_verification.json",
+  "cold_start": "cold_start.json",
+  "offline": "offline_verification.json",
+  "supabase": "supabase_verification.json",
+  "frozen_model_unchanged": true
+}
