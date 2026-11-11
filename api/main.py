@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import math
 import os
 import time
+import uuid
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Annotated, Literal
@@ -151,10 +153,25 @@ async def lifespan(app):
     yield
 
 
-app=FastAPI(title='球路參謀 PitchAdvisor TW',version='0.2.0',lifespan=lifespan)
+app=FastAPI(title='球路參謀 PitchAdvisor TW',version='0.3.0',lifespan=lifespan)
 origins=[x.strip() for x in os.getenv('ALLOWED_ORIGINS','http://127.0.0.1:5173,http://localhost:5173,http://127.0.0.1:4173,http://localhost:4173').split(',') if x.strip()]
 app.add_middleware(CORSMiddleware,allow_origins=origins,allow_credentials=False,
                    allow_methods=['GET','POST'],allow_headers=['Content-Type'])
+
+
+@app.middleware('http')
+async def request_diagnostics(request,call_next):
+    request_id=uuid.uuid4().hex
+    started=time.perf_counter()
+    response=await call_next(request)
+    baseline=getattr(app.state,'baseline',None)
+    version=baseline.model['model_version'] if baseline else 'unready'
+    # Never log query strings, request bodies, credentials or arbitrary URL paths.
+    path=request.url.path if request.url.path in ('/health','/players','/metadata','/model-info','/evaluation','/predict') else 'other'
+    logging.getLogger('uvicorn.error').info('request_completed id=%s method=%s path=%s status=%s elapsed_ms=%.2f model=%s',
+        request_id,request.method,path,response.status_code,(time.perf_counter()-started)*1000,version)
+    response.headers['X-Request-ID']=request_id
+    return response
 
 
 def ready():
@@ -171,7 +188,8 @@ def health():
     m=baseline.model
     return {'status':'ready','model_version':m['model_version'],'data_version':m['data_version'],
             'data_cutoff':m['data_cutoff'],'data_source':app.state.data_source,
-            'data_source_error':app.state.data_source_error,'capabilities':public_capabilities(m)}
+            'data_source_error':app.state.data_source_error,'capabilities':public_capabilities(m),
+            'bundle_sha256':app.state.manifest['sha256'],'test_evaluated':final_evaluation_report(m) is not None}
 
 
 TASKS=('pitch','zone','result')
@@ -210,7 +228,48 @@ def public_evaluation(model):
     if isinstance(validation,dict):
         result['validation']={name:task_summaries(values,METRIC_FIELDS) for name,values in validation.items()}
     result['calibration_audit']=task_summaries(info.get('calibration_audit'),AUDIT_FIELDS)
+    result['test_evaluated']=final_evaluation_report(model) is not None
     return result
+
+
+def final_evaluation_report(model):
+    """A final score belongs only to the exact frozen bundle that was evaluated."""
+    path=ROOT/'docs/week3/final_evaluation_public.json'
+    try:
+        report=json.loads(path.read_text(encoding='utf-8'))
+        frozen=report['frozen_bundle']
+        manifest=getattr(app.state,'manifest',None)
+        if (not manifest or report.get('test_evaluated') is not True
+            or frozen['sha256']!=manifest['sha256']
+            or frozen['model_version']!=model['model_version']
+            or frozen['data_cutoff']!=model['data_cutoff']):
+            return None
+        fields=METRIC_FIELDS+('coverage','mean_set_size')
+        baseline=report.get('baselines',{})
+        return {'schema_version':report['schema_version'],'test_evaluated':True,
+                'frozen_bundle':scalar_summary(frozen,('model_version','sha256','data_cutoff')),
+                'period':scalar_summary(report.get('period'),('start','end')),
+                'sample_counts':scalar_summary(report.get('sample_counts'),
+                    ('raw','usable','catalog_serving','outside_catalog','missing_zone')),
+                'selected':task_summaries(report.get('selected'),fields),
+                'baselines':{name:task_summaries(baseline[name],fields)
+                    for name in ('league_count','pitcher_count_shrunk') if name in baseline},
+                'catalog_serving':{'selected':task_summaries(report.get('catalog_serving',{}).get('selected'),fields),
+                    'baselines':{name:task_summaries(values,fields) for name,values in
+                        report.get('catalog_serving',{}).get('baselines',{}).items()
+                        if name in ('league_count','pitcher_count_shrunk')}},
+                'limitations':[value for value in report.get('limitations',[]) if isinstance(value,str)]}
+    except (OSError,ValueError,KeyError,TypeError):
+        return None
+
+
+@app.get('/evaluation')
+def final_evaluation():
+    report=final_evaluation_report(ready().model)
+    if report is None:
+        raise HTTPException(503,{'code':'final_evaluation_not_available',
+            'message':'目前模型尚無相同校驗碼的最終測試報告，請稍後重試。'})
+    return report
 
 
 def public_calibration(model):

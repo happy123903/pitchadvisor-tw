@@ -1,0 +1,5588 @@
+{
+  "schema_version": 1,
+  "mode": "fixed_demo_cases",
+  "model_version": "week2-sequence-v1",
+  "data_version": "rebas-2023-2025-regular-v1",
+  "data_cutoff": "2024-08-14",
+  "bundle_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+  "recorded_from": "local_snapshot",
+  "disclaimer": "固定示範案例，僅切換已計算的輸入與結果，不接受任意情境即時推論。",
+  "players": [
+    {
+      "id": "KPTzi",
+      "role": "pitcher",
+      "name": "鋼龍",
+      "hand": "R",
+      "sample_count": 3962,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "EsmS7",
+      "role": "pitcher",
+      "name": "德保拉",
+      "hand": "L",
+      "sample_count": 3865,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "CvkZv",
+      "role": "pitcher",
+      "name": "布雷克",
+      "hand": "R",
+      "sample_count": 3578,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "CHGvV",
+      "role": "pitcher",
+      "name": "陳仕朋",
+      "hand": "L",
+      "sample_count": 3401,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "LlGVK",
+      "role": "batter",
+      "name": "陳傑憲",
+      "hand": "L",
+      "sample_count": 3233,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "J4Ca0",
+      "role": "pitcher",
+      "name": "黃子鵬",
+      "hand": "R",
+      "sample_count": 3208,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "u6XUJ",
+      "role": "batter",
+      "name": "李凱威",
+      "hand": "L",
+      "sample_count": 3129,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "yDdjY",
+      "role": "batter",
+      "name": "岳政華",
+      "hand": "L",
+      "sample_count": 3087,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "xdLku",
+      "role": "batter",
+      "name": "陳晨威",
+      "hand": "L",
+      "sample_count": 3083,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8wMt5",
+      "role": "batter",
+      "name": "劉基鴻",
+      "hand": "R",
+      "sample_count": 2967,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "iDWQ3",
+      "role": "batter",
+      "name": "范國宸",
+      "hand": "R",
+      "sample_count": 2839,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "KNmRt",
+      "role": "batter",
+      "name": "郭天信",
+      "hand": "L",
+      "sample_count": 2831,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "VZZgs",
+      "role": "batter",
+      "name": "朱育賢",
+      "hand": "L",
+      "sample_count": 2736,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0fd4d",
+      "role": "batter",
+      "name": "梁家榮",
+      "hand": "L",
+      "sample_count": 2701,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "PtGe1",
+      "role": "pitcher",
+      "name": "勝騎士",
+      "hand": "R",
+      "sample_count": 2697,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "iAcZZ",
+      "role": "batter",
+      "name": "廖健富",
+      "hand": "L",
+      "sample_count": 2685,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "mxPQL",
+      "role": "pitcher",
+      "name": "艾速特",
+      "hand": "L",
+      "sample_count": 2680,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "oYqGo",
+      "role": "batter",
+      "name": "李宗賢",
+      "hand": "R",
+      "sample_count": 2655,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "elqzw",
+      "role": "batter",
+      "name": "吉力吉撈．鞏冠",
+      "hand": "R",
+      "sample_count": 2648,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7eWTJ",
+      "role": "batter",
+      "name": "王正棠",
+      "hand": "L",
+      "sample_count": 2627,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Dvre5",
+      "role": "batter",
+      "name": "岳東華",
+      "hand": "L",
+      "sample_count": 2614,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ooOfM",
+      "role": "batter",
+      "name": "申皓瑋",
+      "hand": "R",
+      "sample_count": 2564,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0uRxO",
+      "role": "batter",
+      "name": "詹子賢",
+      "hand": "R",
+      "sample_count": 2555,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1Q3sV",
+      "role": "pitcher",
+      "name": "威能帝",
+      "hand": "R",
+      "sample_count": 2519,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Nf4Ac",
+      "role": "batter",
+      "name": "邱智呈",
+      "hand": "L",
+      "sample_count": 2496,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "zm0Ra",
+      "role": "pitcher",
+      "name": "古林睿煬",
+      "hand": "R",
+      "sample_count": 2482,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "EbmCy",
+      "role": "pitcher",
+      "name": "羅昂",
+      "hand": "R",
+      "sample_count": 2470,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Ifqha",
+      "role": "batter",
+      "name": "林安可",
+      "hand": "L",
+      "sample_count": 2416,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "sGfcd",
+      "role": "pitcher",
+      "name": "江國豪",
+      "hand": "R",
+      "sample_count": 2346,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "rfEOE",
+      "role": "batter",
+      "name": "江坤宇",
+      "hand": "R",
+      "sample_count": 2333,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "eHTjm",
+      "role": "pitcher",
+      "name": "戈威士",
+      "hand": "R",
+      "sample_count": 2332,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "GyXsc",
+      "role": "pitcher",
+      "name": "肯特",
+      "hand": "L",
+      "sample_count": 2326,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "C5Lw5",
+      "role": "batter",
+      "name": "王威晨",
+      "hand": "L",
+      "sample_count": 2294,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ZE04R",
+      "role": "pitcher",
+      "name": "艾璞樂",
+      "hand": "R",
+      "sample_count": 2286,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ICJNX",
+      "role": "batter",
+      "name": "陳文杰",
+      "hand": "L",
+      "sample_count": 2216,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "m1M26",
+      "role": "batter",
+      "name": "陳俊秀",
+      "hand": "R",
+      "sample_count": 2169,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "TcTH",
+      "role": "pitcher",
+      "name": "郭俊麟",
+      "hand": "R",
+      "sample_count": 2136,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ieceO",
+      "role": "pitcher",
+      "name": "伍鐸",
+      "hand": "R",
+      "sample_count": 2097,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "PKNKN",
+      "role": "batter",
+      "name": "蘇智傑",
+      "hand": "L",
+      "sample_count": 2069,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "l6zUW",
+      "role": "batter",
+      "name": "林哲瑄",
+      "hand": "R",
+      "sample_count": 2061,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "EON0l",
+      "role": "pitcher",
+      "name": "王維中",
+      "hand": "L",
+      "sample_count": 2054,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "dNaQr",
+      "role": "batter",
+      "name": "林孝程",
+      "hand": "L",
+      "sample_count": 1987,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "DfhPb",
+      "role": "pitcher",
+      "name": "布里悍",
+      "hand": "R",
+      "sample_count": 1935,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "c3PEk",
+      "role": "batter",
+      "name": "許基宏",
+      "hand": "L",
+      "sample_count": 1920,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7SbFo",
+      "role": "pitcher",
+      "name": "曾仁和",
+      "hand": "R",
+      "sample_count": 1900,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "yvoBa",
+      "role": "batter",
+      "name": "陳子豪",
+      "hand": "L",
+      "sample_count": 1868,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "pCoH1",
+      "role": "batter",
+      "name": "陳重廷",
+      "hand": "R",
+      "sample_count": 1849,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7vTQV",
+      "role": "batter",
+      "name": "林泓育",
+      "hand": "R",
+      "sample_count": 1838,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Z18US",
+      "role": "pitcher",
+      "name": "猛登",
+      "hand": "R",
+      "sample_count": 1835,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "LsMyw",
+      "role": "batter",
+      "name": "潘傑楷",
+      "hand": "L",
+      "sample_count": 1814,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ZtyCx",
+      "role": "batter",
+      "name": "成晉",
+      "hand": "R",
+      "sample_count": 1812,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "b3UAW",
+      "role": "batter",
+      "name": "曾頌恩",
+      "hand": "R",
+      "sample_count": 1803,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "a5fxm",
+      "role": "pitcher",
+      "name": "陳克羿",
+      "hand": "R",
+      "sample_count": 1779,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "RJzVu",
+      "role": "batter",
+      "name": "林立",
+      "hand": "R",
+      "sample_count": 1766,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3Xh4g",
+      "role": "pitcher",
+      "name": "江承諺",
+      "hand": "L",
+      "sample_count": 1716,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3M1Jq",
+      "role": "batter",
+      "name": "拿莫．伊漾",
+      "hand": "R",
+      "sample_count": 1714,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "lAZri",
+      "role": "pitcher",
+      "name": "鄭浩均",
+      "hand": "R",
+      "sample_count": 1707,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "w5KG8",
+      "role": "batter",
+      "name": "陳重羽",
+      "hand": "R",
+      "sample_count": 1707,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "xZBmj",
+      "role": "batter",
+      "name": "林承飛",
+      "hand": "R",
+      "sample_count": 1706,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "P5S6r",
+      "role": "batter",
+      "name": "陳鏞基",
+      "hand": "R",
+      "sample_count": 1697,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Oo3kC",
+      "role": "pitcher",
+      "name": "郭郁政",
+      "hand": "R",
+      "sample_count": 1675,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "paNxV",
+      "role": "batter",
+      "name": "高宇杰",
+      "hand": "R",
+      "sample_count": 1667,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BLal8",
+      "role": "pitcher",
+      "name": "富藍戈",
+      "hand": "R",
+      "sample_count": 1618,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "upBvv",
+      "role": "pitcher",
+      "name": "羅戈",
+      "hand": "R",
+      "sample_count": 1613,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "duBTU",
+      "role": "pitcher",
+      "name": "後勁",
+      "hand": "R",
+      "sample_count": 1593,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "HEtHO",
+      "role": "batter",
+      "name": "張志豪",
+      "hand": "L",
+      "sample_count": 1585,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8J0xd",
+      "role": "batter",
+      "name": "林靖凱",
+      "hand": "R",
+      "sample_count": 1574,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "qQixh",
+      "role": "pitcher",
+      "name": "呂彥青",
+      "hand": "L",
+      "sample_count": 1535,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "fDihN",
+      "role": "pitcher",
+      "name": "魔神樂",
+      "hand": "L",
+      "sample_count": 1527,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "qJRgp",
+      "role": "pitcher",
+      "name": "余謙",
+      "hand": "R",
+      "sample_count": 1524,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "rdO1R",
+      "role": "pitcher",
+      "name": "霸威斯",
+      "hand": "L",
+      "sample_count": 1519,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "YKrjN",
+      "role": "pitcher",
+      "name": "吳俊偉",
+      "hand": "R",
+      "sample_count": 1513,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "mlpZo",
+      "role": "pitcher",
+      "name": "胡智爲",
+      "hand": "R",
+      "sample_count": 1483,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "NjTQu",
+      "role": "pitcher",
+      "name": "魏碩成",
+      "hand": "L",
+      "sample_count": 1477,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "TgNKb",
+      "role": "batter",
+      "name": "曾子祐",
+      "hand": "R",
+      "sample_count": 1451,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nm81R",
+      "role": "batter",
+      "name": "蔣少宏",
+      "hand": "R",
+      "sample_count": 1444,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "PUHJv",
+      "role": "pitcher",
+      "name": "鄭凱文",
+      "hand": "R",
+      "sample_count": 1434,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "NHGwk",
+      "role": "pitcher",
+      "name": "林子昱",
+      "hand": "R",
+      "sample_count": 1415,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "dFblH",
+      "role": "batter",
+      "name": "張政禹",
+      "hand": "L",
+      "sample_count": 1414,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Q5oCF",
+      "role": "pitcher",
+      "name": "陳冠偉",
+      "hand": "R",
+      "sample_count": 1411,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "NvcWV",
+      "role": "batter",
+      "name": "戴培峰",
+      "hand": "L",
+      "sample_count": 1396,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0ILWC",
+      "role": "pitcher",
+      "name": "陳鴻文",
+      "hand": "R",
+      "sample_count": 1381,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "MSMcB",
+      "role": "pitcher",
+      "name": "徐若熙",
+      "hand": "R",
+      "sample_count": 1356,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ZpO1W",
+      "role": "batter",
+      "name": "林益全",
+      "hand": "L",
+      "sample_count": 1350,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "qGUE1",
+      "role": "batter",
+      "name": "高國麟",
+      "hand": "R",
+      "sample_count": 1347,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "WeQIm",
+      "role": "batter",
+      "name": "王勝偉",
+      "hand": "R",
+      "sample_count": 1342,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "AGbc",
+      "role": "batter",
+      "name": "王政順",
+      "hand": "L",
+      "sample_count": 1340,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "bvbdc",
+      "role": "pitcher",
+      "name": "霍爾",
+      "hand": "R",
+      "sample_count": 1321,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1juVE",
+      "role": "batter",
+      "name": "王柏融",
+      "hand": "L",
+      "sample_count": 1309,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ZvyKT",
+      "role": "batter",
+      "name": "張祐銘",
+      "hand": "L",
+      "sample_count": 1309,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Fraw",
+      "role": "pitcher",
+      "name": "曾峻岳",
+      "hand": "R",
+      "sample_count": 1307,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "XuDGV",
+      "role": "batter",
+      "name": "魔鷹",
+      "hand": "L",
+      "sample_count": 1296,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nI8wX",
+      "role": "pitcher",
+      "name": "施子謙",
+      "hand": "R",
+      "sample_count": 1292,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "MeYuP",
+      "role": "batter",
+      "name": "陳品捷",
+      "hand": "L",
+      "sample_count": 1261,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "xzcRU",
+      "role": "pitcher",
+      "name": "哈瑪星",
+      "hand": "L",
+      "sample_count": 1259,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "V8XLP",
+      "role": "pitcher",
+      "name": "陳冠宇",
+      "hand": "L",
+      "sample_count": 1256,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "YsKwk",
+      "role": "pitcher",
+      "name": "林凱威",
+      "hand": "R",
+      "sample_count": 1230,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "vKeH4",
+      "role": "pitcher",
+      "name": "道博格",
+      "hand": "L",
+      "sample_count": 1229,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1MV0s",
+      "role": "batter",
+      "name": "馬傑森",
+      "hand": "R",
+      "sample_count": 1208,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "krwFy",
+      "role": "batter",
+      "name": "藍寅倫",
+      "hand": "L",
+      "sample_count": 1193,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "v1Pw4",
+      "role": "pitcher",
+      "name": "李東洺",
+      "hand": "R",
+      "sample_count": 1185,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "5RDHC",
+      "role": "pitcher",
+      "name": "蔡齊哲",
+      "hand": "R",
+      "sample_count": 1179,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "yvYke",
+      "role": "pitcher",
+      "name": "邱浩鈞",
+      "hand": "R",
+      "sample_count": 1177,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Y0UJM",
+      "role": "batter",
+      "name": "林子豪",
+      "hand": "L",
+      "sample_count": 1167,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FdIpf",
+      "role": "pitcher",
+      "name": "呂詠臻",
+      "hand": "R",
+      "sample_count": 1158,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "hHLGE",
+      "role": "pitcher",
+      "name": "威達爾",
+      "hand": "L",
+      "sample_count": 1155,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8llux",
+      "role": "pitcher",
+      "name": "王尉永",
+      "hand": "R",
+      "sample_count": 1136,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "X8uw7",
+      "role": "pitcher",
+      "name": "布藍登",
+      "hand": "R",
+      "sample_count": 1125,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "SIuGq",
+      "role": "pitcher",
+      "name": "雷法\t",
+      "hand": "R",
+      "sample_count": 1121,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "KGiim",
+      "role": "pitcher",
+      "name": "錡龍",
+      "hand": "L",
+      "sample_count": 1089,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "K1Dt",
+      "role": "pitcher",
+      "name": "岳少華",
+      "hand": "R",
+      "sample_count": 1081,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7SWLU",
+      "role": "batter",
+      "name": "林智勝",
+      "hand": "R",
+      "sample_count": 1075,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "pdZon",
+      "role": "batter",
+      "name": "周思齊",
+      "hand": "L",
+      "sample_count": 1067,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nVk1Q",
+      "role": "pitcher",
+      "name": "陳柏清",
+      "hand": "L",
+      "sample_count": 1054,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FlXMq",
+      "role": "batter",
+      "name": "胡金龍",
+      "hand": "R",
+      "sample_count": 1034,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "AOjct",
+      "role": "batter",
+      "name": "張進德",
+      "hand": "L",
+      "sample_count": 1031,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "wjF8n",
+      "role": "pitcher",
+      "name": "王躍霖",
+      "hand": "R",
+      "sample_count": 1030,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0pBZx",
+      "role": "batter",
+      "name": "郭嚴文",
+      "hand": "L",
+      "sample_count": 1029,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BVeRB",
+      "role": "pitcher",
+      "name": "江少慶",
+      "hand": "R",
+      "sample_count": 1026,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7TPaU",
+      "role": "batter",
+      "name": "林佳緯",
+      "hand": "L",
+      "sample_count": 1022,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8ZZrq",
+      "role": "pitcher",
+      "name": "艾里歐",
+      "hand": "R",
+      "sample_count": 1015,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "RQkp2",
+      "role": "pitcher",
+      "name": "林詔恩",
+      "hand": "L",
+      "sample_count": 1009,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BXV3r",
+      "role": "pitcher",
+      "name": "吳俊杰",
+      "hand": "R",
+      "sample_count": 1002,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "yVVZM",
+      "role": "batter",
+      "name": "辛元旭",
+      "hand": "R",
+      "sample_count": 992,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "dYaAT",
+      "role": "pitcher",
+      "name": "安得勝",
+      "hand": "R",
+      "sample_count": 989,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "yemqV",
+      "role": "pitcher",
+      "name": "陳韻文",
+      "hand": "R",
+      "sample_count": 980,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8wmMR",
+      "role": "pitcher",
+      "name": "王志煊",
+      "hand": "L",
+      "sample_count": 965,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "6adnx",
+      "role": "pitcher",
+      "name": "銳歐",
+      "hand": "L",
+      "sample_count": 951,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "puKjJ",
+      "role": "batter",
+      "name": "張肇元",
+      "hand": "R",
+      "sample_count": 946,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "IYo8c",
+      "role": "batter",
+      "name": "杜家明",
+      "hand": "R",
+      "sample_count": 945,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Fnfek",
+      "role": "batter",
+      "name": "池恩齊",
+      "hand": "L",
+      "sample_count": 935,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "5PuU",
+      "role": "batter",
+      "name": "孔念恩",
+      "hand": "L",
+      "sample_count": 924,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "WiffT",
+      "role": "batter",
+      "name": "王博玄",
+      "hand": "L",
+      "sample_count": 921,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uw5wXi",
+      "role": "batter",
+      "name": "郭永維",
+      "hand": "R",
+      "sample_count": 917,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "C6A1j",
+      "role": "pitcher",
+      "name": "陳禹勳",
+      "hand": "R",
+      "sample_count": 912,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "k1NGO",
+      "role": "pitcher",
+      "name": "謝榮豪",
+      "hand": "R",
+      "sample_count": 910,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "UeDA6",
+      "role": "batter",
+      "name": "林政華",
+      "hand": "L",
+      "sample_count": 908,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "kVLMY",
+      "role": "batter",
+      "name": "姚冠瑋",
+      "hand": "R",
+      "sample_count": 888,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Osr68",
+      "role": "pitcher",
+      "name": "李其峰",
+      "hand": "R",
+      "sample_count": 873,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "QEU8",
+      "role": "pitcher",
+      "name": "陳冠勳",
+      "hand": "L",
+      "sample_count": 869,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "itw6W",
+      "role": "pitcher",
+      "name": "泰樂",
+      "hand": "R",
+      "sample_count": 867,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "zbFte",
+      "role": "batter",
+      "name": "林祖傑",
+      "hand": "R",
+      "sample_count": 867,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FEwny",
+      "role": "pitcher",
+      "name": "賴鴻誠",
+      "hand": "L",
+      "sample_count": 860,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ZkDCF",
+      "role": "batter",
+      "name": "林岱安",
+      "hand": "R",
+      "sample_count": 855,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "gljYV",
+      "role": "pitcher",
+      "name": "黃偉晟",
+      "hand": "R",
+      "sample_count": 851,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "xGu6H",
+      "role": "pitcher",
+      "name": "鈴木駿輔",
+      "hand": "R",
+      "sample_count": 846,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "dBVKG",
+      "role": "pitcher",
+      "name": "黃保羅",
+      "hand": "R",
+      "sample_count": 845,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "MmS8r",
+      "role": "batter",
+      "name": "嚴宏鈞",
+      "hand": "L",
+      "sample_count": 811,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "PoOO0",
+      "role": "batter",
+      "name": "張閔勛",
+      "hand": "R",
+      "sample_count": 793,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "vdpJ5",
+      "role": "batter",
+      "name": "林子偉",
+      "hand": "L",
+      "sample_count": 781,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3zbEo",
+      "role": "batter",
+      "name": "許哲晏",
+      "hand": "R",
+      "sample_count": 777,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "dqIZr",
+      "role": "pitcher",
+      "name": "劉軒荅",
+      "hand": "R",
+      "sample_count": 773,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "625kG",
+      "role": "batter",
+      "name": "周佳樂",
+      "hand": "L",
+      "sample_count": 767,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "vjziy",
+      "role": "pitcher",
+      "name": "小野寺賢人",
+      "hand": "R",
+      "sample_count": 754,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "IIlEk",
+      "role": "batter",
+      "name": "宋嘉翔",
+      "hand": "L",
+      "sample_count": 754,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Bq4t2",
+      "role": "pitcher",
+      "name": "邱駿威",
+      "hand": "R",
+      "sample_count": 751,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FQ5fV",
+      "role": "pitcher",
+      "name": "劉予承",
+      "hand": "R",
+      "sample_count": 751,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "a45g",
+      "role": "batter",
+      "name": "董子恩",
+      "hand": "R",
+      "sample_count": 743,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7m4NU",
+      "role": "batter",
+      "name": "劉俊豪",
+      "hand": "L",
+      "sample_count": 738,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "svO50",
+      "role": "batter",
+      "name": "瑪仕革斯．俄霸律尼",
+      "hand": "L",
+      "sample_count": 737,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Am8Uy",
+      "role": "pitcher",
+      "name": "蘇俊璋",
+      "hand": "R",
+      "sample_count": 726,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "NiqAD",
+      "role": "pitcher",
+      "name": "陳琥",
+      "hand": "R",
+      "sample_count": 722,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "lWSaS",
+      "role": "batter",
+      "name": "陳真",
+      "hand": "R",
+      "sample_count": 721,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "hMmIn",
+      "role": "pitcher",
+      "name": "歐書誠",
+      "hand": "R",
+      "sample_count": 719,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "vY7S",
+      "role": "pitcher",
+      "name": "陳柏豪",
+      "hand": "R",
+      "sample_count": 718,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "32PTc",
+      "role": "pitcher",
+      "name": "江承峰",
+      "hand": "R",
+      "sample_count": 705,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "EIhcu",
+      "role": "pitcher",
+      "name": "李振昌",
+      "hand": "R",
+      "sample_count": 691,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "N6NUc",
+      "role": "batter",
+      "name": "葉子霆",
+      "hand": "R",
+      "sample_count": 691,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "AYaIo",
+      "role": "pitcher",
+      "name": "克迪",
+      "hand": "L",
+      "sample_count": 672,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "tKyxK",
+      "role": "pitcher",
+      "name": "趙璟榮",
+      "hand": "R",
+      "sample_count": 670,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "gdEku",
+      "role": "pitcher",
+      "name": "林子崴",
+      "hand": "L",
+      "sample_count": 663,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Ych1T",
+      "role": "pitcher",
+      "name": "許峻暘",
+      "hand": "R",
+      "sample_count": 649,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "40qAx",
+      "role": "pitcher",
+      "name": "賴智垣",
+      "hand": "R",
+      "sample_count": 648,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "JYGnI",
+      "role": "pitcher",
+      "name": "莊昕諺",
+      "hand": "R",
+      "sample_count": 648,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "OZ4Ny",
+      "role": "pitcher",
+      "name": "陳宇宏",
+      "hand": "R",
+      "sample_count": 648,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "vf5l4",
+      "role": "pitcher",
+      "name": "恩力\t",
+      "hand": "L",
+      "sample_count": 647,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "vrFcV",
+      "role": "pitcher",
+      "name": "布萊威",
+      "hand": "R",
+      "sample_count": 642,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FaBDa",
+      "role": "pitcher",
+      "name": "徐基麟",
+      "hand": "R",
+      "sample_count": 625,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "b76lK",
+      "role": "pitcher",
+      "name": "王凱程",
+      "hand": "R",
+      "sample_count": 603,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "00Or0",
+      "role": "batter",
+      "name": "余德龍",
+      "hand": "R",
+      "sample_count": 577,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "rKhhC",
+      "role": "batter",
+      "name": "高孝儀",
+      "hand": "R",
+      "sample_count": 575,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "tJGlh",
+      "role": "pitcher",
+      "name": "裴瑞茲",
+      "hand": "R",
+      "sample_count": 574,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "rxmjz",
+      "role": "pitcher",
+      "name": "吳哲源",
+      "hand": "R",
+      "sample_count": 567,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "UtY4A",
+      "role": "pitcher",
+      "name": "羅華韋",
+      "hand": "L",
+      "sample_count": 560,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "JXUUQ",
+      "role": "batter",
+      "name": "福來喜",
+      "hand": "R",
+      "sample_count": 558,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Zk6YH",
+      "role": "pitcher",
+      "name": "黃群",
+      "hand": "L",
+      "sample_count": 554,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ge1ec",
+      "role": "batter",
+      "name": "黃勇傳",
+      "hand": "L",
+      "sample_count": 553,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "mTPOn",
+      "role": "pitcher",
+      "name": "楊彬",
+      "hand": "R",
+      "sample_count": 549,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "gMO3e",
+      "role": "pitcher",
+      "name": "姚杰宏",
+      "hand": "R",
+      "sample_count": 547,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nNXFY",
+      "role": "batter",
+      "name": "馮健庭",
+      "hand": "R",
+      "sample_count": 541,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "STlx2",
+      "role": "batter",
+      "name": "郭阜林",
+      "hand": "R",
+      "sample_count": 530,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "N0vZX",
+      "role": "pitcher",
+      "name": "蘭道爾",
+      "hand": "R",
+      "sample_count": 524,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0YgQ0",
+      "role": "batter",
+      "name": "王念好",
+      "hand": "R",
+      "sample_count": 494,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "IvH3O",
+      "role": "pitcher",
+      "name": "王鏡銘",
+      "hand": "R",
+      "sample_count": 493,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "374gk",
+      "role": "batter",
+      "name": "高國輝",
+      "hand": "R",
+      "sample_count": 493,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "alYAM",
+      "role": "pitcher",
+      "name": "瑞恩",
+      "hand": "R",
+      "sample_count": 487,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0CD6G",
+      "role": "batter",
+      "name": "蔣智賢",
+      "hand": "L",
+      "sample_count": 485,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "2HG7r",
+      "role": "batter",
+      "name": "劉俊緯",
+      "hand": "R",
+      "sample_count": 474,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "4EOym",
+      "role": "pitcher",
+      "name": "潘威倫",
+      "hand": "R",
+      "sample_count": 471,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "sthAG",
+      "role": "pitcher",
+      "name": "杰戈",
+      "hand": "R",
+      "sample_count": 467,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "zBFK1",
+      "role": "pitcher",
+      "name": "雷公",
+      "hand": "L",
+      "sample_count": 453,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "n6fv0",
+      "role": "pitcher",
+      "name": "朱承洋",
+      "hand": "R",
+      "sample_count": 449,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ycAs1",
+      "role": "pitcher",
+      "name": "林逸達",
+      "hand": "R",
+      "sample_count": 448,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nJU3T",
+      "role": "pitcher",
+      "name": "吳世豪",
+      "hand": "R",
+      "sample_count": 441,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "O4qH0",
+      "role": "pitcher",
+      "name": "盧孟揚",
+      "hand": "R",
+      "sample_count": 440,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7pop6",
+      "role": "batter",
+      "name": "曾傳昇",
+      "hand": "L",
+      "sample_count": 438,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BdwFp",
+      "role": "pitcher",
+      "name": "伍祐城",
+      "hand": "R",
+      "sample_count": 420,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "03MZ",
+      "role": "batter",
+      "name": "楊晉豪",
+      "hand": "L",
+      "sample_count": 420,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "YG0gn",
+      "role": "pitcher",
+      "name": "辛俊昇",
+      "hand": "L",
+      "sample_count": 418,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "qTu2J",
+      "role": "pitcher",
+      "name": "曹祐齊",
+      "hand": "R",
+      "sample_count": 411,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "aaUv3",
+      "role": "pitcher",
+      "name": "金安",
+      "hand": "R",
+      "sample_count": 407,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nAZPi",
+      "role": "batter",
+      "name": "劉時豪",
+      "hand": "L",
+      "sample_count": 404,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "P5qYX",
+      "role": "batter",
+      "name": "吳明鴻",
+      "hand": "R",
+      "sample_count": 403,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "bmiMl",
+      "role": "batter",
+      "name": "何恆佑",
+      "hand": "L",
+      "sample_count": 401,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "wb3hW",
+      "role": "pitcher",
+      "name": "張景淯",
+      "hand": "L",
+      "sample_count": 397,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ojwr3",
+      "role": "batter",
+      "name": "吳念庭",
+      "hand": "L",
+      "sample_count": 396,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "lyC1j",
+      "role": "pitcher",
+      "name": "藍愷青",
+      "hand": "L",
+      "sample_count": 380,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "GwaW8",
+      "role": "pitcher",
+      "name": "楊達翔",
+      "hand": "R",
+      "sample_count": 379,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "42OO1",
+      "role": "batter",
+      "name": "黃韋盛",
+      "hand": "R",
+      "sample_count": 370,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "feU8u",
+      "role": "pitcher",
+      "name": "巫柏葳",
+      "hand": "R",
+      "sample_count": 368,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "cDiBm",
+      "role": "pitcher",
+      "name": "許育銘",
+      "hand": "L",
+      "sample_count": 367,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "q8Pn8",
+      "role": "pitcher",
+      "name": "黃竣彥",
+      "hand": "R",
+      "sample_count": 367,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "CdR5x",
+      "role": "pitcher",
+      "name": "陳暐皓",
+      "hand": "R",
+      "sample_count": 364,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FEjzB",
+      "role": "pitcher",
+      "name": "林詩翔",
+      "hand": "R",
+      "sample_count": 364,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "bNFyN",
+      "role": "pitcher",
+      "name": "廖任磊",
+      "hand": "R",
+      "sample_count": 360,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uwD1Z",
+      "role": "pitcher",
+      "name": "游霆崴",
+      "hand": "R",
+      "sample_count": 360,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uokqM",
+      "role": "batter",
+      "name": "林吳晉瑋",
+      "hand": "L",
+      "sample_count": 360,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ftmEi",
+      "role": "pitcher",
+      "name": "林旺熙",
+      "hand": "R",
+      "sample_count": 350,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ID8FP",
+      "role": "batter",
+      "name": "葉保弟",
+      "hand": "L",
+      "sample_count": 349,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "tm0Z",
+      "role": "batter",
+      "name": "王苡丞",
+      "hand": "L",
+      "sample_count": 347,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "sCX7a",
+      "role": "batter",
+      "name": "林辰勳",
+      "hand": "R",
+      "sample_count": 346,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Q1LR3",
+      "role": "batter",
+      "name": "鄭鎧文",
+      "hand": "R",
+      "sample_count": 343,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "OqNVW",
+      "role": "batter",
+      "name": "張育成",
+      "hand": "R",
+      "sample_count": 336,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Excm5",
+      "role": "batter",
+      "name": "楊祥禾",
+      "hand": "R",
+      "sample_count": 331,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "IbHQY",
+      "role": "batter",
+      "name": "張仁瑋",
+      "hand": "R",
+      "sample_count": 329,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ymNuk",
+      "role": "batter",
+      "name": "邱丹",
+      "hand": "L",
+      "sample_count": 323,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3z7Pi",
+      "role": "batter",
+      "name": "唐肇廷",
+      "hand": "L",
+      "sample_count": 316,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uAFjZ",
+      "role": "pitcher",
+      "name": "王柏傑",
+      "hand": "L",
+      "sample_count": 315,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Q6qCr",
+      "role": "pitcher",
+      "name": "笠原祥太郎",
+      "hand": "L",
+      "sample_count": 310,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "gPoLb",
+      "role": "batter",
+      "name": "陳聖平",
+      "hand": "L",
+      "sample_count": 310,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ElLgX",
+      "role": "batter",
+      "name": "林智平",
+      "hand": "R",
+      "sample_count": 308,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "4ICxk",
+      "role": "pitcher",
+      "name": "江忠城",
+      "hand": "R",
+      "sample_count": 304,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "J4GsF",
+      "role": "pitcher",
+      "name": "李建勳",
+      "hand": "R",
+      "sample_count": 299,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "JQngL",
+      "role": "batter",
+      "name": "吳東融",
+      "hand": "R",
+      "sample_count": 293,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FreKs",
+      "role": "pitcher",
+      "name": "廖乙忠",
+      "hand": "R",
+      "sample_count": 289,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "zGfee",
+      "role": "batter",
+      "name": "蔡佳諺",
+      "hand": "R",
+      "sample_count": 289,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "B2um0",
+      "role": "batter",
+      "name": "林家鋐",
+      "hand": "L",
+      "sample_count": 284,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "UWcl0",
+      "role": "pitcher",
+      "name": "彭識穎",
+      "hand": "L",
+      "sample_count": 276,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Nfm2a",
+      "role": "batter",
+      "name": "李丞齡",
+      "hand": "R",
+      "sample_count": 276,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BpLpN",
+      "role": "batter",
+      "name": "蘇緯達",
+      "hand": "L",
+      "sample_count": 275,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uxAfr",
+      "role": "batter",
+      "name": "施冠宇",
+      "hand": "R",
+      "sample_count": 274,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "pKHDZ",
+      "role": "batter",
+      "name": "石翔宇",
+      "hand": "R",
+      "sample_count": 273,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "jLMPc",
+      "role": "batter",
+      "name": "柯育民",
+      "hand": "R",
+      "sample_count": 269,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "mQjRU",
+      "role": "pitcher",
+      "name": "吳君奕",
+      "hand": "R",
+      "sample_count": 268,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "CDWfY",
+      "role": "pitcher",
+      "name": "鑀龍",
+      "hand": "L",
+      "sample_count": 252,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nUjcY",
+      "role": "pitcher",
+      "name": "李超",
+      "hand": "R",
+      "sample_count": 250,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "qgIhF",
+      "role": "batter",
+      "name": "張祐嘉",
+      "hand": "L",
+      "sample_count": 241,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1T6yz",
+      "role": "batter",
+      "name": "紀慶然",
+      "hand": "L",
+      "sample_count": 228,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "LLFhr",
+      "role": "pitcher",
+      "name": "尹柏淮",
+      "hand": "R",
+      "sample_count": 225,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "hR4ID",
+      "role": "batter",
+      "name": "洪瑋漢",
+      "hand": "L",
+      "sample_count": 224,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "YZEdV",
+      "role": "batter",
+      "name": "曾陶鎔",
+      "hand": "R",
+      "sample_count": 222,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "eChCD",
+      "role": "batter",
+      "name": "宋晟睿",
+      "hand": "R",
+      "sample_count": 215,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nBTce",
+      "role": "pitcher",
+      "name": "楊孟沅",
+      "hand": "L",
+      "sample_count": 209,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8KmAn",
+      "role": "batter",
+      "name": "林書逸",
+      "hand": "L",
+      "sample_count": 209,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uQ1IP",
+      "role": "pitcher",
+      "name": "猛威爾",
+      "hand": "R",
+      "sample_count": 208,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "CFgIZ",
+      "role": "pitcher",
+      "name": "馬格文",
+      "hand": "R",
+      "sample_count": 207,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "QWcJc",
+      "role": "pitcher",
+      "name": "伍茲",
+      "hand": "R",
+      "sample_count": 207,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nL5L",
+      "role": "batter",
+      "name": "陳思仲",
+      "hand": "R",
+      "sample_count": 201,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "d5Rxg",
+      "role": "pitcher",
+      "name": "張祖恩",
+      "hand": "L",
+      "sample_count": 199,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "RkMfE",
+      "role": "batter",
+      "name": "冉承霖",
+      "hand": "L",
+      "sample_count": 198,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "lEe40",
+      "role": "pitcher",
+      "name": "王奕凱",
+      "hand": "L",
+      "sample_count": 189,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Qxjh1",
+      "role": "pitcher",
+      "name": "舒治浩",
+      "hand": "R",
+      "sample_count": 187,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Ubf2u",
+      "role": "pitcher",
+      "name": "陳韋霖",
+      "hand": "L",
+      "sample_count": 187,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "G8Yd1",
+      "role": "batter",
+      "name": "黃秉揚",
+      "hand": "R",
+      "sample_count": 177,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "wXbwj",
+      "role": "pitcher",
+      "name": "謝葆錡",
+      "hand": "R",
+      "sample_count": 176,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "5ZFTZ",
+      "role": "pitcher",
+      "name": "李吳永勤",
+      "hand": "L",
+      "sample_count": 174,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "hlcjv",
+      "role": "batter",
+      "name": "潘志芳",
+      "hand": "L",
+      "sample_count": 169,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "X1j6L",
+      "role": "pitcher",
+      "name": "張瑞麟",
+      "hand": "L",
+      "sample_count": 153,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "narc8",
+      "role": "batter",
+      "name": "黃劼希",
+      "hand": "R",
+      "sample_count": 153,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "eOCKK",
+      "role": "pitcher",
+      "name": "劉昱言",
+      "hand": "L",
+      "sample_count": 151,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "u7Nvt",
+      "role": "pitcher",
+      "name": "張奕",
+      "hand": "R",
+      "sample_count": 149,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3dTsm",
+      "role": "pitcher",
+      "name": "鄭鈞仁",
+      "hand": "R",
+      "sample_count": 148,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "pAvtk",
+      "role": "batter",
+      "name": "王順和",
+      "hand": "R",
+      "sample_count": 148,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1KPap",
+      "role": "pitcher",
+      "name": "曾家輝",
+      "hand": "R",
+      "sample_count": 147,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "oUEbG",
+      "role": "batter",
+      "name": "吳桀睿",
+      "hand": "R",
+      "sample_count": 146,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Hxbrc",
+      "role": "pitcher",
+      "name": "王溢正",
+      "hand": "L",
+      "sample_count": 144,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "RSmYJ",
+      "role": "batter",
+      "name": "邱辰",
+      "hand": "R",
+      "sample_count": 138,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "SioVD",
+      "role": "batter",
+      "name": "林澤彬",
+      "hand": "L",
+      "sample_count": 135,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "EcVi3",
+      "role": "batter",
+      "name": "黃柏豪",
+      "hand": "L",
+      "sample_count": 134,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "M2c2d",
+      "role": "pitcher",
+      "name": "賴知頎",
+      "hand": "R",
+      "sample_count": 130,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "fBYtd",
+      "role": "batter",
+      "name": "于森旭",
+      "hand": "L",
+      "sample_count": 129,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "2mO1b",
+      "role": "batter",
+      "name": "羅暐捷",
+      "hand": "L",
+      "sample_count": 128,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "j33XE",
+      "role": "batter",
+      "name": "徐博瑋",
+      "hand": "R",
+      "sample_count": 126,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FNDyJ",
+      "role": "pitcher",
+      "name": "陳柏均",
+      "hand": "L",
+      "sample_count": 123,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "2QmgM",
+      "role": "batter",
+      "name": "豊暐",
+      "hand": "R",
+      "sample_count": 121,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "GrZw6",
+      "role": "pitcher",
+      "name": "林暉盛",
+      "hand": "R",
+      "sample_count": 120,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8tDFK",
+      "role": "pitcher",
+      "name": "吳承諭",
+      "hand": "R",
+      "sample_count": 112,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "c5JFr",
+      "role": "batter",
+      "name": "陳世嘉",
+      "hand": "L",
+      "sample_count": 111,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0et8r",
+      "role": "pitcher",
+      "name": "江國謙",
+      "hand": "R",
+      "sample_count": 110,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "81hMI",
+      "role": "pitcher",
+      "name": "官大元",
+      "hand": "R",
+      "sample_count": 107,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "zaYo4",
+      "role": "batter",
+      "name": "張翔",
+      "hand": "R",
+      "sample_count": 107,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BhwEG",
+      "role": "batter",
+      "name": "鍾玉成",
+      "hand": "L",
+      "sample_count": 106,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "6CIBz",
+      "role": "batter",
+      "name": "陳家駒",
+      "hand": "L",
+      "sample_count": 105,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "y1fia",
+      "role": "pitcher",
+      "name": "傅于剛",
+      "hand": "R",
+      "sample_count": 98,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Qmj7D",
+      "role": "pitcher",
+      "name": "髙塩將樹",
+      "hand": "R",
+      "sample_count": 94,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3ZQ2",
+      "role": "batter",
+      "name": "蔡鎮宇",
+      "hand": "R",
+      "sample_count": 93,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "tY4EG",
+      "role": "batter",
+      "name": "戴云真",
+      "hand": "R",
+      "sample_count": 93,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "fmN1q",
+      "role": "pitcher",
+      "name": "呂偉晟",
+      "hand": "R",
+      "sample_count": 89,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "QRk3",
+      "role": "pitcher",
+      "name": "象魔力",
+      "hand": "L",
+      "sample_count": 88,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "MC2LZ",
+      "role": "pitcher",
+      "name": "道鉑戈",
+      "hand": "L",
+      "sample_count": 87,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "m6tXZ",
+      "role": "batter",
+      "name": "董秉軒",
+      "hand": "L",
+      "sample_count": 85,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "2B6yo",
+      "role": "pitcher",
+      "name": "王玉譜",
+      "hand": "L",
+      "sample_count": 81,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ZWWL",
+      "role": "pitcher",
+      "name": "范柏絜",
+      "hand": "R",
+      "sample_count": 79,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "psHWp",
+      "role": "batter",
+      "name": "林岳谷",
+      "hand": "R",
+      "sample_count": 75,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8QSUU",
+      "role": "pitcher",
+      "name": "賴胤豪",
+      "hand": "R",
+      "sample_count": 69,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "RCSOc",
+      "role": "batter",
+      "name": "胡冠俞",
+      "hand": "R",
+      "sample_count": 68,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "G6U5F",
+      "role": "batter",
+      "name": "高聖恩",
+      "hand": "R",
+      "sample_count": 67,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BuAfc",
+      "role": "pitcher",
+      "name": "莊玉彬",
+      "hand": "R",
+      "sample_count": 65,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1EqwJ",
+      "role": "batter",
+      "name": "李展毅",
+      "hand": "R",
+      "sample_count": 63,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "jSr5s",
+      "role": "batter",
+      "name": "全浩瑋",
+      "hand": "R",
+      "sample_count": 59,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "JyP3r",
+      "role": "pitcher",
+      "name": "陳正毅",
+      "hand": "R",
+      "sample_count": 58,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "UVW1k",
+      "role": "batter",
+      "name": "張偉聖",
+      "hand": "L",
+      "sample_count": 58,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ntuz2",
+      "role": "pitcher",
+      "name": "鳥松",
+      "hand": "R",
+      "sample_count": 57,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "MEwGX",
+      "role": "batter",
+      "name": "黃鈞聲",
+      "hand": "R",
+      "sample_count": 57,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "o8dBe",
+      "role": "batter",
+      "name": "林禹叡",
+      "hand": "L",
+      "sample_count": 57,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Y1OFa",
+      "role": "batter",
+      "name": "林瑞鈞",
+      "hand": "L",
+      "sample_count": 54,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "2NNQf",
+      "role": "pitcher",
+      "name": "張梓軒",
+      "hand": "L",
+      "sample_count": 53,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FJzmS",
+      "role": "pitcher",
+      "name": "森榮鴻",
+      "hand": "R",
+      "sample_count": 51,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "DghS4",
+      "role": "pitcher",
+      "name": "陳冠豪",
+      "hand": "R",
+      "sample_count": 50,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "GGGgf",
+      "role": "pitcher",
+      "name": "曾品洋",
+      "hand": "R",
+      "sample_count": 50,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1YOcf",
+      "role": "batter",
+      "name": "李聖裕",
+      "hand": "L",
+      "sample_count": 50,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "dOLyx",
+      "role": "pitcher",
+      "name": "張喜凱",
+      "hand": "R",
+      "sample_count": 47,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3oFKi",
+      "role": "batter",
+      "name": "廖柏勳",
+      "hand": "R",
+      "sample_count": 47,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ta2z0",
+      "role": "batter",
+      "name": "杜禹鋒",
+      "hand": "R",
+      "sample_count": 46,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "vhrxH",
+      "role": "batter",
+      "name": "張皓緯",
+      "hand": "R",
+      "sample_count": 46,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "JID82",
+      "role": "batter",
+      "name": "張洺瑀",
+      "hand": "L",
+      "sample_count": 45,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "hZtA6",
+      "role": "batter",
+      "name": "姚雨翔",
+      "hand": "L",
+      "sample_count": 39,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "VESWD",
+      "role": "batter",
+      "name": "楊竣翔",
+      "hand": "R",
+      "sample_count": 38,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "yhCr",
+      "role": "pitcher",
+      "name": "林子崴",
+      "hand": "L",
+      "sample_count": 35,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "FGizK",
+      "role": "batter",
+      "name": "顏清浤",
+      "hand": "L",
+      "sample_count": 35,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "yHLe",
+      "role": "pitcher",
+      "name": "羅國華",
+      "hand": "R",
+      "sample_count": 34,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "N2Oew",
+      "role": "pitcher",
+      "name": "陳聖文",
+      "hand": "L",
+      "sample_count": 33,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "y3VHg",
+      "role": "pitcher",
+      "name": "劉家愷",
+      "hand": "L",
+      "sample_count": 33,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "iQmL8",
+      "role": "batter",
+      "name": "馬鋼",
+      "hand": "R",
+      "sample_count": 33,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "PNg5H",
+      "role": "pitcher",
+      "name": "葉家淇",
+      "hand": "L",
+      "sample_count": 31,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "MXzuM",
+      "role": "pitcher",
+      "name": "由規",
+      "hand": "R",
+      "sample_count": 30,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uKyUf",
+      "role": "batter",
+      "name": "蕭憶銘",
+      "hand": "R",
+      "sample_count": 29,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "uK12k",
+      "role": "batter",
+      "name": "江亮緯",
+      "hand": "R",
+      "sample_count": 28,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "3SLsp",
+      "role": "pitcher",
+      "name": "林華偉",
+      "hand": "R",
+      "sample_count": 26,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "A7z16",
+      "role": "pitcher",
+      "name": "方建德",
+      "hand": "R",
+      "sample_count": 26,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Z6eqi",
+      "role": "pitcher",
+      "name": "黃弘毅",
+      "hand": "R",
+      "sample_count": 26,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "VjFft",
+      "role": "pitcher",
+      "name": "宋文華",
+      "hand": "R",
+      "sample_count": 24,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "s6QQp",
+      "role": "batter",
+      "name": "陳佳樂",
+      "hand": "L",
+      "sample_count": 24,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "v1Tys",
+      "role": "pitcher",
+      "name": "郭俞延",
+      "hand": "R",
+      "sample_count": 23,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "y113w",
+      "role": "batter",
+      "name": "高國慶",
+      "hand": "R",
+      "sample_count": 23,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "nJxsY",
+      "role": "pitcher",
+      "name": "楊志龍",
+      "hand": "R",
+      "sample_count": 22,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "8JvUf",
+      "role": "batter",
+      "name": "張士綸",
+      "hand": "L",
+      "sample_count": 22,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "WGsFP",
+      "role": "batter",
+      "name": "吳睿勝",
+      "hand": "L",
+      "sample_count": 21,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "pZwDr",
+      "role": "pitcher",
+      "name": "林鋅杰",
+      "hand": "R",
+      "sample_count": 19,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "ujiQB",
+      "role": "pitcher",
+      "name": "黃子宸",
+      "hand": "R",
+      "sample_count": 19,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "UBrAA",
+      "role": "batter",
+      "name": "楊瑞承",
+      "hand": "L",
+      "sample_count": 18,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "pjM1N",
+      "role": "batter",
+      "name": "林志綱",
+      "hand": "L",
+      "sample_count": 17,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "1i8C4",
+      "role": "batter",
+      "name": "林泓弦",
+      "hand": "L",
+      "sample_count": 16,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Y04qB",
+      "role": "batter",
+      "name": "劉貴元",
+      "hand": "L",
+      "sample_count": 15,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "0WzSK",
+      "role": "batter",
+      "name": "王詩聰",
+      "hand": "L",
+      "sample_count": 13,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "GrjvL",
+      "role": "batter",
+      "name": "陳飛霖",
+      "hand": "L",
+      "sample_count": 13,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "00Or0",
+      "role": "pitcher",
+      "name": "余德龍",
+      "hand": "R",
+      "sample_count": 12,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "pAMDg",
+      "role": "batter",
+      "name": "毛英傑",
+      "hand": "R",
+      "sample_count": 12,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "54TAw",
+      "role": "batter",
+      "name": "張皓崴",
+      "hand": "L",
+      "sample_count": 11,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "Ob7KB",
+      "role": "batter",
+      "name": "周委宏",
+      "hand": "L",
+      "sample_count": 10,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "PBapN",
+      "role": "batter",
+      "name": "田子杰",
+      "hand": "L",
+      "sample_count": 10,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "BMBs8",
+      "role": "batter",
+      "name": "林培緯",
+      "hand": "R",
+      "sample_count": 9,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "KFxfq",
+      "role": "batter",
+      "name": "陳致嘉",
+      "hand": "R",
+      "sample_count": 6,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "M1D5Z",
+      "role": "batter",
+      "name": "張聖豪",
+      "hand": "L",
+      "sample_count": 6,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "P4Fe3",
+      "role": "batter",
+      "name": "陳統恩",
+      "hand": "R",
+      "sample_count": 6,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "DogqI",
+      "role": "pitcher",
+      "name": "羅力",
+      "hand": "R",
+      "sample_count": 5,
+      "data_version": "rebas-2023-2025-regular-v1"
+    },
+    {
+      "id": "7TPaU",
+      "role": "pitcher",
+      "name": "林佳緯",
+      "hand": "R",
+      "sample_count": 3,
+      "data_version": "rebas-2023-2025-regular-v1"
+    }
+  ],
+  "metadata": {
+    "games": 1020,
+    "pitches": 293482,
+    "by_year": [
+      {
+        "year": 2023,
+        "games": 300,
+        "pitches": 87374,
+        "coordinate_missing_rate": 0.004108773777096161,
+        "zone_unavailable_rate": 0.004108773777096161,
+        "velocity_missing_rate": 0.04096184219561883,
+        "valid_state_rate": 0.9711126879849841,
+        "resolved_identity_rate": 1.0
+      },
+      {
+        "year": 2024,
+        "games": 360,
+        "pitches": 103620,
+        "coordinate_missing_rate": 0.0013317892298784018,
+        "zone_unavailable_rate": 0.0013317892298784018,
+        "velocity_missing_rate": 0.03131634819532909,
+        "valid_state_rate": 0.9765392781316348,
+        "resolved_identity_rate": 1.0
+      },
+      {
+        "year": 2025,
+        "games": 360,
+        "pitches": 102488,
+        "coordinate_missing_rate": 0.0009074233080946062,
+        "zone_unavailable_rate": 0.0009074233080946062,
+        "velocity_missing_rate": 0.05469908672234798,
+        "valid_state_rate": 0.9736359378658965,
+        "resolved_identity_rate": 1.0
+      }
+    ],
+    "training_pitches": 155502,
+    "model_version": "week2-sequence-v1",
+    "model_name": "lightgbm_history",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "capabilities": {
+      "sequence": true,
+      "batter_conditioned_model": true,
+      "conformal": true,
+      "conditional_result": true
+    },
+    "model_info": {
+      "selected_candidate": "lightgbm_history",
+      "selection_rule": "validation pitch log loss; within 0.005 nats prefer context LGB then history LGB then GRU; GRU zone/result may degrade at most 0.03 nats vs history LGB",
+      "selection_reason": "lightgbm_history is the simplest eligible model within 0.005 nats of best validation pitch log loss (1.158778).",
+      "training_rows": 155502,
+      "test_evaluated": true,
+      "validation": {
+        "league_count": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.594000476186874,
+            "top1_accuracy": 0.45244449836224676,
+            "top2_accuracy": 0.6291398762586436,
+            "ece": 0.015018744517735091
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3927523124293972,
+            "top1_accuracy": 0.18293867638129932,
+            "top2_accuracy": 0.3380692167577414,
+            "ece": 0.005661511892598684
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4487950185470817,
+            "top1_accuracy": 0.35982045371830645,
+            "top2_accuracy": 0.6241659589955113,
+            "ece": 0.00967625664437561
+          }
+        },
+        "pitcher_count_shrunk": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.2446976772740352,
+            "top1_accuracy": 0.4856241659589955,
+            "top2_accuracy": 0.7499090137086012,
+            "ece": 0.015604964358150971
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3885480787665356,
+            "top1_accuracy": 0.1875531268973892,
+            "top2_accuracy": 0.34705525197328474,
+            "ece": 0.005463679761587671
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4487950185470817,
+            "top1_accuracy": 0.35982045371830645,
+            "top2_accuracy": 0.6241659589955113,
+            "ece": 0.00967625664437561
+          }
+        },
+        "lightgbm_context": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.20101228953335,
+            "top1_accuracy": 0.4954506854300619,
+            "top2_accuracy": 0.772352298920296,
+            "ece": 0.0347511204665554
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.35234144906203,
+            "top1_accuracy": 0.21681845780206435,
+            "top2_accuracy": 0.3822707953855495,
+            "ece": 0.006255620168531591
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4345371128546662,
+            "top1_accuracy": 0.36157952201868254,
+            "top2_accuracy": 0.6307776295038214,
+            "ece": 0.014733409414248382
+          }
+        },
+        "lightgbm_history": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.1587782846819539,
+            "top1_accuracy": 0.512131505519835,
+            "top2_accuracy": 0.787577338347689,
+            "ece": 0.026350265807372823
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.348360980426171,
+            "top1_accuracy": 0.22088646023072253,
+            "top2_accuracy": 0.383485124468731,
+            "ece": 0.004808025385179064
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4336940294196565,
+            "top1_accuracy": 0.36473371345383965,
+            "top2_accuracy": 0.6301710542278297,
+            "ece": 0.014802941224530977
+          }
+        },
+        "gru": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.1744693517684937,
+            "top1_accuracy": 0.5085527113914837,
+            "top2_accuracy": 0.7838772291641393,
+            "ece": 0.02872751803959541
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3551571369171143,
+            "top1_accuracy": 0.21955069823922282,
+            "top2_accuracy": 0.3820279295689132,
+            "ece": 0.009051922677536043
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4368152618408203,
+            "top1_accuracy": 0.36588620647822395,
+            "top2_accuracy": 0.6267742326822758,
+            "ece": 0.017077117053814247
+          }
+        }
+      },
+      "calibration_audit": {
+        "pitch": {
+          "n": 3196,
+          "coverage": 0.8983103879849812,
+          "mean_set_size": 2.5168961201501876,
+          "ece_before": 0.040633323397859654,
+          "ece_after": 0.034433553491874096,
+          "log_loss_before": 1.1059416925987313,
+          "log_loss_after": 1.1052705407615313
+        },
+        "zone": {
+          "n": 3193,
+          "coverage": 0.9025994362668337,
+          "mean_set_size": 10.270905104917006,
+          "ece_before": 0.008968731033290551,
+          "ece_after": 0.008215434557585881,
+          "log_loss_before": 2.362307044387179,
+          "log_loss_after": 2.3622892541377043
+        },
+        "result": {
+          "n": 3196,
+          "coverage": 0.8945556946182729,
+          "mean_set_size": 3.580413016270338,
+          "ece_before": 0.03134550763960649,
+          "ece_after": 0.02702146410494483,
+          "log_loss_before": 1.452362686848165,
+          "log_loss_after": 1.4519888593701378
+        }
+      }
+    },
+    "calibration": {
+      "method": "temperature+split-conformal",
+      "target_coverage": 0.9,
+      "limitations": "Chronological observational samples may shift; empirical coverage is not an exchangeability guarantee.",
+      "temperature": {
+        "pitch": 1.0238362555396097,
+        "zone": 1.001160286377934,
+        "result": 1.0238362555396097,
+        "conditional_result": 1.001160286377934
+      },
+      "thresholds": {
+        "pitch": 0.8919821381568909,
+        "zone": 0.9618647247552872,
+        "result": 0.8838139325380325
+      },
+      "audit": {
+        "pitch": {
+          "n": 3196,
+          "coverage": 0.8983103879849812,
+          "mean_set_size": 2.5168961201501876,
+          "ece_before": 0.040633323397859654,
+          "ece_after": 0.034433553491874096,
+          "log_loss_before": 1.1059416925987313,
+          "log_loss_after": 1.1052705407615313
+        },
+        "zone": {
+          "n": 3193,
+          "coverage": 0.9025994362668337,
+          "mean_set_size": 10.270905104917006,
+          "ece_before": 0.008968731033290551,
+          "ece_after": 0.008215434557585881,
+          "log_loss_before": 2.362307044387179,
+          "log_loss_after": 2.3622892541377043
+        },
+        "result": {
+          "n": 3196,
+          "coverage": 0.8945556946182729,
+          "mean_set_size": 3.580413016270338,
+          "ece_before": 0.03134550763960649,
+          "ece_after": 0.02702146410494483,
+          "log_loss_before": 1.452362686848165,
+          "log_loss_after": 1.4519888593701378
+        }
+      },
+      "split": {
+        "temperature": {
+          "date_min": "2024-09-12",
+          "date_max": "2024-09-21",
+          "rows": 5516
+        },
+        "conformal": {
+          "date_min": "2024-09-22",
+          "date_max": "2024-10-01",
+          "rows": 5099
+        },
+        "audit": {
+          "date_min": "2024-10-05",
+          "date_max": "2024-10-11",
+          "rows": 3196
+        }
+      }
+    },
+    "pitch_types": [
+      "CH",
+      "CU",
+      "FC",
+      "FF",
+      "FO",
+      "FS",
+      "KN",
+      "SI",
+      "SL"
+    ],
+    "sequence_schema": {
+      "max_length": 16,
+      "complete_current_pa": true,
+      "results": [
+        "ball",
+        "called_strike",
+        "swinging_strike",
+        "foul",
+        "in_play"
+      ],
+      "zone_min": 0,
+      "zone_max": 12,
+      "velocity_min": 40,
+      "velocity_max": 180
+    }
+  },
+  "model_info": {
+    "model_version": "week2-sequence-v1",
+    "model_name": "lightgbm_history",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "capabilities": {
+      "sequence": true,
+      "batter_conditioned_model": true,
+      "conformal": true,
+      "conditional_result": true
+    },
+    "model_info": {
+      "selected_candidate": "lightgbm_history",
+      "selection_rule": "validation pitch log loss; within 0.005 nats prefer context LGB then history LGB then GRU; GRU zone/result may degrade at most 0.03 nats vs history LGB",
+      "selection_reason": "lightgbm_history is the simplest eligible model within 0.005 nats of best validation pitch log loss (1.158778).",
+      "training_rows": 155502,
+      "test_evaluated": true,
+      "validation": {
+        "league_count": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.594000476186874,
+            "top1_accuracy": 0.45244449836224676,
+            "top2_accuracy": 0.6291398762586436,
+            "ece": 0.015018744517735091
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3927523124293972,
+            "top1_accuracy": 0.18293867638129932,
+            "top2_accuracy": 0.3380692167577414,
+            "ece": 0.005661511892598684
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4487950185470817,
+            "top1_accuracy": 0.35982045371830645,
+            "top2_accuracy": 0.6241659589955113,
+            "ece": 0.00967625664437561
+          }
+        },
+        "pitcher_count_shrunk": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.2446976772740352,
+            "top1_accuracy": 0.4856241659589955,
+            "top2_accuracy": 0.7499090137086012,
+            "ece": 0.015604964358150971
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3885480787665356,
+            "top1_accuracy": 0.1875531268973892,
+            "top2_accuracy": 0.34705525197328474,
+            "ece": 0.005463679761587671
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4487950185470817,
+            "top1_accuracy": 0.35982045371830645,
+            "top2_accuracy": 0.6241659589955113,
+            "ece": 0.00967625664437561
+          }
+        },
+        "lightgbm_context": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.20101228953335,
+            "top1_accuracy": 0.4954506854300619,
+            "top2_accuracy": 0.772352298920296,
+            "ece": 0.0347511204665554
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.35234144906203,
+            "top1_accuracy": 0.21681845780206435,
+            "top2_accuracy": 0.3822707953855495,
+            "ece": 0.006255620168531591
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4345371128546662,
+            "top1_accuracy": 0.36157952201868254,
+            "top2_accuracy": 0.6307776295038214,
+            "ece": 0.014733409414248382
+          }
+        },
+        "lightgbm_history": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.1587782846819539,
+            "top1_accuracy": 0.512131505519835,
+            "top2_accuracy": 0.787577338347689,
+            "ece": 0.026350265807372823
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.348360980426171,
+            "top1_accuracy": 0.22088646023072253,
+            "top2_accuracy": 0.383485124468731,
+            "ece": 0.004808025385179064
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4336940294196565,
+            "top1_accuracy": 0.36473371345383965,
+            "top2_accuracy": 0.6301710542278297,
+            "ece": 0.014802941224530977
+          }
+        },
+        "gru": {
+          "pitch": {
+            "n": 16486,
+            "log_loss": 1.1744693517684937,
+            "top1_accuracy": 0.5085527113914837,
+            "top2_accuracy": 0.7838772291641393,
+            "ece": 0.02872751803959541
+          },
+          "zone": {
+            "n": 16470,
+            "log_loss": 2.3551571369171143,
+            "top1_accuracy": 0.21955069823922282,
+            "top2_accuracy": 0.3820279295689132,
+            "ece": 0.009051922677536043
+          },
+          "result": {
+            "n": 16486,
+            "log_loss": 1.4368152618408203,
+            "top1_accuracy": 0.36588620647822395,
+            "top2_accuracy": 0.6267742326822758,
+            "ece": 0.017077117053814247
+          }
+        }
+      },
+      "calibration_audit": {
+        "pitch": {
+          "n": 3196,
+          "coverage": 0.8983103879849812,
+          "mean_set_size": 2.5168961201501876,
+          "ece_before": 0.040633323397859654,
+          "ece_after": 0.034433553491874096,
+          "log_loss_before": 1.1059416925987313,
+          "log_loss_after": 1.1052705407615313
+        },
+        "zone": {
+          "n": 3193,
+          "coverage": 0.9025994362668337,
+          "mean_set_size": 10.270905104917006,
+          "ece_before": 0.008968731033290551,
+          "ece_after": 0.008215434557585881,
+          "log_loss_before": 2.362307044387179,
+          "log_loss_after": 2.3622892541377043
+        },
+        "result": {
+          "n": 3196,
+          "coverage": 0.8945556946182729,
+          "mean_set_size": 3.580413016270338,
+          "ece_before": 0.03134550763960649,
+          "ece_after": 0.02702146410494483,
+          "log_loss_before": 1.452362686848165,
+          "log_loss_after": 1.4519888593701378
+        }
+      }
+    },
+    "calibration": {
+      "method": "temperature+split-conformal",
+      "target_coverage": 0.9,
+      "limitations": "Chronological observational samples may shift; empirical coverage is not an exchangeability guarantee.",
+      "temperature": {
+        "pitch": 1.0238362555396097,
+        "zone": 1.001160286377934,
+        "result": 1.0238362555396097,
+        "conditional_result": 1.001160286377934
+      },
+      "thresholds": {
+        "pitch": 0.8919821381568909,
+        "zone": 0.9618647247552872,
+        "result": 0.8838139325380325
+      },
+      "audit": {
+        "pitch": {
+          "n": 3196,
+          "coverage": 0.8983103879849812,
+          "mean_set_size": 2.5168961201501876,
+          "ece_before": 0.040633323397859654,
+          "ece_after": 0.034433553491874096,
+          "log_loss_before": 1.1059416925987313,
+          "log_loss_after": 1.1052705407615313
+        },
+        "zone": {
+          "n": 3193,
+          "coverage": 0.9025994362668337,
+          "mean_set_size": 10.270905104917006,
+          "ece_before": 0.008968731033290551,
+          "ece_after": 0.008215434557585881,
+          "log_loss_before": 2.362307044387179,
+          "log_loss_after": 2.3622892541377043
+        },
+        "result": {
+          "n": 3196,
+          "coverage": 0.8945556946182729,
+          "mean_set_size": 3.580413016270338,
+          "ece_before": 0.03134550763960649,
+          "ece_after": 0.02702146410494483,
+          "log_loss_before": 1.452362686848165,
+          "log_loss_after": 1.4519888593701378
+        }
+      },
+      "split": {
+        "temperature": {
+          "date_min": "2024-09-12",
+          "date_max": "2024-09-21",
+          "rows": 5516
+        },
+        "conformal": {
+          "date_min": "2024-09-22",
+          "date_max": "2024-10-01",
+          "rows": 5099
+        },
+        "audit": {
+          "date_min": "2024-10-05",
+          "date_max": "2024-10-11",
+          "rows": 3196
+        }
+      }
+    }
+  },
+  "evaluation": {
+    "schema_version": 1,
+    "test_evaluated": true,
+    "frozen_bundle": {
+      "model_version": "week2-sequence-v1",
+      "sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+      "data_cutoff": "2024-08-14"
+    },
+    "period": {
+      "start": "2025-03-29",
+      "end": "2025-10-06"
+    },
+    "sample_counts": {
+      "raw": 102488,
+      "usable": 99729,
+      "catalog_serving": 69044,
+      "outside_catalog": 30685,
+      "missing_zone": 68
+    },
+    "selected": {
+      "pitch": {
+        "n": 99729,
+        "log_loss": 1.400057024100469,
+        "top1_accuracy": 0.5028928395953033,
+        "top2_accuracy": 0.7417601700608649,
+        "ece": 0.05106983016711891,
+        "coverage": 0.8373792978973017,
+        "mean_set_size": 2.593388081701411
+      },
+      "zone": {
+        "n": 99661,
+        "log_loss": 2.377183741204384,
+        "top1_accuracy": 0.21017248472321168,
+        "top2_accuracy": 0.36832863406949556,
+        "ece": 0.009792715346262025,
+        "coverage": 0.8985460711813046,
+        "mean_set_size": 10.295792737379717
+      },
+      "result": {
+        "n": 99729,
+        "log_loss": 1.4386291020563406,
+        "top1_accuracy": 0.36481865856471035,
+        "top2_accuracy": 0.6281623198868935,
+        "ece": 0.014237610557814723,
+        "coverage": 0.8932005735543322,
+        "mean_set_size": 3.520540665202699
+      }
+    },
+    "baselines": {
+      "league_count": {
+        "pitch": {
+          "n": 99729,
+          "log_loss": 1.6007515792770985,
+          "top1_accuracy": 0.46431830260004614,
+          "top2_accuracy": 0.6228078091628313,
+          "ece": 0.0049468298178545825
+        },
+        "zone": {
+          "n": 99661,
+          "log_loss": 2.4105509891190007,
+          "top1_accuracy": 0.17878608482756544,
+          "top2_accuracy": 0.32715906924473964,
+          "ece": 0.0036692098300809897
+        },
+        "result": {
+          "n": 99729,
+          "log_loss": 1.4448513835448065,
+          "top1_accuracy": 0.36176037060433774,
+          "top2_accuracy": 0.6289544666044982,
+          "ece": 0.005988329582659417
+        }
+      },
+      "pitcher_count_shrunk": {
+        "pitch": {
+          "n": 99729,
+          "log_loss": 1.3689262886337115,
+          "top1_accuracy": 0.49265509530828544,
+          "top2_accuracy": 0.7070160133963039,
+          "ece": 0.009700038223570186
+        },
+        "zone": {
+          "n": 99661,
+          "log_loss": 2.4081953422187894,
+          "top1_accuracy": 0.17948846589939896,
+          "top2_accuracy": 0.32927624647555215,
+          "ece": 0.007071297771850646
+        },
+        "result": {
+          "n": 99729,
+          "log_loss": 1.4448513835448065,
+          "top1_accuracy": 0.36176037060433774,
+          "top2_accuracy": 0.6289544666044982,
+          "ece": 0.005988329582659417
+        }
+      }
+    },
+    "catalog_serving": {
+      "selected": {
+        "pitch": {
+          "n": 69044,
+          "log_loss": 1.2258679169941982,
+          "top1_accuracy": 0.5226811888071374,
+          "top2_accuracy": 0.7849342448293841,
+          "ece": 0.017445332696210805,
+          "coverage": 0.8930537048838422,
+          "mean_set_size": 2.6716731359712647
+        },
+        "zone": {
+          "n": 69001,
+          "log_loss": 2.368153519497898,
+          "top1_accuracy": 0.21727221344618194,
+          "top2_accuracy": 0.37458877407573804,
+          "ece": 0.0061998138409455955,
+          "coverage": 0.8996246431211142,
+          "mean_set_size": 10.263372994594281
+        },
+        "result": {
+          "n": 69044,
+          "log_loss": 1.4392947471378907,
+          "top1_accuracy": 0.36391286715717514,
+          "top2_accuracy": 0.6284688025027518,
+          "ece": 0.01418646823393186,
+          "coverage": 0.8951538149585772,
+          "mean_set_size": 3.532356178668675
+        }
+      },
+      "baselines": {
+        "league_count": {
+          "pitch": {
+            "n": 69044,
+            "log_loss": 1.5888799755885208,
+            "top1_accuracy": 0.4709605468976305,
+            "top2_accuracy": 0.6339001216615492,
+            "ece": 0.003492612623686086
+          },
+          "zone": {
+            "n": 69001,
+            "log_loss": 2.4056762384994093,
+            "top1_accuracy": 0.18608425964841088,
+            "top2_accuracy": 0.3384008927406849,
+            "ece": 0.0024979047719152314
+          },
+          "result": {
+            "n": 69044,
+            "log_loss": 1.445182335866699,
+            "top1_accuracy": 0.3595967788656509,
+            "top2_accuracy": 0.6295260992989977,
+            "ece": 0.008370100498209066
+          }
+        },
+        "pitcher_count_shrunk": {
+          "pitch": {
+            "n": 69044,
+            "log_loss": 1.2710663628058587,
+            "top1_accuracy": 0.5097329239325648,
+            "top2_accuracy": 0.7487689009906726,
+            "ece": 0.010597990423546278
+          },
+          "zone": {
+            "n": 69001,
+            "log_loss": 2.4025342111322523,
+            "top1_accuracy": 0.1870842451558673,
+            "top2_accuracy": 0.3415892523296764,
+            "ece": 0.005663361844303798
+          },
+          "result": {
+            "n": 69044,
+            "log_loss": 1.445182335866699,
+            "top1_accuracy": 0.3595967788656509,
+            "top2_accuracy": 0.6295260992989977,
+            "ece": 0.008370100498209066
+          }
+        }
+      }
+    },
+    "limitations": [
+      "Final test is a retrospective 2025 regular-season cohort, not a future-performance guarantee.",
+      "Temporal drift and correlated pitches can invalidate exchangeability assumptions; nominal 90% is not guaranteed.",
+      "All-supported metrics include unseen player IDs with frozen unknown-ID features; the public API accepts only the frozen catalog. Catalog-serving metrics are reported separately.",
+      "Hit-by-pitch and other outcomes outside the five-class task are excluded and counted. Missing zones mask only zone and conditional-result evaluation.",
+      "Recorded pitch location is an observed outcome, not the intended target. Conditional-result accuracy on observed actions does not establish causal recommendation benefit.",
+      "Calibration-audit versus final-test changes compare different time cohorts; they do not isolate the cause of drift.",
+      "Frozen model metadata retains test_evaluated=false as historical training provenance; this separate report records the later final evaluation."
+    ]
+  },
+  "cases": [
+    {
+      "id": "count-only",
+      "title": "一般情境：無已投球歷程",
+      "description": "手動設定的示範輸入，並非特定歷史打席；輸出由凍結模型實際計算。",
+      "pitcher_name": "鋼龍",
+      "batter_name": "陳傑憲",
+      "request": {
+        "pitcher_id": "KPTzi",
+        "batter_id": "LlGVK",
+        "state": {
+          "balls": 0,
+          "strikes": 0,
+          "outs": 0,
+          "bases": [
+            false,
+            false,
+            false
+          ]
+        },
+        "sequence": []
+      },
+      "response": {
+        "pitch_probabilities": [
+          {
+            "pitch_type": "CH",
+            "name": "變速球",
+            "probability": 0.08586899936199188
+          },
+          {
+            "pitch_type": "CU",
+            "name": "曲球",
+            "probability": 0.16166578233242035
+          },
+          {
+            "pitch_type": "FC",
+            "name": "卡特",
+            "probability": 0.0005476424703374505
+          },
+          {
+            "pitch_type": "FF",
+            "name": "四縫線",
+            "probability": 0.004897200968116522
+          },
+          {
+            "pitch_type": "FO",
+            "name": "指叉",
+            "probability": 0.000687195046339184
+          },
+          {
+            "pitch_type": "FS",
+            "name": "快速指叉",
+            "probability": 1.545611667097546e-05
+          },
+          {
+            "pitch_type": "KN",
+            "name": "蝴蝶球",
+            "probability": 1.2723399777314626e-05
+          },
+          {
+            "pitch_type": "SI",
+            "name": "伸卡／二縫線",
+            "probability": 0.6862637996673584
+          },
+          {
+            "pitch_type": "SL",
+            "name": "滑球",
+            "probability": 0.0600411593914032
+          }
+        ],
+        "zone_probabilities": [
+          {
+            "zone": 0,
+            "name": "左上",
+            "probability": 0.0474972240626812
+          },
+          {
+            "zone": 1,
+            "name": "中上",
+            "probability": 0.057028643786907196
+          },
+          {
+            "zone": 2,
+            "name": "右上",
+            "probability": 0.04955602064728737
+          },
+          {
+            "zone": 3,
+            "name": "左中",
+            "probability": 0.04392365366220474
+          },
+          {
+            "zone": 4,
+            "name": "正中",
+            "probability": 0.08014078438282013
+          },
+          {
+            "zone": 5,
+            "name": "右中",
+            "probability": 0.08397459238767624
+          },
+          {
+            "zone": 6,
+            "name": "左下",
+            "probability": 0.05251544713973999
+          },
+          {
+            "zone": 7,
+            "name": "中下",
+            "probability": 0.05526495352387428
+          },
+          {
+            "zone": 8,
+            "name": "右下",
+            "probability": 0.0400419607758522
+          },
+          {
+            "zone": 9,
+            "name": "帶外上方",
+            "probability": 0.0864950567483902
+          },
+          {
+            "zone": 10,
+            "name": "帶外右側",
+            "probability": 0.1554492563009262
+          },
+          {
+            "zone": 11,
+            "name": "帶外下方",
+            "probability": 0.13804110884666443
+          },
+          {
+            "zone": 12,
+            "name": "帶外左側",
+            "probability": 0.11007130146026611
+          }
+        ],
+        "result_probabilities": [
+          {
+            "result": "ball",
+            "probability": 0.3830803632736206
+          },
+          {
+            "result": "called_strike",
+            "probability": 0.454668790102005
+          },
+          {
+            "result": "swinging_strike",
+            "probability": 0.024622784927487373
+          },
+          {
+            "result": "foul",
+            "probability": 0.06787651032209396
+          },
+          {
+            "result": "in_play",
+            "probability": 0.06975162774324417
+          }
+        ],
+        "recommendations": [
+          {
+            "pitch_type": "CU",
+            "zone": 5,
+            "expected_run_change": -0.04269,
+            "direct_sample_count": 13,
+            "pooled_sample_count": 628,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.0046524000354111195
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.8861970901489258
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.021825825795531273
+              },
+              {
+                "result": "foul",
+                "probability": 0.03285875543951988
+              },
+              {
+                "result": "in_play",
+                "probability": 0.054465897381305695
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "CU",
+            "zone": 3,
+            "expected_run_change": -0.04143,
+            "direct_sample_count": 7,
+            "pooled_sample_count": 655,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.010354082100093365
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.8854352235794067
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.00842245016247034
+              },
+              {
+                "result": "foul",
+                "probability": 0.034371789544820786
+              },
+              {
+                "result": "in_play",
+                "probability": 0.06141648814082146
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "CU",
+            "zone": 7,
+            "expected_run_change": -0.04091,
+            "direct_sample_count": 13,
+            "pooled_sample_count": 827,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.018353130668401718
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.8691976070404053
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.01862027309834957
+              },
+              {
+                "result": "foul",
+                "probability": 0.03513413667678833
+              },
+              {
+                "result": "in_play",
+                "probability": 0.0586947500705719
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "CU",
+            "zone": 8,
+            "expected_run_change": -0.04091,
+            "direct_sample_count": 23,
+            "pooled_sample_count": 639,
+            "support": "historical",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.02567841298878193
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.8770396709442139
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.01712638884782791
+              },
+              {
+                "result": "foul",
+                "probability": 0.030238501727581024
+              },
+              {
+                "result": "in_play",
+                "probability": 0.04991694539785385
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "SL",
+            "zone": 5,
+            "expected_run_change": -0.04061,
+            "direct_sample_count": 1,
+            "pooled_sample_count": 1100,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.0058626942336559296
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.8257796168327332
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.0315888412296772
+              },
+              {
+                "result": "foul",
+                "probability": 0.05916570499539375
+              },
+              {
+                "result": "in_play",
+                "probability": 0.07760308682918549
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          }
+        ],
+        "sample_counts": {
+          "pitcher": 3962,
+          "batter": 3233,
+          "matchup": 65,
+          "league_state": 9576
+        },
+        "warnings": [
+          "推薦依歷史觀察關聯與訓練期得分期望，不代表因果或保證最優配球。",
+          "90%預測集合僅在保留校準稽核資料量測；時間漂移可能使實際覆蓋率改變。",
+          "候選配球的條件結果頭另作溫度校準；主結果頭的90%集合不代表候選配球的成功率。",
+          "歷程假設來自同一位當前投手；打席中換投時請清空歷程，僅使用目前情境。",
+          "未提供本打席先前投球；使用情境、投打身分與空歷史特徵。"
+        ],
+        "prediction_sets": {
+          "pitch": {
+            "labels": [
+              "CU",
+              "SI"
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.8919821381568909
+          },
+          "zone": {
+            "labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.9618647247552872
+          },
+          "result": {
+            "labels": [
+              "ball",
+              "called_strike"
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.8838139325380325
+          }
+        },
+        "prediction_set": [
+          "CU",
+          "SI"
+        ],
+        "calibration": {
+          "method": "temperature+split-conformal",
+          "target_coverage": 0.9,
+          "limitations": "Chronological observational samples may shift; empirical coverage is not an exchangeability guarantee.",
+          "temperature": {
+            "pitch": 1.0238362555396097,
+            "zone": 1.001160286377934,
+            "result": 1.0238362555396097,
+            "conditional_result": 1.001160286377934
+          },
+          "thresholds": {
+            "pitch": 0.8919821381568909,
+            "zone": 0.9618647247552872,
+            "result": 0.8838139325380325
+          },
+          "audit": {
+            "pitch": {
+              "n": 3196,
+              "coverage": 0.8983103879849812,
+              "mean_set_size": 2.5168961201501876,
+              "ece_before": 0.040633323397859654,
+              "ece_after": 0.034433553491874096,
+              "log_loss_before": 1.1059416925987313,
+              "log_loss_after": 1.1052705407615313
+            },
+            "zone": {
+              "n": 3193,
+              "coverage": 0.9025994362668337,
+              "mean_set_size": 10.270905104917006,
+              "ece_before": 0.008968731033290551,
+              "ece_after": 0.008215434557585881,
+              "log_loss_before": 2.362307044387179,
+              "log_loss_after": 2.3622892541377043
+            },
+            "result": {
+              "n": 3196,
+              "coverage": 0.8945556946182729,
+              "mean_set_size": 3.580413016270338,
+              "ece_before": 0.03134550763960649,
+              "ece_after": 0.02702146410494483,
+              "log_loss_before": 1.452362686848165,
+              "log_loss_after": 1.4519888593701378
+            }
+          },
+          "split": {
+            "temperature": {
+              "date_min": "2024-09-12",
+              "date_max": "2024-09-21",
+              "rows": 5516
+            },
+            "conformal": {
+              "date_min": "2024-09-22",
+              "date_max": "2024-10-01",
+              "rows": 5099
+            },
+            "audit": {
+              "date_min": "2024-10-05",
+              "date_max": "2024-10-11",
+              "rows": 3196
+            }
+          }
+        },
+        "history_summary": {
+          "provided": false,
+          "length": 0,
+          "balls": null,
+          "strikes": null,
+          "missing_zone_count": 0,
+          "missing_velocity_count": 0,
+          "sequence_used": false
+        },
+        "model_info": {
+          "selected_candidate": "lightgbm_history",
+          "selection_rule": "validation pitch log loss; within 0.005 nats prefer context LGB then history LGB then GRU; GRU zone/result may degrade at most 0.03 nats vs history LGB",
+          "selection_reason": "lightgbm_history is the simplest eligible model within 0.005 nats of best validation pitch log loss (1.158778).",
+          "training_rows": 155502,
+          "test_evaluated": true,
+          "validation": {
+            "league_count": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.594000476186874,
+                "top1_accuracy": 0.45244449836224676,
+                "top2_accuracy": 0.6291398762586436,
+                "ece": 0.015018744517735091
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3927523124293972,
+                "top1_accuracy": 0.18293867638129932,
+                "top2_accuracy": 0.3380692167577414,
+                "ece": 0.005661511892598684
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4487950185470817,
+                "top1_accuracy": 0.35982045371830645,
+                "top2_accuracy": 0.6241659589955113,
+                "ece": 0.00967625664437561
+              }
+            },
+            "pitcher_count_shrunk": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.2446976772740352,
+                "top1_accuracy": 0.4856241659589955,
+                "top2_accuracy": 0.7499090137086012,
+                "ece": 0.015604964358150971
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3885480787665356,
+                "top1_accuracy": 0.1875531268973892,
+                "top2_accuracy": 0.34705525197328474,
+                "ece": 0.005463679761587671
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4487950185470817,
+                "top1_accuracy": 0.35982045371830645,
+                "top2_accuracy": 0.6241659589955113,
+                "ece": 0.00967625664437561
+              }
+            },
+            "lightgbm_context": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.20101228953335,
+                "top1_accuracy": 0.4954506854300619,
+                "top2_accuracy": 0.772352298920296,
+                "ece": 0.0347511204665554
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.35234144906203,
+                "top1_accuracy": 0.21681845780206435,
+                "top2_accuracy": 0.3822707953855495,
+                "ece": 0.006255620168531591
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4345371128546662,
+                "top1_accuracy": 0.36157952201868254,
+                "top2_accuracy": 0.6307776295038214,
+                "ece": 0.014733409414248382
+              }
+            },
+            "lightgbm_history": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.1587782846819539,
+                "top1_accuracy": 0.512131505519835,
+                "top2_accuracy": 0.787577338347689,
+                "ece": 0.026350265807372823
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.348360980426171,
+                "top1_accuracy": 0.22088646023072253,
+                "top2_accuracy": 0.383485124468731,
+                "ece": 0.004808025385179064
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4336940294196565,
+                "top1_accuracy": 0.36473371345383965,
+                "top2_accuracy": 0.6301710542278297,
+                "ece": 0.014802941224530977
+              }
+            },
+            "gru": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.1744693517684937,
+                "top1_accuracy": 0.5085527113914837,
+                "top2_accuracy": 0.7838772291641393,
+                "ece": 0.02872751803959541
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3551571369171143,
+                "top1_accuracy": 0.21955069823922282,
+                "top2_accuracy": 0.3820279295689132,
+                "ece": 0.009051922677536043
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4368152618408203,
+                "top1_accuracy": 0.36588620647822395,
+                "top2_accuracy": 0.6267742326822758,
+                "ece": 0.017077117053814247
+              }
+            }
+          },
+          "calibration_audit": {
+            "pitch": {
+              "n": 3196,
+              "coverage": 0.8983103879849812,
+              "mean_set_size": 2.5168961201501876,
+              "ece_before": 0.040633323397859654,
+              "ece_after": 0.034433553491874096,
+              "log_loss_before": 1.1059416925987313,
+              "log_loss_after": 1.1052705407615313
+            },
+            "zone": {
+              "n": 3193,
+              "coverage": 0.9025994362668337,
+              "mean_set_size": 10.270905104917006,
+              "ece_before": 0.008968731033290551,
+              "ece_after": 0.008215434557585881,
+              "log_loss_before": 2.362307044387179,
+              "log_loss_after": 2.3622892541377043
+            },
+            "result": {
+              "n": 3196,
+              "coverage": 0.8945556946182729,
+              "mean_set_size": 3.580413016270338,
+              "ece_before": 0.03134550763960649,
+              "ece_after": 0.02702146410494483,
+              "log_loss_before": 1.452362686848165,
+              "log_loss_after": 1.4519888593701378
+            }
+          }
+        },
+        "model_version": "week2-sequence-v1",
+        "data_version": "rebas-2023-2025-regular-v1",
+        "data_cutoff": "2024-08-14",
+        "model_name": "lightgbm_history",
+        "capabilities": {
+          "sequence": true,
+          "batter_conditioned_model": true,
+          "conformal": true,
+          "conditional_result": true
+        },
+        "source_mode": "local_snapshot",
+        "elapsed_ms": 3.4,
+        "sequence_used": false
+      }
+    },
+    {
+      "id": "history-two",
+      "title": "完整歷程：兩球後的下一球",
+      "description": "手動設定的示範輸入，並非特定歷史打席；輸出由凍結模型實際計算。",
+      "pitcher_name": "鋼龍",
+      "batter_name": "陳傑憲",
+      "request": {
+        "pitcher_id": "KPTzi",
+        "batter_id": "LlGVK",
+        "state": {
+          "balls": 1,
+          "strikes": 1,
+          "outs": 0,
+          "bases": [
+            false,
+            false,
+            false
+          ]
+        },
+        "sequence": [
+          {
+            "pitch_type": "SI",
+            "zone": null,
+            "velocity": null,
+            "result": "ball"
+          },
+          {
+            "pitch_type": "CU",
+            "zone": 4,
+            "velocity": 140.0,
+            "result": "called_strike"
+          }
+        ]
+      },
+      "response": {
+        "pitch_probabilities": [
+          {
+            "pitch_type": "CH",
+            "name": "變速球",
+            "probability": 0.17007334530353546
+          },
+          {
+            "pitch_type": "CU",
+            "name": "曲球",
+            "probability": 0.24910792708396912
+          },
+          {
+            "pitch_type": "FC",
+            "name": "卡特",
+            "probability": 0.0006558893364854157
+          },
+          {
+            "pitch_type": "FF",
+            "name": "四縫線",
+            "probability": 0.005800480954349041
+          },
+          {
+            "pitch_type": "FO",
+            "name": "指叉",
+            "probability": 0.0009618439362384379
+          },
+          {
+            "pitch_type": "FS",
+            "name": "快速指叉",
+            "probability": 2.1878400730201975e-05
+          },
+          {
+            "pitch_type": "KN",
+            "name": "蝴蝶球",
+            "probability": 1.5541992979706265e-05
+          },
+          {
+            "pitch_type": "SI",
+            "name": "伸卡／二縫線",
+            "probability": 0.5130064487457275
+          },
+          {
+            "pitch_type": "SL",
+            "name": "滑球",
+            "probability": 0.060356635600328445
+          }
+        ],
+        "zone_probabilities": [
+          {
+            "zone": 0,
+            "name": "左上",
+            "probability": 0.04517242684960365
+          },
+          {
+            "zone": 1,
+            "name": "中上",
+            "probability": 0.04998388513922691
+          },
+          {
+            "zone": 2,
+            "name": "右上",
+            "probability": 0.044516295194625854
+          },
+          {
+            "zone": 3,
+            "name": "左中",
+            "probability": 0.04658771678805351
+          },
+          {
+            "zone": 4,
+            "name": "正中",
+            "probability": 0.061813030391931534
+          },
+          {
+            "zone": 5,
+            "name": "右中",
+            "probability": 0.07331647723913193
+          },
+          {
+            "zone": 6,
+            "name": "左下",
+            "probability": 0.05102089047431946
+          },
+          {
+            "zone": 7,
+            "name": "中下",
+            "probability": 0.06185039132833481
+          },
+          {
+            "zone": 8,
+            "name": "右下",
+            "probability": 0.04076279327273369
+          },
+          {
+            "zone": 9,
+            "name": "帶外上方",
+            "probability": 0.0650983527302742
+          },
+          {
+            "zone": 10,
+            "name": "帶外右側",
+            "probability": 0.14061224460601807
+          },
+          {
+            "zone": 11,
+            "name": "帶外下方",
+            "probability": 0.2008374035358429
+          },
+          {
+            "zone": 12,
+            "name": "帶外左側",
+            "probability": 0.11842814832925797
+          }
+        ],
+        "result_probabilities": [
+          {
+            "result": "ball",
+            "probability": 0.36231565475463867
+          },
+          {
+            "result": "called_strike",
+            "probability": 0.15217430889606476
+          },
+          {
+            "result": "swinging_strike",
+            "probability": 0.06913924217224121
+          },
+          {
+            "result": "foul",
+            "probability": 0.19573163986206055
+          },
+          {
+            "result": "in_play",
+            "probability": 0.2206391841173172
+          }
+        ],
+        "recommendations": [
+          {
+            "pitch_type": "CU",
+            "zone": 5,
+            "expected_run_change": -0.0549,
+            "direct_sample_count": 6,
+            "pooled_sample_count": 628,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.007021957542747259
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.3647216260433197
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.08418773859739304
+              },
+              {
+                "result": "foul",
+                "probability": 0.2429979294538498
+              },
+              {
+                "result": "in_play",
+                "probability": 0.3010707497596741
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "CU",
+            "zone": 8,
+            "expected_run_change": -0.05438,
+            "direct_sample_count": 3,
+            "pooled_sample_count": 639,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.03201298415660858
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.4204229712486267
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.06496560573577881
+              },
+              {
+                "result": "foul",
+                "probability": 0.22320862114429474
+              },
+              {
+                "result": "in_play",
+                "probability": 0.2593897879123688
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "SL",
+            "zone": 8,
+            "expected_run_change": -0.0519,
+            "direct_sample_count": 1,
+            "pooled_sample_count": 1134,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.03671988099813461
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.3176281750202179
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.07430721074342728
+              },
+              {
+                "result": "foul",
+                "probability": 0.2928811311721802
+              },
+              {
+                "result": "in_play",
+                "probability": 0.27846357226371765
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "SL",
+            "zone": 5,
+            "expected_run_change": -0.05177,
+            "direct_sample_count": 1,
+            "pooled_sample_count": 1100,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.007609757129102945
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.22645379602909088
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.0998910516500473
+              },
+              {
+                "result": "foul",
+                "probability": 0.3307601809501648
+              },
+              {
+                "result": "in_play",
+                "probability": 0.33528515696525574
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "CH",
+            "zone": 5,
+            "expected_run_change": -0.05098,
+            "direct_sample_count": 4,
+            "pooled_sample_count": 701,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.00791785679757595
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.18327859044075012
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.10928469896316528
+              },
+              {
+                "result": "foul",
+                "probability": 0.3557110130786896
+              },
+              {
+                "result": "in_play",
+                "probability": 0.3438078761100769
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          }
+        ],
+        "sample_counts": {
+          "pitcher": 3962,
+          "batter": 3233,
+          "matchup": 65,
+          "league_state": 3959
+        },
+        "warnings": [
+          "推薦依歷史觀察關聯與訓練期得分期望，不代表因果或保證最優配球。",
+          "90%預測集合僅在保留校準稽核資料量測；時間漂移可能使實際覆蓋率改變。",
+          "候選配球的條件結果頭另作溫度校準；主結果頭的90%集合不代表候選配球的成功率。",
+          "歷程假設來自同一位當前投手；打席中換投時請清空歷程，僅使用目前情境。"
+        ],
+        "prediction_sets": {
+          "pitch": {
+            "labels": [
+              "CH",
+              "CU",
+              "SI"
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.8919821381568909
+          },
+          "zone": {
+            "labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.9618647247552872
+          },
+          "result": {
+            "labels": [
+              "ball",
+              "called_strike",
+              "foul",
+              "in_play"
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.8838139325380325
+          }
+        },
+        "prediction_set": [
+          "CH",
+          "CU",
+          "SI"
+        ],
+        "calibration": {
+          "method": "temperature+split-conformal",
+          "target_coverage": 0.9,
+          "limitations": "Chronological observational samples may shift; empirical coverage is not an exchangeability guarantee.",
+          "temperature": {
+            "pitch": 1.0238362555396097,
+            "zone": 1.001160286377934,
+            "result": 1.0238362555396097,
+            "conditional_result": 1.001160286377934
+          },
+          "thresholds": {
+            "pitch": 0.8919821381568909,
+            "zone": 0.9618647247552872,
+            "result": 0.8838139325380325
+          },
+          "audit": {
+            "pitch": {
+              "n": 3196,
+              "coverage": 0.8983103879849812,
+              "mean_set_size": 2.5168961201501876,
+              "ece_before": 0.040633323397859654,
+              "ece_after": 0.034433553491874096,
+              "log_loss_before": 1.1059416925987313,
+              "log_loss_after": 1.1052705407615313
+            },
+            "zone": {
+              "n": 3193,
+              "coverage": 0.9025994362668337,
+              "mean_set_size": 10.270905104917006,
+              "ece_before": 0.008968731033290551,
+              "ece_after": 0.008215434557585881,
+              "log_loss_before": 2.362307044387179,
+              "log_loss_after": 2.3622892541377043
+            },
+            "result": {
+              "n": 3196,
+              "coverage": 0.8945556946182729,
+              "mean_set_size": 3.580413016270338,
+              "ece_before": 0.03134550763960649,
+              "ece_after": 0.02702146410494483,
+              "log_loss_before": 1.452362686848165,
+              "log_loss_after": 1.4519888593701378
+            }
+          },
+          "split": {
+            "temperature": {
+              "date_min": "2024-09-12",
+              "date_max": "2024-09-21",
+              "rows": 5516
+            },
+            "conformal": {
+              "date_min": "2024-09-22",
+              "date_max": "2024-10-01",
+              "rows": 5099
+            },
+            "audit": {
+              "date_min": "2024-10-05",
+              "date_max": "2024-10-11",
+              "rows": 3196
+            }
+          }
+        },
+        "history_summary": {
+          "provided": true,
+          "length": 2,
+          "balls": 1,
+          "strikes": 1,
+          "missing_zone_count": 1,
+          "missing_velocity_count": 1,
+          "sequence_used": true
+        },
+        "model_info": {
+          "selected_candidate": "lightgbm_history",
+          "selection_rule": "validation pitch log loss; within 0.005 nats prefer context LGB then history LGB then GRU; GRU zone/result may degrade at most 0.03 nats vs history LGB",
+          "selection_reason": "lightgbm_history is the simplest eligible model within 0.005 nats of best validation pitch log loss (1.158778).",
+          "training_rows": 155502,
+          "test_evaluated": true,
+          "validation": {
+            "league_count": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.594000476186874,
+                "top1_accuracy": 0.45244449836224676,
+                "top2_accuracy": 0.6291398762586436,
+                "ece": 0.015018744517735091
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3927523124293972,
+                "top1_accuracy": 0.18293867638129932,
+                "top2_accuracy": 0.3380692167577414,
+                "ece": 0.005661511892598684
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4487950185470817,
+                "top1_accuracy": 0.35982045371830645,
+                "top2_accuracy": 0.6241659589955113,
+                "ece": 0.00967625664437561
+              }
+            },
+            "pitcher_count_shrunk": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.2446976772740352,
+                "top1_accuracy": 0.4856241659589955,
+                "top2_accuracy": 0.7499090137086012,
+                "ece": 0.015604964358150971
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3885480787665356,
+                "top1_accuracy": 0.1875531268973892,
+                "top2_accuracy": 0.34705525197328474,
+                "ece": 0.005463679761587671
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4487950185470817,
+                "top1_accuracy": 0.35982045371830645,
+                "top2_accuracy": 0.6241659589955113,
+                "ece": 0.00967625664437561
+              }
+            },
+            "lightgbm_context": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.20101228953335,
+                "top1_accuracy": 0.4954506854300619,
+                "top2_accuracy": 0.772352298920296,
+                "ece": 0.0347511204665554
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.35234144906203,
+                "top1_accuracy": 0.21681845780206435,
+                "top2_accuracy": 0.3822707953855495,
+                "ece": 0.006255620168531591
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4345371128546662,
+                "top1_accuracy": 0.36157952201868254,
+                "top2_accuracy": 0.6307776295038214,
+                "ece": 0.014733409414248382
+              }
+            },
+            "lightgbm_history": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.1587782846819539,
+                "top1_accuracy": 0.512131505519835,
+                "top2_accuracy": 0.787577338347689,
+                "ece": 0.026350265807372823
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.348360980426171,
+                "top1_accuracy": 0.22088646023072253,
+                "top2_accuracy": 0.383485124468731,
+                "ece": 0.004808025385179064
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4336940294196565,
+                "top1_accuracy": 0.36473371345383965,
+                "top2_accuracy": 0.6301710542278297,
+                "ece": 0.014802941224530977
+              }
+            },
+            "gru": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.1744693517684937,
+                "top1_accuracy": 0.5085527113914837,
+                "top2_accuracy": 0.7838772291641393,
+                "ece": 0.02872751803959541
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3551571369171143,
+                "top1_accuracy": 0.21955069823922282,
+                "top2_accuracy": 0.3820279295689132,
+                "ece": 0.009051922677536043
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4368152618408203,
+                "top1_accuracy": 0.36588620647822395,
+                "top2_accuracy": 0.6267742326822758,
+                "ece": 0.017077117053814247
+              }
+            }
+          },
+          "calibration_audit": {
+            "pitch": {
+              "n": 3196,
+              "coverage": 0.8983103879849812,
+              "mean_set_size": 2.5168961201501876,
+              "ece_before": 0.040633323397859654,
+              "ece_after": 0.034433553491874096,
+              "log_loss_before": 1.1059416925987313,
+              "log_loss_after": 1.1052705407615313
+            },
+            "zone": {
+              "n": 3193,
+              "coverage": 0.9025994362668337,
+              "mean_set_size": 10.270905104917006,
+              "ece_before": 0.008968731033290551,
+              "ece_after": 0.008215434557585881,
+              "log_loss_before": 2.362307044387179,
+              "log_loss_after": 2.3622892541377043
+            },
+            "result": {
+              "n": 3196,
+              "coverage": 0.8945556946182729,
+              "mean_set_size": 3.580413016270338,
+              "ece_before": 0.03134550763960649,
+              "ece_after": 0.02702146410494483,
+              "log_loss_before": 1.452362686848165,
+              "log_loss_after": 1.4519888593701378
+            }
+          }
+        },
+        "model_version": "week2-sequence-v1",
+        "data_version": "rebas-2023-2025-regular-v1",
+        "data_cutoff": "2024-08-14",
+        "model_name": "lightgbm_history",
+        "capabilities": {
+          "sequence": true,
+          "batter_conditioned_model": true,
+          "conformal": true,
+          "conditional_result": true
+        },
+        "source_mode": "local_snapshot",
+        "elapsed_ms": 3.23,
+        "sequence_used": true
+      }
+    },
+    {
+      "id": "small-matchup",
+      "title": "少量樣本：查看資料支持與集合",
+      "description": "手動設定的示範輸入，並非特定歷史打席；輸出由凍結模型實際計算。",
+      "pitcher_name": "鋼龍",
+      "batter_name": "陳致嘉",
+      "request": {
+        "pitcher_id": "KPTzi",
+        "batter_id": "KFxfq",
+        "state": {
+          "balls": 1,
+          "strikes": 2,
+          "outs": 1,
+          "bases": [
+            true,
+            false,
+            false
+          ]
+        },
+        "sequence": []
+      },
+      "response": {
+        "pitch_probabilities": [
+          {
+            "pitch_type": "CH",
+            "name": "變速球",
+            "probability": 0.1818642020225525
+          },
+          {
+            "pitch_type": "CU",
+            "name": "曲球",
+            "probability": 0.23457373678684235
+          },
+          {
+            "pitch_type": "FC",
+            "name": "卡特",
+            "probability": 0.0009313132031820714
+          },
+          {
+            "pitch_type": "FF",
+            "name": "四縫線",
+            "probability": 0.008130989037454128
+          },
+          {
+            "pitch_type": "FO",
+            "name": "指叉",
+            "probability": 0.0012112368131056428
+          },
+          {
+            "pitch_type": "FS",
+            "name": "快速指叉",
+            "probability": 2.0015877453261055e-05
+          },
+          {
+            "pitch_type": "KN",
+            "name": "蝴蝶球",
+            "probability": 2.117762778652832e-05
+          },
+          {
+            "pitch_type": "SI",
+            "name": "伸卡／二縫線",
+            "probability": 0.43926161527633667
+          },
+          {
+            "pitch_type": "SL",
+            "name": "滑球",
+            "probability": 0.13398566842079163
+          }
+        ],
+        "zone_probabilities": [
+          {
+            "zone": 0,
+            "name": "左上",
+            "probability": 0.03402795270085335
+          },
+          {
+            "zone": 1,
+            "name": "中上",
+            "probability": 0.03302595764398575
+          },
+          {
+            "zone": 2,
+            "name": "右上",
+            "probability": 0.031058406457304955
+          },
+          {
+            "zone": 3,
+            "name": "左中",
+            "probability": 0.048460572957992554
+          },
+          {
+            "zone": 4,
+            "name": "正中",
+            "probability": 0.041399627923965454
+          },
+          {
+            "zone": 5,
+            "name": "右中",
+            "probability": 0.03960894048213959
+          },
+          {
+            "zone": 6,
+            "name": "左下",
+            "probability": 0.06549187749624252
+          },
+          {
+            "zone": 7,
+            "name": "中下",
+            "probability": 0.03857261314988136
+          },
+          {
+            "zone": 8,
+            "name": "右下",
+            "probability": 0.027846351265907288
+          },
+          {
+            "zone": 9,
+            "name": "帶外上方",
+            "probability": 0.09907865524291992
+          },
+          {
+            "zone": 10,
+            "name": "帶外右側",
+            "probability": 0.07794825732707977
+          },
+          {
+            "zone": 11,
+            "name": "帶外下方",
+            "probability": 0.2291336953639984
+          },
+          {
+            "zone": 12,
+            "name": "帶外左側",
+            "probability": 0.23434704542160034
+          }
+        ],
+        "result_probabilities": [
+          {
+            "result": "ball",
+            "probability": 0.4221144914627075
+          },
+          {
+            "result": "called_strike",
+            "probability": 0.04834047332406044
+          },
+          {
+            "result": "swinging_strike",
+            "probability": 0.1516314595937729
+          },
+          {
+            "result": "foul",
+            "probability": 0.17436179518699646
+          },
+          {
+            "result": "in_play",
+            "probability": 0.20355169475078583
+          }
+        ],
+        "recommendations": [
+          {
+            "pitch_type": "CU",
+            "zone": 8,
+            "expected_run_change": 0.00622,
+            "direct_sample_count": 2,
+            "pooled_sample_count": 639,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.05652890354394913
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.15319563448429108
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.15056101977825165
+              },
+              {
+                "result": "foul",
+                "probability": 0.31181204319000244
+              },
+              {
+                "result": "in_play",
+                "probability": 0.3279024064540863
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "SL",
+            "zone": 8,
+            "expected_run_change": 0.00802,
+            "direct_sample_count": 0,
+            "pooled_sample_count": 1134,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.05440029874444008
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.11852630227804184
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.169250950217247
+              },
+              {
+                "result": "foul",
+                "probability": 0.3185541331768036
+              },
+              {
+                "result": "in_play",
+                "probability": 0.33926835656166077
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "CU",
+            "zone": 6,
+            "expected_run_change": 0.01171,
+            "direct_sample_count": 4,
+            "pooled_sample_count": 701,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.07193497568368912
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.12090417742729187
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.15530632436275482
+              },
+              {
+                "result": "foul",
+                "probability": 0.3136329650878906
+              },
+              {
+                "result": "in_play",
+                "probability": 0.3382215201854706
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "CH",
+            "zone": 8,
+            "expected_run_change": 0.01236,
+            "direct_sample_count": 10,
+            "pooled_sample_count": 889,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.05597613751888275
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.05925825610756874
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.19223955273628235
+              },
+              {
+                "result": "foul",
+                "probability": 0.3387910723686218
+              },
+              {
+                "result": "in_play",
+                "probability": 0.3537349998950958
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          },
+          {
+            "pitch_type": "SL",
+            "zone": 6,
+            "expected_run_change": 0.01242,
+            "direct_sample_count": 3,
+            "pooled_sample_count": 1597,
+            "support": "pooled",
+            "result_probabilities": [
+              {
+                "result": "ball",
+                "probability": 0.06805223971605301
+              },
+              {
+                "result": "called_strike",
+                "probability": 0.09378010034561157
+              },
+              {
+                "result": "swinging_strike",
+                "probability": 0.17318500578403473
+              },
+              {
+                "result": "foul",
+                "probability": 0.3178443908691406
+              },
+              {
+                "result": "in_play",
+                "probability": 0.3471382260322571
+              }
+            ],
+            "method": "conditional_result_times_train_only_delta_re",
+            "causal": false
+          }
+        ],
+        "sample_counts": {
+          "pitcher": 3962,
+          "batter": 6,
+          "matchup": 0,
+          "league_state": 974
+        },
+        "warnings": [
+          "推薦依歷史觀察關聯與訓練期得分期望，不代表因果或保證最優配球。",
+          "90%預測集合僅在保留校準稽核資料量測；時間漂移可能使實際覆蓋率改變。",
+          "候選配球的條件結果頭另作溫度校準；主結果頭的90%集合不代表候選配球的成功率。",
+          "歷程假設來自同一位當前投手；打席中換投時請清空歷程，僅使用目前情境。",
+          "未提供本打席先前投球；使用情境、投打身分與空歷史特徵。",
+          "直接對戰樣本少於30球，請參考投打整體樣本及校準集合。"
+        ],
+        "prediction_sets": {
+          "pitch": {
+            "labels": [
+              "CH",
+              "CU",
+              "SI",
+              "SL"
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.8919821381568909
+          },
+          "zone": {
+            "labels": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.9618647247552872
+          },
+          "result": {
+            "labels": [
+              "ball",
+              "swinging_strike",
+              "foul",
+              "in_play"
+            ],
+            "target_coverage": 0.9,
+            "threshold": 0.8838139325380325
+          }
+        },
+        "prediction_set": [
+          "CH",
+          "CU",
+          "SI",
+          "SL"
+        ],
+        "calibration": {
+          "method": "temperature+split-conformal",
+          "target_coverage": 0.9,
+          "limitations": "Chronological observational samples may shift; empirical coverage is not an exchangeability guarantee.",
+          "temperature": {
+            "pitch": 1.0238362555396097,
+            "zone": 1.001160286377934,
+            "result": 1.0238362555396097,
+            "conditional_result": 1.001160286377934
+          },
+          "thresholds": {
+            "pitch": 0.8919821381568909,
+            "zone": 0.9618647247552872,
+            "result": 0.8838139325380325
+          },
+          "audit": {
+            "pitch": {
+              "n": 3196,
+              "coverage": 0.8983103879849812,
+              "mean_set_size": 2.5168961201501876,
+              "ece_before": 0.040633323397859654,
+              "ece_after": 0.034433553491874096,
+              "log_loss_before": 1.1059416925987313,
+              "log_loss_after": 1.1052705407615313
+            },
+            "zone": {
+              "n": 3193,
+              "coverage": 0.9025994362668337,
+              "mean_set_size": 10.270905104917006,
+              "ece_before": 0.008968731033290551,
+              "ece_after": 0.008215434557585881,
+              "log_loss_before": 2.362307044387179,
+              "log_loss_after": 2.3622892541377043
+            },
+            "result": {
+              "n": 3196,
+              "coverage": 0.8945556946182729,
+              "mean_set_size": 3.580413016270338,
+              "ece_before": 0.03134550763960649,
+              "ece_after": 0.02702146410494483,
+              "log_loss_before": 1.452362686848165,
+              "log_loss_after": 1.4519888593701378
+            }
+          },
+          "split": {
+            "temperature": {
+              "date_min": "2024-09-12",
+              "date_max": "2024-09-21",
+              "rows": 5516
+            },
+            "conformal": {
+              "date_min": "2024-09-22",
+              "date_max": "2024-10-01",
+              "rows": 5099
+            },
+            "audit": {
+              "date_min": "2024-10-05",
+              "date_max": "2024-10-11",
+              "rows": 3196
+            }
+          }
+        },
+        "history_summary": {
+          "provided": false,
+          "length": 0,
+          "balls": null,
+          "strikes": null,
+          "missing_zone_count": 0,
+          "missing_velocity_count": 0,
+          "sequence_used": false
+        },
+        "model_info": {
+          "selected_candidate": "lightgbm_history",
+          "selection_rule": "validation pitch log loss; within 0.005 nats prefer context LGB then history LGB then GRU; GRU zone/result may degrade at most 0.03 nats vs history LGB",
+          "selection_reason": "lightgbm_history is the simplest eligible model within 0.005 nats of best validation pitch log loss (1.158778).",
+          "training_rows": 155502,
+          "test_evaluated": true,
+          "validation": {
+            "league_count": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.594000476186874,
+                "top1_accuracy": 0.45244449836224676,
+                "top2_accuracy": 0.6291398762586436,
+                "ece": 0.015018744517735091
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3927523124293972,
+                "top1_accuracy": 0.18293867638129932,
+                "top2_accuracy": 0.3380692167577414,
+                "ece": 0.005661511892598684
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4487950185470817,
+                "top1_accuracy": 0.35982045371830645,
+                "top2_accuracy": 0.6241659589955113,
+                "ece": 0.00967625664437561
+              }
+            },
+            "pitcher_count_shrunk": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.2446976772740352,
+                "top1_accuracy": 0.4856241659589955,
+                "top2_accuracy": 0.7499090137086012,
+                "ece": 0.015604964358150971
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3885480787665356,
+                "top1_accuracy": 0.1875531268973892,
+                "top2_accuracy": 0.34705525197328474,
+                "ece": 0.005463679761587671
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4487950185470817,
+                "top1_accuracy": 0.35982045371830645,
+                "top2_accuracy": 0.6241659589955113,
+                "ece": 0.00967625664437561
+              }
+            },
+            "lightgbm_context": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.20101228953335,
+                "top1_accuracy": 0.4954506854300619,
+                "top2_accuracy": 0.772352298920296,
+                "ece": 0.0347511204665554
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.35234144906203,
+                "top1_accuracy": 0.21681845780206435,
+                "top2_accuracy": 0.3822707953855495,
+                "ece": 0.006255620168531591
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4345371128546662,
+                "top1_accuracy": 0.36157952201868254,
+                "top2_accuracy": 0.6307776295038214,
+                "ece": 0.014733409414248382
+              }
+            },
+            "lightgbm_history": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.1587782846819539,
+                "top1_accuracy": 0.512131505519835,
+                "top2_accuracy": 0.787577338347689,
+                "ece": 0.026350265807372823
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.348360980426171,
+                "top1_accuracy": 0.22088646023072253,
+                "top2_accuracy": 0.383485124468731,
+                "ece": 0.004808025385179064
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4336940294196565,
+                "top1_accuracy": 0.36473371345383965,
+                "top2_accuracy": 0.6301710542278297,
+                "ece": 0.014802941224530977
+              }
+            },
+            "gru": {
+              "pitch": {
+                "n": 16486,
+                "log_loss": 1.1744693517684937,
+                "top1_accuracy": 0.5085527113914837,
+                "top2_accuracy": 0.7838772291641393,
+                "ece": 0.02872751803959541
+              },
+              "zone": {
+                "n": 16470,
+                "log_loss": 2.3551571369171143,
+                "top1_accuracy": 0.21955069823922282,
+                "top2_accuracy": 0.3820279295689132,
+                "ece": 0.009051922677536043
+              },
+              "result": {
+                "n": 16486,
+                "log_loss": 1.4368152618408203,
+                "top1_accuracy": 0.36588620647822395,
+                "top2_accuracy": 0.6267742326822758,
+                "ece": 0.017077117053814247
+              }
+            }
+          },
+          "calibration_audit": {
+            "pitch": {
+              "n": 3196,
+              "coverage": 0.8983103879849812,
+              "mean_set_size": 2.5168961201501876,
+              "ece_before": 0.040633323397859654,
+              "ece_after": 0.034433553491874096,
+              "log_loss_before": 1.1059416925987313,
+              "log_loss_after": 1.1052705407615313
+            },
+            "zone": {
+              "n": 3193,
+              "coverage": 0.9025994362668337,
+              "mean_set_size": 10.270905104917006,
+              "ece_before": 0.008968731033290551,
+              "ece_after": 0.008215434557585881,
+              "log_loss_before": 2.362307044387179,
+              "log_loss_after": 2.3622892541377043
+            },
+            "result": {
+              "n": 3196,
+              "coverage": 0.8945556946182729,
+              "mean_set_size": 3.580413016270338,
+              "ece_before": 0.03134550763960649,
+              "ece_after": 0.02702146410494483,
+              "log_loss_before": 1.452362686848165,
+              "log_loss_after": 1.4519888593701378
+            }
+          }
+        },
+        "model_version": "week2-sequence-v1",
+        "data_version": "rebas-2023-2025-regular-v1",
+        "data_cutoff": "2024-08-14",
+        "model_name": "lightgbm_history",
+        "capabilities": {
+          "sequence": true,
+          "batter_conditioned_model": true,
+          "conformal": true,
+          "conditional_result": true
+        },
+        "source_mode": "local_snapshot",
+        "elapsed_ms": 2.71,
+        "sequence_used": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-11-11T02:42:22.370566+00:00",
+  "model_version": "week2-sequence-v1",
+  "sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+  "model_bytes": 10422629,
+  "tables": {
+    "players": 377,
+    "pitcher_repertoire": 826,
+    "aggregate_stats": 75424,
+    "model_versions": 2
+  },
+  "checks": {
+    "registration_matches_manifest": true,
+    "full_catalog_matches": true,
+    "private_model_bytes_match": true,
+    "private_manifest_bytes_match": true
+  },
+  "registration": {
+    "model_version": "week2-sequence-v1",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
+    "storage_path": "week2-sequence-v1/model.json",
+    "metadata": {
+      "capabilities": {
+        "sequence": true,
+        "conformal": true,
+        "conditional_result": true,
+        "batter_conditioned_model": true
+      },
+      "model_family": "lightgbm",
+      "feature_version": "week2-v1",
+      "training_pitches": 155502
+    }
+  }
+}

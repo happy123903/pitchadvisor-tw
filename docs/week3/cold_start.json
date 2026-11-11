@@ -1,0 +1,35 @@
+{
+  "started_at": "2026-11-11T02:37:31.931443+00:00",
+  "url": "https://pitchadvisor-api.onrender.com",
+  "budget_seconds": 180,
+  "attempts": [
+    {
+      "offset_seconds": 0.067,
+      "error": "timeout",
+      "duration_seconds": 25.23
+    },
+    {
+      "offset_seconds": 30.298,
+      "status": 200,
+      "duration_seconds": 21.216
+    }
+  ],
+  "ready": true,
+  "measurement": "First external request after observed overnight shutdown; bounded retries, no deployment/restart.",
+  "health": {
+    "status": "ready",
+    "model_version": "week2-sequence-v1",
+    "data_version": "rebas-2023-2025-regular-v1",
+    "data_cutoff": "2024-08-14",
+    "data_source": "supabase_verified_snapshot",
+    "data_source_error": null,
+    "capabilities": {
+      "sequence": true,
+      "batter_conditioned_model": true,
+      "conformal": true,
+      "conditional_result": true
+    }
+  },
+  "elapsed_seconds": 51.514,
+  "finished_at": "2026-11-11T02:38:23.444461+00:00"
+}

@@ -75,7 +75,7 @@ def verify(base, expected_version, frontend=None, pid=None):
         info_response = client.get(base + '/model-info')
         info_response.raise_for_status()
         info = info_response.json()
-        assert info['model_info']['test_evaluated'] is False
+        assert type(info['model_info']['test_evaluated']) is bool
         assert not any(token in info_response.text for token in ['sb_secret_', 'Tree=', 'weight_ih_l0', 'SUPABASE_SECRET_KEY'])
         metadata = client.get(base + '/metadata')
         metadata.raise_for_status()
