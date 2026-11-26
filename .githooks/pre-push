@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+cd "$(git rev-parse --show-toplevel)"
+set --
+while read -r local_ref local_oid remote_ref remote_oid; do
+  case "$local_oid" in
+    0000000000000000000000000000000000000000) continue ;;
+  esac
+  set -- "$@" --ref "$local_oid"
+done
+[ "$#" -gt 0 ] || exit 0
+if [ -x .venv/Scripts/python.exe ]; then
+  exec .venv/Scripts/python.exe scripts/security_check.py --mode history "$@"
+elif command -v python >/dev/null 2>&1; then
+  exec python scripts/security_check.py --mode history "$@"
+else
+  exec python3 scripts/security_check.py --mode history "$@"
+fi

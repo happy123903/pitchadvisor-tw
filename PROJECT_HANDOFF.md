@@ -24,9 +24,9 @@ tags: [project-handoff, pitchadvisor-tw, github-pages, supabase, render, week3]
 
 ## 目前任務與授權
 
-- 使用者要求**完成第三週內容**。三平台操作與專案部署先前已授權；不用重問帳號建立、下載資料或一般發布權限。
-- 工作目錄 `<LOCAL_PATH>`；所有專案工具、資料與環境放此處。保留 `野革盃黑客松_專案計畫書_v2.md` 與原始 PPTX，不任意覆寫或加入版本庫。
-- 所有 shell 命令以 `rtk` 開頭，依 `<LOCAL_PATH>`。`No hook installed` 只是 RTK 提示，不是 API 錯誤，不為此改全域設定。
+- 發布、帳號與雲端資源操作須依目前工作階段的授權範圍執行。
+- 工作目錄 `<PROJECT_ROOT>`；所有專案工具、資料與環境放此處。保留 `野革盃黑客松_專案計畫書_v2.md` 與原始 PPTX，不任意覆寫或加入版本庫。
+- 所有 shell 命令以 `rtk` 開頭，依 `<CODEX_CONFIG>/RTK.md`。`No hook installed` 只是 RTK 提示，不是 API 錯誤，不為此改全域設定。
 - `.env` 只限本機，忽略且不列印；疑似曝光的憑證須撤銷換發。
 
 ## 第二週既有實作（歷史基礎）

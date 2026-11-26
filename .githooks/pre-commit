@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+cd "$(git rev-parse --show-toplevel)"
+if [ -x .venv/Scripts/python.exe ]; then
+  exec .venv/Scripts/python.exe scripts/security_check.py --mode staged
+elif command -v python >/dev/null 2>&1; then
+  exec python scripts/security_check.py --mode staged
+else
+  exec python3 scripts/security_check.py --mode staged
+fi

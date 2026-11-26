@@ -18,3 +18,25 @@ artifacts/week2-smoke/
 docs/week2/smoke/
 docs/week2/metrics_in_progress.json
 *.log
+
+# Local research, original submissions and private machine state
+graphify-out/
+output/
+/球路參謀_初審提案簡報_v4.pptx
+/野革盃黑客松_專案計畫書_v2.md
+private/
+secrets/
+.aws/
+.ssh/
+.npmrc
+.pypirc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.sqlite*
+*.db
+*.bak
+*.dump

@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FROZEN_SHA256 = 'aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec'
 RUNTIME_FILES = [
     'api/__init__.py', 'api/main.py',
-    'src/__init__.py', 'src/baseline.py', 'src/domain.py', 'src/sequence.py',
+    'src/__init__.py', 'src/baseline.py', 'src/domain.py', 'src/sequence.py', 'src/http_security.py',
     'src/week2_features.py', 'src/week2_model.py',
     'scripts/serve_offline.py', 'scripts/Start-Offline.ps1', 'scripts/Stop-Offline.ps1',
     'artifacts/week2/model.json', 'artifacts/week2/manifest.json', 'requirements-lock.txt',

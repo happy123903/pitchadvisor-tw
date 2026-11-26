@@ -1,6 +1,6 @@
 # 第一週交付狀態
 
-更新日期：2026-11-10 18:18（Asia/Taipei）。三平台部署與公開 HTTP／API 串接驗收通過；完整證據見 `deployment_verification.json`。所有本機檔案位於 `<LOCAL_PATH>`，v2 與原簡報保留。
+更新日期：2026-11-10 18:18（Asia/Taipei）。三平台部署與公開 HTTP／API 串接驗收通過；完整證據見 `deployment_verification.json`。所有本機檔案位於 `<PROJECT_ROOT>`，v2 與原簡報保留。
 
 ## 已完成
 
@@ -33,7 +33,7 @@
 
 **GitHub Pages、Render 與 Supabase 均已部署，公開 HTTP／API 串接驗收通過。** 真實瀏覽器視覺／點擊、手機版及閒置後喚醒穩定性仍待驗收，不能把這次部署確認當成所有體驗與負載測試已完成。
 
-部署重現方式保留於 [詳細上線步驟](../DEPLOYMENT_STEP_BY_STEP.md)，Actions Variables 的 `VITE_API_BASE_URL` 已在發布資源中確認為 `https://pitchadvisor-api.onrender.com`。憑證輪替與私人操作紀錄在平台私下管理。
+部署重現方式保留於 [詳細上線步驟](../DEPLOYMENT_STEP_BY_STEP.md)，Actions Variables 的 `VITE_API_BASE_URL` 已在發布資源中確認為 `https://pitchadvisor-api.onrender.com`。憑證的撤銷與換發應在平台私下管理，不將金鑰或個人操作紀錄寫入公開文件。
 
 ## 驗證證據
 

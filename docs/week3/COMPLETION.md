@@ -39,7 +39,7 @@ API `/evaluation` 只在報告的模型版本、SHA與截止日完全匹配時�
 - [瀏覽器驗收](BROWSER_QA.md)與[browser_verification.json](browser_verification.json)：真Chrome桌面／手機viewport、實際65秒逾時與20秒提示、503清舊圖、重試、延遲回應競態、API受阻後唯讀固定案例、本機編譯版阻擋外網後重載與任意即時推論皆通過。手機為viewport模擬，外網為瀏覽器攔截，不冒稱實體手機／關網卡；測試程序已停止。
 - `deliverables/球路參謀_示範影片_v1.mp4`：**4:40、1440×1120、25fps、H.264／yuv420p、faststart、無音軌**，21段繁中字幕已燒錄，另附SRT。原片7:39.36只剪除等待，保留原速實際互動；503場景明確標示模擬，影片使用本機真API。
 - [影片說明](VIDEO_GUIDE.md)與[完整解碼／視覺檢查](video_verification.json)。MP4共19,269,849 bytes，SHA-256 `fa333585925a5adecd34f2ea0c17a5253830f2973800e2c71a0975ee9dd45ffb`。
-- 離線ZIP最終4,133,834 bytes，SHA-256 `914f7572eaec181acd730dce69b3268c26c8362b436e4e5e4b4c05572e464de3`；已從包內自己的root用預備環境啟動驗證，非借用原repo來源碼。
+- 離線ZIP於2026-11-26資安補強後重新封裝，最新大小與SHA-256以 [offline_package.json](offline_package.json) 為準；已重新從包內自己的root用預備環境啟動驗證，非借用原repo來源碼。
 
 ## 成果入口
 

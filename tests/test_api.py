@@ -75,6 +75,27 @@ def test_cors_is_explicit(client):
     assert 'access-control-allow-origin' not in denied.headers
 
 
+def test_request_limits_and_validation_never_echo_input(client):
+    hidden='synthetic-private-input'
+    for body in [{hidden:hidden}, {'pitcher_id':hidden}]:
+        response=client.post('/predict',json=body)
+        assert response.status_code==422
+        assert hidden not in response.text
+        assert response.json()['detail']['code']=='invalid_request'
+    response=client.post('/predict',content=hidden*2000,headers={'Origin':server.origins[0]})
+    assert response.status_code==413
+    assert response.headers['access-control-allow-origin']==server.origins[0]
+    assert hidden not in response.text
+
+
+@pytest.mark.parametrize('url',['http://example.invalid','https://example.invalid/rest/v1',
+    'https://example.invalid?key=value','https://'+'name:password'+'@example.invalid'])
+def test_supabase_configuration_rejects_unsafe_origin_before_sending_secret(monkeypatch,url):
+    monkeypatch.setenv('SUPABASE_URL',url)
+    with pytest.raises(ValueError,match='invalid_supabase_origin'):
+        server.supabase_origin()
+
+
 def test_bundle_integrity_rejects_changed_file(tmp_path,monkeypatch):
     (tmp_path/'manifest.json').write_text(json.dumps({'sha256':'0'*64}),encoding='utf-8')
     (tmp_path/'model.json').write_text('{}',encoding='utf-8')

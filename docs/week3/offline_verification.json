@@ -1,6 +1,6 @@
 {
   "verification": "real loopback HTTP and Windows process lifecycle",
-  "generated_at": "2026-11-11T02:56:41.065621+00:00",
+  "generated_at": "2026-11-26T09:16:19.151554+00:00",
   "network_scope": "HTTP server checks use loopback; outbound-HTTP blocking is separately tested in tests/test_offline.py",
   "model_sha256": "aa3e984758796843bce68aa71fb06a4c84739a7d8048be475cc1bfe6855671ec",
   "checks": {
@@ -25,22 +25,22 @@
     },
     "compiled_static_reload": [
       {
-        "asset": "./assets/index-DmIJJkY7.js",
+        "asset": "./assets/index-CVk0gK97.js",
         "reload": 0,
         "status": 200
       },
       {
-        "asset": "./assets/index-DmIJJkY7.js",
+        "asset": "./assets/index-CVk0gK97.js",
         "reload": 1,
         "status": 200
       },
       {
-        "asset": "./assets/index-DHiXWTsK.css",
+        "asset": "./assets/index-CfnrGNQb.css",
         "reload": 0,
         "status": 200
       },
       {
-        "asset": "./assets/index-DHiXWTsK.css",
+        "asset": "./assets/index-CfnrGNQb.css",
         "reload": 1,
         "status": 200
       }
@@ -69,29 +69,29 @@
       "usable_rows": 99729
     }
   },
-  "actual_server_pid": 34256,
-  "launcher_pid": 3480,
+  "actual_server_pid": 57500,
+  "launcher_pid": 62960,
   "processes_before_stop": [
     {
-      "creation_date": "2026-11-11T02:56:42.5649780Z",
-      "working_set_bytes": 5943296,
-      "pid": 3480,
+      "creation_date": "2026-11-26T09:16:20.3338050Z",
+      "working_set_bytes": 6004736,
+      "pid": 62960,
       "name": "python.exe",
-      "parent_pid": 13932
+      "parent_pid": 62868
     },
     {
-      "creation_date": "2026-11-11T02:56:42.5886030Z",
-      "working_set_bytes": 218656768,
-      "pid": 34256,
+      "creation_date": "2026-11-26T09:16:20.3865440Z",
+      "working_set_bytes": 218914816,
+      "pid": 57500,
       "name": "python.exe",
-      "parent_pid": 3480
+      "parent_pid": 62960
     }
   ],
-  "actual_server_working_set_bytes": 218656768,
+  "actual_server_working_set_bytes": 218914816,
   "package": {
-    "files": 28,
-    "bytes": 4133834,
-    "archive_sha256": "914f7572eaec181acd730dce69b3268c26c8362b436e4e5e4b4c05572e464de3",
+    "files": 29,
+    "bytes": 4134654,
+    "archive_sha256": "a97588ad0d40897993fa5b8d4af33f2331fc017096bd1195bf857d76664d407e",
     "all_file_checksums_match": true,
     "private_cloud_values_found": 0,
     "env_venv_raw_data_node_modules_included": false,

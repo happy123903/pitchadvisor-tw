@@ -10,14 +10,18 @@ import uuid
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Annotated, Literal
+from urllib.parse import urlsplit
 
 import httpx
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, ConfigDict, Field
 
 from src.baseline import Baseline
+from src.http_security import RequestSizeLimit
 from src.sequence import MAX_SEQUENCE_LENGTH, SEQUENCE_RESULTS, SequenceValidationError, validate_sequence
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -73,6 +77,15 @@ def load_bundle():
     return Baseline(model)
 
 
+def supabase_origin():
+    url=os.getenv('SUPABASE_URL','').rstrip('/')
+    origin=urlsplit(url)
+    if (origin.scheme!='https' or not origin.hostname or origin.username or origin.password
+            or origin.path or origin.query or origin.fragment):
+        raise ValueError('invalid_supabase_origin')
+    return url
+
+
 def download_bundle_if_needed():
     """Explicit version pin; download trusted JSON only, never execute model code."""
     if (BUNDLE/'manifest.json').exists() and (BUNDLE/'model.json').exists():
@@ -82,6 +95,7 @@ def download_bundle_if_needed():
     version=os.getenv('MODEL_VERSION','')
     if not all([url,secret,version]):
         raise RuntimeError('Local model bundle missing; build it or configure Supabase model download.')
+    url=supabase_origin()
     BUNDLE.mkdir(parents=True,exist_ok=True)
     headers={'apikey':secret}
     if not secret.startswith('sb_secret_'):
@@ -113,12 +127,12 @@ async def lifespan(app):
         app.state.startup_error='model_bundle_load_failed'
     # Keep the service inspectable if the external DB is temporarily unavailable.
     if app.state.baseline and os.getenv('SUPABASE_URL') and os.getenv('SUPABASE_SECRET_KEY'):
-        url=os.environ['SUPABASE_URL'].rstrip('/')
         secret=os.environ['SUPABASE_SECRET_KEY']
         headers={'apikey':secret}
         if not secret.startswith('sb_secret_'):
             headers['Authorization']='Bearer '+secret
         try:
+            url=supabase_origin()
             async with httpx.AsyncClient(timeout=10) as client:
                 version=app.state.baseline.model['model_version']
                 response=await client.get(url+'/rest/v1/model_versions',headers=headers,
@@ -154,9 +168,17 @@ async def lifespan(app):
 
 
 app=FastAPI(title='球路參謀 PitchAdvisor TW',version='0.3.0',lifespan=lifespan)
+app.add_middleware(RequestSizeLimit)
 origins=[x.strip() for x in os.getenv('ALLOWED_ORIGINS','http://127.0.0.1:5173,http://localhost:5173,http://127.0.0.1:4173,http://localhost:4173').split(',') if x.strip()]
 app.add_middleware(CORSMiddleware,allow_origins=origins,allow_credentials=False,
                    allow_methods=['GET','POST'],allow_headers=['Content-Type'])
+
+
+@app.exception_handler(RequestValidationError)
+async def invalid_request(_request,_exc):
+    # Framework defaults echo input values, unknown field names and JSON context.
+    return JSONResponse(status_code=422,content={'detail':{
+        'code':'invalid_request','message':'請求格式或欄位值不正確，請檢查投打與球數資料。'}})
 
 
 @app.middleware('http')

@@ -26,7 +26,7 @@ rtk proxy .venv\Scripts\python.exe scripts/verify_week2.py --api-url https://pit
 
 順序：建立 GitHub 儲存庫 → 上傳程式 → 建立 Supabase 並匯入 → 部署 Render → 啟用 GitHub Pages → 驗證完整網站。
 
-「專用儲存庫」就是為球路參謀另外開一個 GitHub repository，與原本其他專案分開。本機資料夾維持 `<LOCAL_PATH>`。
+「專用儲存庫」就是為球路參謀另外開一個 GitHub repository，與原本其他專案分開。本機資料夾維持 `<PROJECT_ROOT>`。
 
 ## 1. 建立 GitHub 儲存庫
 
@@ -46,7 +46,7 @@ rtk proxy .venv\Scripts\python.exe scripts/verify_week2.py --api-url https://pit
 在 IDE 終端機開啟 PowerShell，切到專案根目錄：
 
 ```powershell
-Set-Location -LiteralPath '<LOCAL_PATH>'
+Set-Location -LiteralPath '<PROJECT_ROOT>'
 ```
 
 目前本機已初始化 Git，分支為 `main`，尚無提交與遠端。若你是在日後的另一台電腦重新操作，先依當時狀態確認，不要盲目重複新增遠端。
@@ -66,7 +66,7 @@ rtk git diff --cached --stat
 
 ```powershell
 rtk git config user.name 'happy123903'
-rtk git config user.email '91250441+happy123903@users.noreply.github.com'
+rtk git config user.email '<YOUR_GITHUB_NOREPLY_EMAIL>'
 ```
 
 再提交並推送：
